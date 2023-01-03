@@ -55,5 +55,68 @@
 
 Harfang is a software developpement company which is dedicated to the creation of human-machine interfaces for various sectors. Founded in 2016, its head office is in Orléans (France) and is run by a team with 15 years of experiences in the video game and industrial sector.
 
-The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes. 
+The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes.
 
+# 3. Goal of the project
+
+The goal of this project is to create a binding in the F# programming language for the Harfang 3D Framework alongside the ones already existing in different languages like Python, Golang and Lua.
+
+## 3.1. Scope
+
+The most 
+
+## 3.2. In Scope
+
+These   
+  
+  
+## 3.3. Out Of Scope
+ 
+Due 
+
+  
+## 3.4. Deadlines
+
+The deadline for the hardware choosing is the //////. The deadline for the V0 is the 17th February 2023.
+
+# 4. Functional Requirements
+
+## 4.1. Assumptions
+- Content will be displayed horizontally.
+- Both buildings are connected to the same network.
+- The screens will be connected to the same network.  
+- Ethernet is the safest way to connect the screens to the network.
+- The V0 will concern 2 screens.
+- Each screen will be independent from each other.
+  
+## 4.2. Constraints
+
+- There are 3 shifts per day. 
+- Small shutdown at Christmas time.
+- Wi-Fi sometimes had issues.
+
+
+# 5. Personas
+
+# 6. Use cases
+
+## 6.1. Functional Analysis
+
+## 6.2. Use Cases Analysis 
+Here is a more detailed version of the functional analysis above :
+<details>
+<summary><b id="toc"><u>Use case table</u></b></summary>
+
+| Use Case # | Addresses Business/User Requirement n° | Name                                                  | Description                                                                               | Actor(s)                                                 | Pre-Conditions                                                                                                                                                                                                                                                                                                                                                                                                                                       | Flow of Events                                                                                                                                                                                        | Post-Conditions                                                                                                                                         | Exit Criteria                                                                                                                 |
+| ---------- | -------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+</details>     
+
+
+# 7. Non-Functional Requirements
+
+# 8. Security 
+
+Following t
+
+# 9. Conclusion
