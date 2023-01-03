@@ -29,5 +29,31 @@
 
 ---
 
-# AppNews Network - Functional Specification
+# Harfang 3D Binding - Functional Specification
+
+## 1. Glossary
+
+ We recommend the reader to read this glossary in order to understand the following parts.  
+
+ - **Harfang 3D** : Abreviation of "**A**gence **N**ationale de la **S**écurité des **S**ystèmes d'**I**nformation"
+  
+ - **Harfang 3D Binding** : The project we are working on.  
+
+ - **Binding** : The project we are working on.  
+
+ - **Engine** : The project we are working on.  
+
+ - **Framework** : The project we are working on.  
+
+ - **Real-Time 3D** : The project we are working on.  
+
+ - **HMI** : Abreviation of "**H**uman-**M**achine **I**nterface.  
+
+ - **API** : TAbreviation of "**H**uman-**M**achine **I**nterface.   
+
+ # 2. Introduction
+
+Harfang is a software developpement company which is dedicated to the creation of human-machine interfaces for various sectors. Founded in 2016, its head office is in Orléans (France) and is run by a team with 15 years of experiences in the video game and industrial sector.
+
+The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes. 
 
