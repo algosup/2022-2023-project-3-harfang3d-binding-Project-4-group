@@ -35,9 +35,7 @@
 
  We recommend the reader to read this glossary in order to understand the following parts.  
 
- - **Harfang 3D** : Abreviation of "**A**gence **N**ationale de la **S**écurité des **S**ystèmes d'**I**nformation"
-  
- - **Harfang 3D Binding** : The project we are working on.  
+ - **Harfang 3D** : Abreviation of "**A**gence **N**ationale de la **S**écurité des **S**ystèmes d'**I**nformation". 
 
  - **Binding** : The project we are working on.  
 
@@ -49,7 +47,7 @@
 
  - **HMI** : Abreviation of "**H**uman-**M**achine **I**nterface.  
 
- - **API** : TAbreviation of "**H**uman-**M**achine **I**nterface.   
+ - **API** : Abreviation of "**H**uman-**M**achine **I**nterface.   
 
  # 2. Introduction
 
@@ -82,18 +80,11 @@ The deadline for the hardware choosing is the //////. The deadline for the V0 is
 # 4. Functional Requirements
 
 ## 4.1. Assumptions
-- Content will be displayed horizontally.
-- Both buildings are connected to the same network.
-- The screens will be connected to the same network.  
-- Ethernet is the safest way to connect the screens to the network.
-- The V0 will concern 2 screens.
-- Each screen will be independent from each other.
+- Content 
   
 ## 4.2. Constraints
 
-- There are 3 shifts per day. 
-- Small shutdown at Christmas time.
-- Wi-Fi sometimes had issues.
+- There are 3 
 
 
 # 5. Personas
