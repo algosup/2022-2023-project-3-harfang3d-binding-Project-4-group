@@ -9,7 +9,7 @@
   - [3.1. Scope](#31-scope)
   - [3.2. In Scope](#32-in-scope)
   - [3.3. Out Of Scope](#33-out-of-scope)
-  - [3.4. Deadlines](#34-deadlines)
+  - [3.4. Deadline](#34-deadline)
 - [4. Functional Requirements](#4-functional-requirements)
   - [4.1. Assumptions](#41-assumptions)
   - [4.2. Constraints](#42-constraints)
@@ -35,7 +35,9 @@
 
  We recommend the reader to read this glossary in order to understand the following parts.  
 
- - **Harfang 3D** : The real-time 3D development environment engine that we must update. 
+ - **Harfang 3D** : The real-time 3D development environment engine written in C++ that we must update. 
+
+  - **Fabgen** : A set of Python scripts to generate C++ bidning codes to different languages. 
 
  - **Binding** : An use of a software library for a different programming language.
 
@@ -55,17 +57,25 @@ Harfang is a software developpement company which is dedicated to the creation o
 
 The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes.
 
+The clients, Emmanuel Julien and François Gutherz, want us to create a library using the F# language for using their main product named Harfang 3D.
+
 # 3. Goal of the project
 
-The goal of this project is to create a binding in the F# programming language for the Harfang 3D Framework alongside the ones already existing in different languages like Python, Golang and Lua.
+The goal of this project is to create a binding in the F# programming language. 
+
+Indeed, there is a binding generator called FabGen created by the society to bring the C++ engine to different languages like Python, Golang and Lua.
 
 ## 3.1. Scope
 
-The most 
+Most importantly, we have to find a way to bridge Harfang 3D (created with C++) with the F# programming language.
+
+The issue is that it's not possible to bridge F# with C++. So, the client wants us to use the C language as an intermediary language between C++ and F#.
 
 ## 3.2. In Scope
 
-These   
+These are the mains features that are planned in our V0 :
+-creation of a static library for an embedded use of F#.
+-scripting of the required functions for using the native code of F#   
   
   
 ## 3.3. Out Of Scope
@@ -73,14 +83,15 @@ These
 Due 
 
   
-## 3.4. Deadlines
+## 3.4. Deadline
 
-The deadline for the hardware choosing is the //////. The deadline for the V0 is the 17th February 2023.
+The deadline for the V0 is February 17th 2023.
 
 # 4. Functional Requirements
 
 ## 4.1. Assumptions
-- Content 
+- Several tests using Harfang 3D with the F# binding must be done.
+- 
   
 ## 4.2. Constraints
 
@@ -98,8 +109,9 @@ Here is a more detailed version of the functional analysis above :
 <details>
 <summary><b id="toc"><u>Use case table</u></b></summary>
 
-| Use Case # | Addresses Business/User Requirement n° | Name                                                  | Description                                                                               | Actor(s)                                                 | Pre-Conditions                                                                                                                                                                                                                                                                                                                                                                                                                                       | Flow of Events                                                                                                                                                                                        | Post-Conditions                                                                                                                                         | Exit Criteria                                                                                                                 |
-| ---------- | -------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use Case # | Addresses Business/User Requirement n° | Name | Description | Actor(s) | Pre-Conditions | Flow of Events | Post-Conditions | Exit Criteria |
+| ---------- | -------------------------------------- | ---- | ----------- | -------- | -------------- | -------------- | --------------- | ------------- |
+|            |                                        |      |             |          |                |                |                 |               |
 
 </details>     
 
