@@ -31,23 +31,23 @@
 
 # Harfang 3D Binding - Functional Specification
 
-## 1. Glossary
+# 1. Glossary
 
  We recommend the reader to read this glossary in order to understand the following parts.  
 
- - **Harfang 3D** : Abreviation of "**A**gence **N**ationale de la **S**écurité des **S**ystèmes d'**I**nformation". 
+ - **Harfang 3D** : The real-time 3D development environment engine that we must update. 
 
- - **Binding** : The project we are working on.  
+ - **Binding** : An use of a software library for a different programming language.
 
- - **Engine** : The project we are working on.  
+ - **Engine** : A program performing a core or essential function, faciliting development and allowing real-time maintenance.
 
- - **Framework** : The project we are working on.  
+ - **Framework** : A set of tools and software components gathered to allow a faster development of softwares.  
 
- - **Real-Time 3D** : The project we are working on.  
+ - **Real-Time 3D** : The method of representation of 3D images that appear to be moving in real time.
 
  - **HMI** : Abreviation of "**H**uman-**M**achine **I**nterface.  
 
- - **API** : Abreviation of "**H**uman-**M**achine **I**nterface.   
+ - **API** : Abreviation of "**A**pplication **P**rogramming **I**nterface.   
 
  # 2. Introduction
 
