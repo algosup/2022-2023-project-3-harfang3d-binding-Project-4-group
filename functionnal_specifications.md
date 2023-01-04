@@ -6,10 +6,9 @@
   - [1. Glossary](#1-glossary)
 - [2. Introduction](#2-introduction)
 - [3. Goal of the project](#3-goal-of-the-project)
-  - [3.1. Scope](#31-scope)
-  - [3.2. In Scope](#32-in-scope)
-  - [3.3. Out Of Scope](#33-out-of-scope)
-  - [3.4. Deadline](#34-deadline)
+  - [3.1. In Scope](#31-in-scope)
+  - [3.2. Out Of Scope](#32-out-of-scope)
+  - [3.3. Deadline](#33-deadline)
 - [4. Functional Requirements](#4-functional-requirements)
   - [4.1. Assumptions](#41-assumptions)
   - [4.2. Constraints](#42-constraints)
@@ -37,7 +36,7 @@
 
  - **Harfang 3D** : The real-time 3D development environment engine written in C++ that we must update. 
 
-  - **Fabgen** : A set of Python scripts to generate C++ bidning codes to different languages. 
+  - **FABGen** : A set of Python scripts to generate C++ bidning codes to different languages. 
 
  - **Binding** : An use of a software library for a different programming language.
 
@@ -63,29 +62,26 @@ The clients, Emmanuel Julien and François Gutherz, want us to create a library 
 
 The goal of this project is to create a binding in the F# programming language. 
 
-Indeed, there is a binding generator called FabGen created by the society to bring the C++ engine to different languages like Python, Golang and Lua.
+Indeed, there is a binding generator called FABGen created by the society to bring the C++ engine to different languages like Python, Golang and Lua.
 
-## 3.1. Scope
-
-Most importantly, we have to find a way to bridge Harfang 3D (created with C++) with the F# programming language.
+## 3.1. In Scope
+Most importantly, we have to find a way to bridge FABGen with the F# programming language.
 
 The issue is that it's not possible to bridge F# with C++. So, the client wants us to use the C language as an intermediary language between C++ and F#.
 
-## 3.2. In Scope
-
-These are the mains features that are planned in our V0 :
+Anyway, these are the mains features that are planned for the first version of our product :
 -creation of a static library for an embedded use of F#.
--scripting of the required functions for using the native code of F#   
+-scripting of the required functions for using the native code of F#
+   
   
   
-## 3.3. Out Of Scope
- 
-Due 
+## 3.2. Out Of Scope
+Because of the time and resources constraints, we could only include these features in the futur eversions :
+-binding with newer version of F#
 
   
-## 3.4. Deadline
-
-The deadline for the V0 is February 17th 2023.
+## 3.3. Deadline
+The deadline for the V0 is in February 17th 2023.
 
 # 4. Functional Requirements
 
@@ -94,8 +90,7 @@ The deadline for the V0 is February 17th 2023.
 - 
   
 ## 4.2. Constraints
-
-- There are 3 
+- The
 
 
 # 5. Personas
