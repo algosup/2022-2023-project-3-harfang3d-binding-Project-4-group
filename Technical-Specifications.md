@@ -54,16 +54,13 @@ The project is divided into three main phases:
 Tests are provided by [Harfang 3D](#Harfang3D) so we won't have to create them.
 
 ### Footnotes
-
-<span id="Fabgen">Fabgen</span>: Fabgen is a script written in Python made to create C++ to allow users to code with multiple languages such as Python, Go, and Lua.
-
-<span id="F#">F#</span>: F# is an object-oriented language which means it can associate a block of a program to a concept, F# is widely used to make multiple languages work together.
-
-<span id="C++">C++</span>: C++ is a high-level programming language, as F#, C++ is an object-oriented language.
-
-<span id="Python">Python#</span>: Like C++, Python is a high-level language, this language is widely used inside the programming community for his simplicity to use parts of code called libraries which are made by users.
-
-<span id="Harfang3D">Harfang 3D</span>: Harfang 3D is a French company based in Orléans with the objective to create a 3D engine for industrial companies and purposes less explored by his concurrence. Harfang 3D is also the name of their 3D engine. 
+|word|definition|
+|---|:----:|
+|<span id="Fabgen">Fabgen</span> | Fabgen is a script written in [Python](#Python) made to create C++ to allow users to code with multiple languages such as [Python](#Python), Go, and Lua.|
+|<span id="F#">F#</span> | F# is an object-oriented language which means it can associate a block of a program to a concept, F# is widely used to make multiple languages work together.|
+|<span id="C++">C++</span>| C++ is a high-level programming language, as F#, C++ is an object-oriented language.|
+|<span id="Python">Python</span>| Like C++, Python is a high-level language, this language is widely used inside the programming community for his simplicity to use parts of code called libraries which are made by users.|
+|<span id="Harfang3D">Harfang 3D</span>| Harfang 3D is a French company based in Orléans with the objective to create a 3D engine for industrial companies and purposes less explored by his concurrence. Harfang 3D is also the name of their 3D engine. |
 
 
 
