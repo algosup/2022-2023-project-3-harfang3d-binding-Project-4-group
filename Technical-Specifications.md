@@ -1,0 +1,45 @@
+<hr>
+
+##  Harfang 3D technical specification
+
+<hr>
+
+### Overview
+
+The goal of this project is to translate [Fabgen](#Fabgen) into [F#](#F#). To do so we will have to understand what is [Fabgen](#Fabgen) and how it works, moreover, to make it work properly we will have to use two languages which are: 
+- [F#](#F#)
+- C++
+
+#### Why this project?
+
+[Fabgen](#Fabgen) is a binding generator whose purpose is to replace SWIG an older binding generator to fit [Harfang 3D](#Harfang3D) goals. It is currently working with Python, Lua, and Go. This project aims to add [F#](#F#) and Rust.
+
+#### Schedule
+
+The project has to be finished by the 17 of February 2023.
+
+The project is divided into three main phases:
+
+- week 1 to week 2 phase 1: Exploration and understanding of [Fabgen](#Fabgen) and creation of documents
+- week 3 to week 4 phase 2: Production of the product
+- week 4 to week 6 phase 3: Finalisation of the product
+
+#### Software
+
+##### Software architecture 
+#### Risk and assumptions
+
+#### testing
+
+Tests are provided by [Harfang 3D](#Harfang3D) so we won't have to create them.
+
+### Footnotes
+
+<span id="Fabgen">Fabgen</span>: Fabgen is a script written in Python made to create C++ to allow users to code with multiple languages such as Python, Go, and Lua.
+
+<span id="F#">F#</span>: F# is an object-oriented language which means it can associate a block of a program to a concept, F# is widely used to make multiple languages work together.
+
+<span id="Harfang3D">Harfang 3D</span>: Harfang 3D is a French company based in Orléans with the objective to create a 3D engine for industrial companies and for purposes less explored by his concurrence. Harfang 3D is also the name of their 3D engine. 
+
+
+
