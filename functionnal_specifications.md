@@ -34,7 +34,7 @@
 
  We recommend the reader to read this glossary in order to understand the following parts.  
 
- - **Harfang 3D** : The real-time 3D development environment engine written in C++ that we must update. 
+ - **Harfang 3D** : The society creating different 3D real-time engine solutions. 
 
   - **FABGen** : A set of Python scripts to generate C++ bidning codes to different languages. 
 
@@ -52,11 +52,13 @@
 
  # 2. Introduction
 
-Harfang is a software developpement company which is dedicated to the creation of human-machine interfaces for various sectors. Founded in 2016, its head office is in Orléans (France) and is run by a team with 15 years of experiences in the video game and industrial sector.
+Harfang  3D is a software developpement company which is dedicated to the creation of human-machine interfaces for various sectors. Founded in 2016, its head office is in Orléans (France) and is run by a team with 15 years of experiences in the video game and industrial sector.
 
 The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes.
 
-The clients, Emmanuel Julien and François Gutherz, want us to create a library using the F# language for using their main product named Harfang 3D.
+Two developpers of the society, Emmanuel Julien and François Gutherz, want to improve the efficiency of their engines. One of their popular project, FABGen, is used to bring the C++ engines to other languages like Python, Lua or Go. However,  it needs to be updated for making more polyvalent and available solutions for their customers. Indeed, they were taking into account the fact that customers didn't want to learn a new language while testing their products.
+
+By the way, the society previously used a popular tool named SWIG which can connect a lot of target languages. Though, it was too old and complex, so they replaced it with FABGen. In fact, their creation is trying to solve its predecessor's issue by implementing new features, and its still evolving. This is the company's duty to complete FABGen's functionalities for improving their creations.
 
 # 3. Goal of the project
 
