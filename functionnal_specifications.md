@@ -97,6 +97,33 @@ The deadline for the V0 is in February 17th 2023.
 
 # 5. Personas
 
+## 5.1 Jean-Charles Magne 
+
+-Job: Developer working for the Research Branch of Renault. He is specialized in the F# and Python languages. 
+-Description: Jean Charles is a 43 years old man living in Tours. He has a passion for cars, likes reading Mangas and playing badminton with his friends.
+
+He divorced 2 years ago, so he has custody of his 2 daughters of 13 years and 12 years old. Though, they live with him from Monday to Friday, his working days.
+
+By the way, he works at the car manufacturer society Renault for 6 years at Tours. To reach his workplace, he takes the tramway each morning for 20 minutes to arrive at 8am. Then, he works until 6pm and takes the metro to home.
+
+His job is to search for new software tools and test them in order to improve the society’s productivity. He is part of the IT department and he has to find a solution to design the HUD of a car panel.
+
+-Goals: 
+Jean-Charles wants to spend more time with his daughters during the days he is with them. So, he would like to find a solution where he doesn’t have to learn a new programming language at home. 
+ 
+## 5.2 Hélène Ganthe 
+
+-Job: Lead Designer of the glove making Agnelle company
+
+-Description: 
+Hélène is a 31 years old woman who lives at Paris, in an apartment not far from the Agnelle company. She likes reading novels, musical comedy movies, and is fascinated by leather gloves since her youth. She often wears gloves and is a loving single mother of a 6 years old boy. 
+ 
+Each day (except during the week-end), she takes her son to school by walking before she arrives to her workplace at 9am. Then, she leaves at 4pm before taking a coffee with a friend and picking up her kid to school before going home.
+
+At her workplace, she is the main person in charge of designing new variations of gloves. She leads her team of designer to find new ideas, but also new tools to create concepts more often. /////TO BE COMPLETED
+
+-Goals: Hélène wants to spend more time with her child by having more control to her creativity. Indeed, she wants a software to help her team design new gloves according to the hand size. 
+
 # 6. Use cases
 
 ## 6.1. Functional Analysis
