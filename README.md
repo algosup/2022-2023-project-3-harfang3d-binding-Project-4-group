@@ -11,12 +11,12 @@
 <br>
 
 **Team members (From left to right)** <br>
-[Alexis Lasselin](https://github.com/AlexisLasselin)(Project Manager); [Paul Nowak](https://github.com/PaulNowak36)(Program Manager); [Aurélien Fernandez](https://github.com/aurelienfernandez)(Tech Lead); [Laurent Bouquin](https://github.com/laurentbouquin)(Software Engineer) and [Karine Vinette](https://github.com/KarineVinette)(QA)
+[Alexis Lasselin](https://www.linkedin.com/in/alexis-lasselin-318649251/)(Project Manager); [Paul Nowak](https://www.linkedin.com/in/paul-nowak-0757a61a7/)(Program Manager); [Aurélien Fernandez](https://www.linkedin.com/in/aur%C3%A9lien-fernandez-4971201b8/)(Tech Lead); [Laurent Bouquin](https://www.linkedin.com/in/laurent-bouquin-60911a1b8/)(Software Engineer) and [Karine Vinette](https://www.linkedin.com/in/karine-vinette-63911b1b8/)(QA)
 <br>
 
 
 ## Client 
-For this project, we are working with the company [Harfang3D](https://www.harfang3d.com/), a French company, based on Orléans, that develops a 3D engine for the industry. The engine is open source and is available on [GitHub](https://github.com/harfang3d).
+For this project, we are working with the company [Harfang3D](https://www.harfang3d.com/), a French company, based on Orléans and created in 2016, that develops a 3D engine for the industry. The engine is open source and is available on [GitHub](https://github.com/harfang3d).
 
 <br>
 
@@ -28,6 +28,6 @@ Our goal for this project is to ad a binding for the language [F#](https://fshar
 
 ## Documents
 
-[Functional Specifications](Functional-Specifications.md) <br>
+[Functional Specifications](functional-specifications.md) <br>
 [Technical Specifications](Technical-Specifications.md) <br>
 [Project's planner](https://github.com/orgs/algosup/projects/4/views/1)
