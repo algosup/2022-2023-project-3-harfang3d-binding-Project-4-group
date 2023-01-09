@@ -23,13 +23,14 @@
 
 ### Overview
 
-The goal of this project is to translate [Fabgen](#Fabgen) into [F#](#F#). To do so we will have to understand what is [Fabgen](#Fabgen) and how it works, moreover, to make it work properly we will have to use two languages which are: 
+The goal of this project is to translate [FABGen](#FABGen) into [F#](#F#). To do so we will have to understand what is [FABGen](#FABGen) and how it works, moreover, to make it work properly we will have to use three languages which are: 
 - [F#](#F#)
 - [C++](#C++)
+- [Python](#Python)
 
 #### Why this project?
 
-[Fabgen](#Fabgen) is a binding generator whose purpose is to replace SWIG an older binding generator to fit [Harfang 3D](#Harfang3D) goals. It is currently working with [Python](#Python), Lua, and Go. This project aims to add [F#](#F#) and Rust.
+[FABGen](#FABGen) is a binding generator whose purpose is to replace SWIG an older binding generator to fit [Harfang 3D](#Harfang3D) goals. It is currently working with [Python](#Python), Lua, and Go. This project aims to add [F#](#F#) and Rust.
 
 #### Schedule
 
@@ -37,26 +38,36 @@ The project has to be finished by the 17 of February 2023.
 
 The project is divided into three main phases:
 
-- week 1 to week 2 phase 1: Exploration and understanding of [Fabgen](#Fabgen) and creation of documents
+- week 1 to week 2 phase 1: Exploration and understanding of [FABGen](#FABGen) and creation of documents
 - week 3 to week 4 phase 2: Production of the product
 - week 4 to week 6 phase 3: Finalisation of the product
 
 ### Software
 
+
+
 #### Software architecture 
+
+
 
 #### File structure
 
-### Risk and assumptions
 
-### testing
+
+### Risks
+
+This project has few risks, they can be defined as:
+- The risk of being late and miss deadlines.
+- The risk of misunderstanding FABgen's functions.
+
+### Testing
 
 Tests are provided by [Harfang 3D](#Harfang3D) so we won't have to create them.
 
 ### Footnotes
 |word|definition|
 |---|:----:|
-|<span id="Fabgen">Fabgen</span> | Fabgen is a script written in [Python](#Python) made to create C++ to allow users to code with multiple languages such as [Python](#Python), Go, and Lua.|
+|<span id="FABGen">FABGen</span> | FABGen is a script written in Python made to create C++ to allow users to code with multiple languages such as Python, Go, and Lua.|
 |<span id="F#">F#</span> | F# is an object-oriented language which means it can associate a block of a program to a concept, F# is widely used to make multiple languages work together.|
 |<span id="C++">C++</span>| C++ is a high-level programming language, as F#, C++ is an object-oriented language.|
 |<span id="Python">Python</span>| Like C++, Python is a high-level language, this language is widely used inside the programming community for his simplicity to use parts of code called libraries which are made by users.|
