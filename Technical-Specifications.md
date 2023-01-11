@@ -78,26 +78,31 @@ The project must have a good file structure to work properly, it is one of the m
 	└── fsharp.py (in theory)
 ├── lib
 	└── __pycache__
+		└── __init__.cpython-310.pyc
+		├── std..cpython-310.pyc
+		└── stl..cpython-310.pyc
 	├── cpython
 		└── __init__.py
 		├── std.py
-		├── stl.py
+		└── stl.py
 	├── lua
 		└── __init__.py
 		├── std.py
-		├── stl.py
+		└── stl.py
 	├── xml
 		└── __init__.py
 		├── std.py
-		├── stl.py
+		└── stl.py
 	├── fsharp (in theory)
 		└── __init__.py
 		├── std.py
-		├── stl.py
-	├── go.cpython-310.pyc
-	├── lua.cpython-310.pyc
-	├── xml.cpython-310.pyc
-	└── fsharp.cpython-310.pyc (in theory)
+		└── stl.py
+├── bind.py
+├── gen.py
+├── license.md
+└── readme.md
+
+	
 
 ```
 
