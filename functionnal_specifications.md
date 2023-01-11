@@ -160,12 +160,18 @@ Naisha wishes to use her F# skills to help her society finding a software tool t
     - He activates FABGen to change his scripting language
     - Case is closed
 
-
-- UC2 (Create a scene in Harfang 3D) :  
-    - Linda activates the F# binding
-    - She writes programs in F#
-    - She tests her scene using the scripts
+- UC2 (Create a new script in F#) :  
+    - Marcus activates the F# binding
+    - He creates a new script in his Harfang template
+    - He writes in F# and save it
     - Case is closed
+
+- UC3 (Test a scene in Harfang 3D using F#) :  
+    - Linda opens a scene in Harfang 3D
+    - She uses a script written in F#
+    - She tests her scene 
+    - Case is closed
+
 
 ## 6.2. Use Cases Analysis 
 Here is a more detailed version of the functional analysis above :
