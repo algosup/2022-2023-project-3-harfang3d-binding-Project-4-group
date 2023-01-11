@@ -14,7 +14,7 @@
 <sub> Team : [Alexis Lasselin](https://www.linkedin.com/in/alexis-lasselin-318649251/) (Project Leader), [Aurélien Hernandez](https://www.linkedin.com/in/aurélien-fernandez-4971201b8/) (Technical Leader), [Laurent Bouquin](https://www.linkedin.com/in/laurent-bouquin-60911a1b8/) (Software Engineer), [Paul NOWAK](https://www.linkedin.com/in/paul-nowak-0757a61a7/) (Quality Assurance) </sub>
 
 ---
-<h1>Testing Plan</h1>
+<h1>Test Cases</h1>
 
 
 ## 1. Hello World
