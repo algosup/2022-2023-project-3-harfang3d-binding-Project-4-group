@@ -30,5 +30,5 @@ Our goal for this project is to ad a binding for the language [F#](https://fshar
 
 [Functional Specifications](Documents/functional-specifications.md) <br>
 [Technical Specifications](Documents/Technical-Specifications.md) <br>
-[Test Plan](Documents/Test-plan.md) <br>
+[Test Plan](Documents/QA/Test-plan.md) <br>
 [Project's planner](https://github.com/orgs/algosup/projects/4/views/1)
