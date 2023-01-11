@@ -59,7 +59,7 @@ Harfang  3D is a software developpement company which is dedicated to the creati
 
 The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes.
 
-Two developpers of the society, Emmanuel Julien and François Gutherz, want to improve the efficiency of their engines. One of their popular project, FABGen, a binding generator used to bring the C++ engines to other languages like Python, Lua or Go. However,  it needs to be updated for making more polyvalent and available solutions for their customers. Indeed, they were taking into account the fact that customers didn't want to learn a new language while testing their products.
+Two developpers of the society, Emmanuel Julien and François Gutherz, want to improve the efficiency of their products. One of their popular project, FABGen, a binding generator used to bring the C++ engine to other languages like Python, Lua or Go. However, it needs to be updated for making more polyvalent and available solutions for their customers. Indeed, they were taking into account the fact that customers didn't want to learn a new language while testing their products.
 
 By the way, the society previously used a popular tool named SWIG which can connect a lot of target languages. Though, it was too old and complex, so they replaced it with FABGen. In fact, their creation is trying to solve its predecessor's issue by implementing new features, and its still evolving. This is the company's duty to complete FABGen's functionalities for improving their creations.
 
@@ -79,7 +79,7 @@ Anyway, these are the mains features that are planned for the first version of o
 -scripting of the required functions for using the native code of F#.     
   
 ## 3.2. Out Of Scope
-Because of the time and resources constraints, we could only include these features in the futur eversions :
+Because of the time and resources constraints, we could only include these features in the future versions :
 -shown desmonstration of using F# language for compiling an engine's project.
 -binding with newer version of F#.
 -writing a working manual for using the F# binding.
@@ -144,7 +144,7 @@ She originally came from Mumbai in India where she was born and spent her childh
 
 After she has finished her high school studies, she enrolled herself to an institute of Technology in Mumbai for 2 years. She then got graduated and is now beginning to work for a indian society specialized in robotics in Bangalore.
 
-The society is seeking for a tool to improve the design of their robot arms, and they got in contact with Harfang 3D's sociatey. So, they sent Naisha in France by airplane with a mission to test Harfang's softwares. 
+The society is seeking for a tool to improve the design of their robot arms, and they got in contact with Harfang 3D's society. So, they sent Naisha in France by airplane with a mission to test Harfang's solutions. 
 
 ### 5.3.3 Goals: 
 Naisha wishes to use her F# skills to help her society finding a software tool to improve their productivity.
@@ -153,6 +153,19 @@ Naisha wishes to use her F# skills to help her society finding a software tool t
 # 6. Use cases
 
 ## 6.1. Functional Analysis
+
+- UC1 (Activate the F# binding) :  
+    - Lambert opens Harfang 3D
+    - He creates a scene
+    - He activates FABGen to change his scripting language
+    - Case is closed
+
+
+- UC2 (Create a scene in Harfang 3D) :  
+    - Linda activates the F# binding
+    - She writes programs in F#
+    - She tests her scene using the scripts
+    - Case is closed
 
 ## 6.2. Use Cases Analysis 
 Here is a more detailed version of the functional analysis above :
