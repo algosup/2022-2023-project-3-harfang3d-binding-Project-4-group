@@ -50,7 +50,7 @@
 
  - **HMI** : Abreviation of "**H**uman-**M**achine **I**nterface.  
 
- - **API** : Abreviation of "**A**pplication **P**rogramming **I**nterface.   
+ - **API** : Abreviation of "**A**pplication **P**rogramming **I**nterface".   
 
  # 2. Introduction
 
@@ -188,6 +188,7 @@ Here is a more detailed version of the functional analysis above :
 
 
 # 7. Non-Functional Requirements
+For the moment, we didn't find any non-functional requirements for this project.
 
 # 8. Conclusion
 
