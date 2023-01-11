@@ -52,6 +52,54 @@ The project is divided into three main phases:
 
 #### File structure
 
+The project must have a good file structure to work properly, it is one of the main points of this project. Thus the files will be structured as it follows :
+
+```bash
+├── __pycache__
+	└── __init__.cpython-310.pyc
+	├── cpython.cpython-310.pyc
+	├── go.cpython-310.pyc
+	├── lua.cpython-310.pyc
+	├── xml.cpython-310.pyc
+	└── fsharp.cpython-310.pyc (in theory)
+├── lang
+	└── __pycache__
+		└── __init__.cpython-310.pyc
+		├── cpython.cpython-310.pyc
+		├── go.cpython-310.pyc
+		├── lua.cpython-310.pyc
+		├── xml.cpython-310.pyc
+		└── fsharp.cpython-310.pyc (in theory)
+	├── __init__.py
+	├── cpython.py
+	├── go.py
+	├── lua.py
+	├── xml.py
+	└── fsharp.py (in theory)
+├── lib
+	└── __pycache__
+	├── cpython
+		└── __init__.py
+		├── std.py
+		├── stl.py
+	├── lua
+		└── __init__.py
+		├── std.py
+		├── stl.py
+	├── xml
+		└── __init__.py
+		├── std.py
+		├── stl.py
+	├── fsharp (in theory)
+		└── __init__.py
+		├── std.py
+		├── stl.py
+	├── go.cpython-310.pyc
+	├── lua.cpython-310.pyc
+	├── xml.cpython-310.pyc
+	└── fsharp.cpython-310.pyc (in theory)
+
+```
 
 
 ### Risks
