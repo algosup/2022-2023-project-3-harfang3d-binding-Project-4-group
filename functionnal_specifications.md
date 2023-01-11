@@ -26,7 +26,7 @@
 
 <sub> Author : [Paul NOWAK](https://www.linkedin.com/in/paul-nowak-0757a61a7/) (Program Manager) </sub>
 
-<sub> Team : [Alexis Lasselin](https://www.linkedin.com/in/alexis-lasselin-318649251/) (Project Leader), [Aurélien Hernandez](https://www.linkedin.com/in/aurélien-fernandez-4971201b8/) (Technical Leader), [Laurent Bouquin](https://www.linkedin.com/in/laurent-bouquin-60911a1b8/) (Software Engineer), [Karine Vignette](https://www.linkedin.com/in/karine-vinette-63911b1b8/) (Quality Assurance) </sub>
+<sub> Team : [Alexis Lasselin](https://www.linkedin.com/in/alexis-lasselin-318649251/) (Project Leader), [Aurélien Fernandez](https://www.linkedin.com/in/aurélien-fernandez-4971201b8/) (Technical Leader), [Laurent Bouquin](https://www.linkedin.com/in/laurent-bouquin-60911a1b8/) (Software Engineer), [Karine Vinette](https://www.linkedin.com/in/karine-vinette-63911b1b8/) (Quality Assurance) </sub>
 
 ---
 
