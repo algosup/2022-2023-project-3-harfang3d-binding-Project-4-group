@@ -54,14 +54,14 @@ The project is divided into three main phases:
 
 The project must have a good file structure to work properly, it is one of the main points of this project. Thus the files will be structured as it follows :
 
-```bash
+<pre>
 ├── lang
 	├── __init__.py
 	├── cpython.py
 	├── go.py
 	├── lua.py
 	├── xml.py
-	└── fsharp.py (in theory)
+	<b>└── fsharp.py (in theory)</b>
 ├── lib
 	├── cpython
 	│	├── __init__.py
@@ -75,16 +75,17 @@ The project must have a good file structure to work properly, it is one of the m
 	│	├── __init__.py
 	│	├── std.py
 	│	└── stl.py
-	└── fsharp (in theory)
+	<b>└── fsharp(in theory)
 		├── __init__.py
 		├── std.py
 		└── stl.py
+		</b>
 ├── bind.py
 ├── gen.py
 ├── license.md
 └── readme.md	
 
-```
+</pre>
 
 
 ### Risks
@@ -92,7 +93,7 @@ The project must have a good file structure to work properly, it is one of the m
 This project has few risks, they can be defined as:
 - The risk of being late and miss deadlines.
 - The risk of misunderstanding FABgen's functions.
-- The risk of bad file structure.
+- The risk of bad file structure	.
 
 ### Testing
 
