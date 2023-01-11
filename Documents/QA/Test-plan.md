@@ -1,5 +1,8 @@
 <h1>Testing Plan</h1>
 
+#### Scope : ALGOSUP is asked to write a **binding generator in Fsharp** to diversify the use of languages for their game engine "Harfang 3D".
+
+
 <details>
 <summary style="text-decoration: underline; font-size:150%">Table of contents:</summary>
 
