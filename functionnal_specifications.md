@@ -20,8 +20,7 @@
   - [6.1. Functional Analysis](#61-functional-analysis)
   - [6.2. Use Cases Analysis](#62-use-cases-analysis)
 - [7. Non-Functional Requirements](#7-non-functional-requirements)
-- [8. Security](#8-security)
-- [9. Conclusion](#9-conclusion)
+- [8. Conclusion](#9-conclusion)
 
 </details> 
 
@@ -178,17 +177,15 @@ Here is a more detailed version of the functional analysis above :
 <details>
 <summary><b id="toc"><u>Use case table</u></b></summary>
 
-| Use Case # | Addresses Business/User Requirement n° | Name | Description | Actor(s) | Pre-Conditions | Flow of Events | Post-Conditions | Exit Criteria |
-| ---------- | -------------------------------------- | ---- | ----------- | -------- | -------------- | -------------- | --------------- | ------------- |
-|      UC 1      |                 U.R #1                       |   F# Binding   |     Lambert wants to activate the F# binding from FABGen so he can code in F# in Harfang 3D        |     Content Producer     |        Lambert must be allowed to use the FABGen project to connect it with Harfang 3D. Indeed, only the authorized users will get to use FABGen and be allowed to use another programming language.        |       Lambert creates a scene in Harfang 3D so he can work on it. He then select the "Preferences" menu to change his programming languages.         |         A pop-up showing all available languages bindings will be displayed and Lambert has to select one.        |      The case is complete once Lambert has selected and saved the programming language.         |
+| Use Case # | Addresses Business/User Requirement n° | Name          | Description                                                                             | Actor(s)  | Pre-Conditions                                                                                                                                                                                | Flow of Events                                                                                                                         | Post-Conditions                                                                                    | Exit Criteria                                                                                           |
+| ---------- | -------------------------------------- | ------------- | --------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| UC 1       | U.R #1                                 | F# Binding    | Lambert wants to activate the F# binding from FABGen so he can code in F# in Harfang 3D | Developer | Lambert must be allowed to use the FABGen project to connect it with Harfang 3D. Indeed, only the authorized users will get to use FABGen and be allowed to use another programming language. | Lambert creates a scene in Harfang 3D so he can work on it. He then select the "Preferences" menu to change his programming languages. | A pop-up showing all available languages bindings will be displayed and Lambert has to select one. | The case is complete once Lambert has selected and saved the programming language.                      |
+| UC 2       | U.R #2                                 | New F# Script | Marcus wants to create a new script in F# while working on his HArfang 3D scene.        | Developer | Marcus has to activate the F# binding in the engine's preferences.                                                                                                                            | Once he activated the F# binding, Marcus click on "New Scrit".                                                                         | A window from the default IDE will open automatically and allow him to write in F#.                | The case is complete once Marcus wrote his F# program and saved it, showing it in the scene's database. |
+| UC 3       | U.R #3                                 | Scene testing | Linda would like to test the scene she created in Harfang 3D which is using F# scripts  | Developer | The scene Linda is working one must have F# scripts connected to the scene. They must be finished so Linda could test her scene.                                                              | Linda clicks on "Test" to activate a simulation of or scen in 3D real-time using F# languages.                                         | The objects connected to the f# scripts must have a specific behavior in the scene.                | The case is complete once Linda has validated if her F# scripts are working and save her scene.                                                 |
 
 </details>     
 
 
 # 7. Non-Functional Requirements
 
-# 8. Security 
-
-Following t
-
-# 9. Conclusion
+# 8. Conclusion
