@@ -180,7 +180,7 @@ Here is a more detailed version of the functional analysis above :
 
 | Use Case # | Addresses Business/User Requirement n° | Name | Description | Actor(s) | Pre-Conditions | Flow of Events | Post-Conditions | Exit Criteria |
 | ---------- | -------------------------------------- | ---- | ----------- | -------- | -------------- | -------------- | --------------- | ------------- |
-|            |                                        |      |             |          |                |                |                 |               |
+|      UC 1      |                 U.R #1                       |   F# Binding   |     Lambert wants to activate the F# binding from FABGen so he can code in F# in Harfang 3D        |     Content Producer     |        Lambert must be allowed to use the FABGen project to connect it with Harfang 3D. Indeed, only the authorized users will get to use FABGen and be allowed to use another programming language.        |       Lambert creates a scene in Harfang 3D so he can work on it. He then select the "Preferences" menu to change his programming languages.         |         A pop-up showing all available languages bindings will be displayed and Lambert has to select one.        |      The case is complete once Lambert has selected and saved the programming language.         |
 
 </details>     
 
