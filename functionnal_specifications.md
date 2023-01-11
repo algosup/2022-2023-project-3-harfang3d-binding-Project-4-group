@@ -13,6 +13,9 @@
   - [4.1. Assumptions](#41-assumptions)
   - [4.2. Constraints](#42-constraints)
 - [5. Personas](#5-personas)
+  - [5.1. Jean-Charles Magne](#51-jean-charles-magne)
+  - [5.2. Hélène Ganthe](#52-helene-ganthe)
+  - [5.3. Naisha Kira](#53-naisha-kira)
 - [6. Use cases](#6-use-cases)
   - [6.1. Functional Analysis](#61-functional-analysis)
   - [6.2. Use Cases Analysis](#62-use-cases-analysis)
@@ -99,8 +102,11 @@ The deadline for the V0 is in February 17th 2023.
 
 ## 5.1 Jean-Charles Magne 
 
--Job: Developer working for the Research Branch of Renault. He is specialized in the F# and Python languages. 
--Description: Jean Charles is a 43 years old man living in Tours. He has a passion for cars, likes reading Mangas and playing badminton with his friends.
+### 5.1.1 Job: 
+Developer working for the Research Branch of Renault. He is specialized in the F# and Python languages. 
+
+### 5.1.2 Description: 
+Jean Charles is a 43 years old man living in Tours. He has a passion for cars, likes reading Mangas and playing badminton with his friends.
 
 He divorced 2 years ago, so he has custody of his 2 daughters of 13 years and 12 years old. Though, they live with him from Monday to Friday, his working days.
 
@@ -108,52 +114,41 @@ By the way, he works at the car manufacturer society Renault for 6 years at Tour
 
 His job is to search for new software tools and test them in order to improve the society’s productivity. He is part of the IT department and he has to find a solution to design the HUD of a car panel.
 
--Goals: 
+### 5.1.3 Goals: 
 Jean-Charles wants to spend more time with his daughters during the days he is with them. So, he would like to find a solution where he doesn’t have to learn a new programming language at home. 
  
 ## 5.2 Hélène Ganthe 
 
--Job: Lead Designer of the glove making Agnelle company
+### 5.2.1 Job:  
+Lead Designer of the glove making Agnelle company
 
--Description: 
+### 5.2.2 Description: 
 Hélène is a 31 years old woman who lives at Paris, in an apartment not far from the Agnelle company. She likes reading novels, musical comedy movies, and is fascinated by leather gloves since her youth. She often wears gloves and is a loving single mother of a 6 years old boy. 
  
 Each day (except during the week-end), she takes her son to school by walking before she arrives to her workplace at 9am. Then, she leaves at 4pm before taking a coffee with a friend and picking up her kid to school before going home.
 
 At her workplace, she is the main person in charge of designing new variations of gloves. She leads her team of designer to find new ideas, but also new tools to create concepts more often. Though, most of her team have experience in the F# programming, but they don't have time to focus on learning a new programming language.
 
--Goals: Hélène wants to spend more time with her child by having more control to her creativity. Indeed, she wants a software to help her team design new gloves according to the hand size. 
+### 5.2.3 Goals: 
+Hélène wants to spend more time with her child by having more control to her creativity. Indeed, she wants a software to help her team design new gloves according to the hand size. 
 
 ## 5.3 Naisha Kira 
 
--Job: Student in software development.
+### 5.3.1 Job:  
+Software developer.
  
--Description: 
-Naisha is a 21 years old woman who is living in a boarding school in Orleans.
+### 5.3.2 Description:
+Naisha is a 21 years old woman who is temporarily living in an apartment in Orleans for 2 weeks.
 
 She originally came from Mumbai in India where she was born and spent her childhood here. Since she was 7 years old, she had a passion for programming and wants to become a software developer. She knows a few programming languages, especially F# and python.
 
-After she has finished her high school studies, she enrolled herself to a college program proposing young students to travel through the world and study in a country for a year. 
+After she has finished her high school studies, she enrolled herself to an institute of Technology in Mumbai for 2 years. She then got graduated and is now beginning to work for a indian society specialized in robotics in Bangalore.
 
-She has already been in Australia, Spain, and she is now in France. She spends half-time studying at the Institute of Technology in Orlans, and half-time as an internship worker at Harfang 3D.
+The society is seeking for a tool to improve the design of their robot arms, and they got in contact with Harfang 3D's sociatey. So, they sent Naisha in France by airplane with a mission to test Harfang's softwares. 
 
--Goals: Naisha wishes to use her F# skills to help the society working on new engines concepts which would beneficiate well from F# advantages. 
-Indeed, this opportunity would allow her to validate her degree in software engineering. 
+### 5.3.3 Goals: 
+Naisha wishes to use her F# skills to help her society finding a software tool to improve their productivity.
 
-## 5.4 Didier Delacité
-
--Job: CEO of Harfang 3D 
--
-Description: 
-Didier is a 52 years old man who is living in Orleans since he was born. He has a passion for technology, and lives with his wife near the Head Office of Harfang 3D. 
- 
-He has a great sense of humor usually dines with his colleagues at restaurants each Saturday, but he hates Football. 
-
-He studied at the Insitute of Technology in Orleans for getting a degree in electrical engineering and industrial computing, but he decided to specialize himself in software conception.
-
-Then, he worked for 5 years as a software engineer at Harfang 3D, and his works have demonstrated his engagement. Finally, he has just been named the new CEO of the society.
-
--Goals: As the new CEO, Didier wants to improve the quality and availability of Harfang 3D products and his society to attract new customers. 
 
 # 6. Use cases
 
