@@ -38,7 +38,7 @@
 
  - **Harfang 3D** : The society creating different 3D real-time engine solutions. 
 
-  - **FABGen** : A set of Python scripts to generate C++ bidning codes to different languages. 
+  - **FABGen** : A set of Python scripts to generate C++ binding codes to different languages. 
 
  - **Binding** : An use of a software library for a different programming language.
 
@@ -48,19 +48,19 @@
 
  - **Real-Time 3D** : The method of representation of 3D images that appear to be moving in real time.
 
- - **HMI** : Abreviation of "**H**uman-**M**achine **I**nterface.  
+ - **HMI** : Abreviation of "**H**uman-**M**achine **I**nterface".  
 
  - **API** : Abreviation of "**A**pplication **P**rogramming **I**nterface".   
 
  # 2. Introduction
 
-Harfang  3D is a software developpement company which is dedicated to the creation of human-machine interfaces for various sectors. Founded in 2016, its head office is in Orléans (France) and is run by a team with 15 years of experiences in the video game and industrial sector.
+Harfang  3D is a software developpement company which is dedicated to the creation of HMIs (human-machine interfaces) for various sectors. Founded in 2016, its head office is in Orléans (France) and is directed by a team with 15 years of experiences in the video game and industrial sector.
 
 The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes.
 
-Two developpers of the society, Emmanuel Julien and François Gutherz, want to improve the efficiency of their products. One of their popular project, FABGen, a binding generator used to bring the C++ engine to other languages like Python, Lua or Go. However, it needs to be updated for making more polyvalent and available solutions for their customers. Indeed, they were taking into account the fact that customers didn't want to learn a new language while testing their products.
+Two developers of the society, Emmanuel Julien and François Gutherz, want to improve the efficiency of their products. One of their popular project, FABGen, a binding generator used to bring the C++ engine to other languages like Python, Lua or Go. However, it needs to be updated for making more polyvalent and available solutions for their customers. Indeed, they were taking into account the fact that customers didn't want to learn a new programming language while testing their products.
 
-By the way, the society previously used a popular tool named SWIG which can connect a lot of target languages. Though, it was too old and complex, so they replaced it with FABGen. In fact, their creation is trying to solve its predecessor's issue by implementing new features, and its still evolving. This is the company's duty to complete FABGen's functionalities for improving their creations.
+By the way, the society previously used a popular tool named SWIG which can connect a lot of target languages to the engine. Though, it was too old and complex, so they replaced it with FABGen. In fact, their creation is trying to solve its predecessor's issue by implementing new features, and it's still evolving. This is the company's duty to complete FABGen's functionalities for improving their creations.
 
 # 3. Goal of the project
 
@@ -91,7 +91,7 @@ The deadline for the V0 is in February 17th 2023.
 ## 4.1. Assumptions
 - Several tests using FABGen with the F# binding must be done.
 - The python language should also be studied for understanding FABGen.
-- The C API created will go through a process of configuration to be used.
+- The C API created will go through a process of configuration in order to be used.
   
 ## 4.2. Constraints
 - F# is a static language, so we need to go through the C language to create the binding.
@@ -110,7 +110,7 @@ Jean Charles is a 43 years old man living in Tours. He has a passion for cars, l
 
 He divorced 2 years ago, so he has custody of his 2 daughters of 13 years and 12 years old. Though, they live with him from Monday to Friday, his working days.
 
-By the way, he works at the car manufacturer society Renault for 6 years at Tours. To reach his workplace, he takes the tramway each morning for 20 minutes to arrive at 8am. Then, he works until 6pm and takes the metro to home.
+By the way, he works at the car manufacturer society Renault for 6 years at Tours. To reach his workplace, he takes the tramway each morning for 20 minutes to arrive at 8am. Then, he works until 6pm and takes the tramway again to go home.
 
 His job is to search for new software tools and test them in order to improve the society’s productivity. He is part of the IT department and he has to find a solution to design the HUD of a car panel.
 
@@ -140,11 +140,11 @@ Software developer.
 ### 5.3.2 Description:
 Naisha is a 21 years old woman who is temporarily living in an apartment in Orleans for 2 weeks.
 
-She originally came from Mumbai in India where she was born and spent her childhood here. Since she was 7 years old, she had a passion for programming and wants to become a software developer. She knows a few programming languages, especially F# and python.
+She originally came from India, her home country, and was born in Mumbai where she spent her childhood. Since she was 7 years old, she had a passion for programming and wanted to become a software developer. She knows a few programming languages, especially F# and Python.
 
 After she has finished her high school studies, she enrolled herself to an institute of Technology in Mumbai for 2 years. She then got graduated and is now beginning to work for a indian society specialized in robotics in Bangalore.
 
-The society is seeking for a tool to improve the design of their robot arms, and they got in contact with Harfang 3D's society. So, they sent Naisha in France by airplane with a mission to test Harfang's solutions. 
+The society is seeking for a tool to improve the efficiency of their robotic arms, and they got in contact with Harfang 3D's society. So, they sent Naisha in France by airplane with a mission to test Harfang's solutions. 
 
 ### 5.3.3 Goals: 
 Naisha wishes to use her F# skills to help her society finding a software tool to improve their productivity.
@@ -163,7 +163,7 @@ Naisha wishes to use her F# skills to help her society finding a software tool t
 - UC2 (Create a new script in F#) :  
     - Marcus activates the F# binding
     - He creates a new script in his Harfang template
-    - He writes in F# and save it
+    - He writes in F# and saves it
     - Case is closed
 
 - UC3 (Test a scene in Harfang 3D using F#) :  
@@ -180,9 +180,9 @@ Here is a more detailed version of the functional analysis above :
 
 | Use Case # | Addresses Business/User Requirement n° | Name          | Description                                                                             | Actor(s)  | Pre-Conditions                                                                                                                                                                                | Flow of Events                                                                                                                         | Post-Conditions                                                                                    | Exit Criteria                                                                                           |
 | ---------- | -------------------------------------- | ------------- | --------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| UC 1       | U.R #1                                 | F# Binding    | Lambert wants to activate the F# binding from FABGen so he can code in F# in Harfang 3D | Developer | Lambert must be allowed to use the FABGen project to connect it with Harfang 3D. Indeed, only the authorized users will get to use FABGen and be allowed to use another programming language. | Lambert creates a scene in Harfang 3D so he can work on it. He then select the "Preferences" menu to change his programming languages. | A pop-up showing all available languages bindings will be displayed and Lambert has to select one. | The case is complete once Lambert has selected and saved the programming language.                      |
-| UC 2       | U.R #2                                 | New F# Script | Marcus wants to create a new script in F# while working on his HArfang 3D scene.        | Developer | Marcus has to activate the F# binding in the engine's preferences.                                                                                                                            | Once he activated the F# binding, Marcus click on "New Scrit".                                                                         | A window from the default IDE will open automatically and allow him to write in F#.                | The case is complete once Marcus wrote his F# program and saved it, showing it in the scene's database. |
-| UC 3       | U.R #3                                 | Scene testing | Linda would like to test the scene she created in Harfang 3D which is using F# scripts  | Developer | The scene Linda is working one must have F# scripts connected to the scene. They must be finished so Linda could test her scene.                                                              | Linda clicks on "Test" to activate a simulation of or scen in 3D real-time using F# languages.                                         | The objects connected to the f# scripts must have a specific behavior in the scene.                | The case is complete once Linda has validated if her F# scripts are working and save her scene.                                                 |
+| UC 1       | U.R #1                                 | F# Binding    | Lambert wants to activate the F# binding from FABGen so he can code in F# in Harfang 3D | Developer | Lambert must be allowed to use the FABGen project to connect it with Harfang 3D. Indeed, only the authorized users will get to use FABGen and be allowed to use another programming language. | Lambert creates a scene in Harfang 3D so he can work on it. He then select the "Preferences" menu to change his programming language. | A pop-up showing all available language bindings will be displayed and Lambert has to select one. | The case is complete once Lambert has selected and saved the programming language he wants to work with.                      |
+| UC 2       | U.R #2                                 | New F# Script | Marcus wants to create a new script in F# while working on his Harfang 3D scene.        | Developer | Marcus has to activate the F# binding in the engine's preferences.                                                                                                                            | Once he activated the F# binding, Marcus click on "New Script".                                                                         | A window from the default IDE will open automatically and allow him to write in F#.                | The case is complete once Marcus wrote his F# program and saved it, showing it in the scene's database. |
+| UC 3       | U.R #3                                 | Scene testing | Linda would like to test the scene she created in Harfang 3D which is using F# scripts  | Developer | The scene Linda is working on must have F# scripts connected to the scene. They must be finished so Linda could test her scene.                                                              | Linda clicks on "Test" to activate a simulation of her scene in 3D real-time using F# languages.                                         | The objects connected to the f# scripts must have a specific behavior in the scene.                | The case is complete once Linda has validated if her F# scripts are working and saved her scene.                                                 |
 
 </details>     
 
@@ -191,7 +191,6 @@ Here is a more detailed version of the functional analysis above :
 For the moment, we didn't find any non-functional requirements for this project.
 
 # 8. Conclusion
-
 The client helped us by giving us leads on how to work on the project. Indeed, they gave us a link to a github page for showing how FABGen and creating a binding would work.
 
 We want to thank the stakeholders, Harfang 3D, and particularly François Gutherz and Emmanuel Julien, for giving us details for the project.
