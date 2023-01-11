@@ -64,19 +64,19 @@ The project must have a good file structure to work properly, it is one of the m
 	└── fsharp.py (in theory)
 ├── lib
 	├── cpython
-		└── __init__.py
-		├── std.py
-		└── stl.py
+	│	├── __init__.py
+	│	├── std.py
+	│	└── stl.py
 	├── lua
-		└── __init__.py
-		├── std.py
-		└── stl.py
+	│	├── __init__.py
+	│	├── std.py
+	│	└── stl.py
 	├── xml
-		└── __init__.py
-		├── std.py
-		└── stl.py
-	├── fsharp (in theory)
-		└── __init__.py
+	│	├── __init__.py
+	│	├── std.py
+	│	└── stl.py
+	└── fsharp (in theory)
+		├── __init__.py
 		├── std.py
 		└── stl.py
 ├── bind.py
@@ -92,7 +92,7 @@ The project must have a good file structure to work properly, it is one of the m
 This project has few risks, they can be defined as:
 - The risk of being late and miss deadlines.
 - The risk of misunderstanding FABgen's functions.
-- The risk of bad file structuring.
+- The risk of bad file structure.
 
 ### Testing
 
