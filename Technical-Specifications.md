@@ -55,21 +55,7 @@ The project is divided into three main phases:
 The project must have a good file structure to work properly, it is one of the main points of this project. Thus the files will be structured as it follows :
 
 ```bash
-├── __pycache__
-	└── __init__.cpython-310.pyc
-	├── cpython.cpython-310.pyc
-	├── go.cpython-310.pyc
-	├── lua.cpython-310.pyc
-	├── xml.cpython-310.pyc
-	└── fsharp.cpython-310.pyc (in theory)
 ├── lang
-	└── __pycache__
-		└── __init__.cpython-310.pyc
-		├── cpython.cpython-310.pyc
-		├── go.cpython-310.pyc
-		├── lua.cpython-310.pyc
-		├── xml.cpython-310.pyc
-		└── fsharp.cpython-310.pyc (in theory)
 	├── __init__.py
 	├── cpython.py
 	├── go.py
@@ -77,10 +63,6 @@ The project must have a good file structure to work properly, it is one of the m
 	├── xml.py
 	└── fsharp.py (in theory)
 ├── lib
-	└── __pycache__
-		└── __init__.cpython-310.pyc
-		├── std..cpython-310.pyc
-		└── stl..cpython-310.pyc
 	├── cpython
 		└── __init__.py
 		├── std.py
@@ -100,9 +82,7 @@ The project must have a good file structure to work properly, it is one of the m
 ├── bind.py
 ├── gen.py
 ├── license.md
-└── readme.md
-
-	
+└── readme.md	
 
 ```
 
@@ -112,6 +92,7 @@ The project must have a good file structure to work properly, it is one of the m
 This project has few risks, they can be defined as:
 - The risk of being late and miss deadlines.
 - The risk of misunderstanding FABgen's functions.
+- The risk of bad file structuring.
 
 ### Testing
 
