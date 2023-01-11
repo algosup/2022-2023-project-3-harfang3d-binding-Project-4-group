@@ -191,6 +191,6 @@ Here is a more detailed version of the functional analysis above :
 
 # 8. Conclusion
 
-The client helped us by creating a github page for showing how FABGen and creating a binding would work.
+The client helped us by giving us leads on how to work on the project. Indeed, they gave us a link to a github page for showing how FABGen and creating a binding would work.
 
 We want to thank the stakeholders, Harfang 3D, and particularly François Gutherz and Emmanuel Julien, for giving us details for the project.
