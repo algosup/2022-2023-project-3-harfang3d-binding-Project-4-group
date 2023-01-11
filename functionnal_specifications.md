@@ -120,9 +120,40 @@ Hélène is a 31 years old woman who lives at Paris, in an apartment not far fro
  
 Each day (except during the week-end), she takes her son to school by walking before she arrives to her workplace at 9am. Then, she leaves at 4pm before taking a coffee with a friend and picking up her kid to school before going home.
 
-At her workplace, she is the main person in charge of designing new variations of gloves. She leads her team of designer to find new ideas, but also new tools to create concepts more often. /////TO BE COMPLETED
+At her workplace, she is the main person in charge of designing new variations of gloves. She leads her team of designer to find new ideas, but also new tools to create concepts more often. Though, most of her team have experience in the F# programming, but they don't have time to focus on learning a new programming language.
 
 -Goals: Hélène wants to spend more time with her child by having more control to her creativity. Indeed, she wants a software to help her team design new gloves according to the hand size. 
+
+## 5.3 Naisha Kira 
+
+-Job: Student in software development.
+ 
+-Description: 
+Naisha is a 21 years old woman who is living in a boarding school in Orleans.
+
+She originally came from Mumbai in India where she was born and spent her childhood here. Since she was 7 years old, she had a passion for programming and wants to become a software developer. She knows a few programming languages, especially F# and python.
+
+After she has finished her high school studies, she enrolled herself to a college program proposing young students to travel through the world and study in a country for a year. 
+
+She has already been in Australia, Spain, and she is now in France. She spends half-time studying at the Institute of Technology in Orlans, and half-time as an internship worker at Harfang 3D.
+
+-Goals: Naisha wishes to use her F# skills to help the society working on new engines concepts which would beneficiate well from F# advantages. 
+Indeed, this opportunity would allow her to validate her degree in software engineering. 
+
+## 5.4 Didier Delacité
+
+-Job: CEO of Harfang 3D 
+-
+Description: 
+Didier is a 52 years old man who is living in Orleans since he was born. He has a passion for technology, and lives with his wife near the Head Office of Harfang 3D. 
+ 
+He has a great sense of humor usually dines with his colleagues at restaurants each Saturday, but he hates Football. 
+
+He studied at the Insitute of Technology in Orleans for getting a degree in electrical engineering and industrial computing, but he decided to specialize himself in software conception.
+
+Then, he worked for 5 years as a software engineer at Harfang 3D, and his works have demonstrated his engagement. Finally, he has just been named the new CEO of the society.
+
+-Goals: As the new CEO, Didier wants to improve the quality and availability of Harfang 3D products and his society to attract new customers. 
 
 # 6. Use cases
 
