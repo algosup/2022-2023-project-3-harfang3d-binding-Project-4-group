@@ -38,9 +38,9 @@ The project has to be finished by the 17 of February 2023.
 
 The project is divided into three main phases:
 
-- week 1 to week 2 phase 1: Exploration and understanding of [FABGen](#FABGen) and creation of documents
-- week 3 to week 4 phase 2: Production of the product
-- week 4 to week 6 phase 3: Finalisation of the product
+- week 1 to week 2 phase 1: creation of documents
+- week 2 to week 4 phase 2: Exploration and understanding of [FABGen](#FABGen)
+- week 4 to week 6 phase 3: Production of the product
 
 ### Software
 
@@ -93,7 +93,7 @@ The project must have a good file structure to work properly, it is one of the m
 This project has few risks, they can be defined as:
 - The risk of being late and miss deadlines.
 - The risk of misunderstanding FABgen's functions.
-- The risk of bad file structure	.
+- The risk of bad file structure.
 
 ### Testing
 
