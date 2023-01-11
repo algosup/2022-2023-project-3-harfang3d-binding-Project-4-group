@@ -72,16 +72,16 @@ Most importantly, we have to find a way to bridge FABGen with the F# programming
 The issue is that it's not possible to bridge F# with C++. So, the client wants us to use the C language as an intermediary language between C++ and F#.
 
 Anyway, these are the mains features that are planned for the first version of our product :
--implementation of a C API wrapping C++ objects.
--integration of the F# language with the C API.
--creation of a static library for an embedded use of F#.
--scripting of the required functions for using the native code of F#.     
+- implementation of a C API wrapping C++ objects.
+- integration of the F# language with the C API.
+- creation of a static library for an embedded use of F#.
+- scripting of the required functions for using the native code of F#.     
   
 ## 3.2. Out Of Scope
 Because of the time and resources constraints, we could only include these features in the future versions :
--shown desmonstration of using F# language for compiling an engine's project.
--binding with newer version of F#.
--writing a working manual for using the F# binding.
+- shown desmonstration of using F# language for compiling an engine's project.
+- binding with newer version of F#.
+- writing a working manual for using the F# binding.
   
 ## 3.3. Deadline
 The deadline for the V0 is in February 17th 2023.
@@ -95,6 +95,7 @@ The deadline for the V0 is in February 17th 2023.
   
 ## 4.2. Constraints
 - F# is a static language, so we need to go through the C language to create the binding.
+- We have to manage time properly for this project, as we are doubting that we could finish everything.
 
 
 # 5. Personas
@@ -189,3 +190,7 @@ Here is a more detailed version of the functional analysis above :
 # 7. Non-Functional Requirements
 
 # 8. Conclusion
+
+The client helped us by creating a github page for showing how FABGen and creating a binding would work.
+
+We want to thank the stakeholders, Harfang 3D, and particularly François Gutherz and Emmanuel Julien, for giving us details for the project.
