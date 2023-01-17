@@ -55,7 +55,6 @@
  - **API** : Abreviation of "**A**pplication **P**rogramming **I**nterface".     
 
  # 2. Introduction
-
 Harfang  3D is a software developpement company which is dedicated to the creation of HMIs (human-machine interfaces) for various sectors. Founded in 2016, its head office is in Orléans (France) and is directed by a team with 15 years of experiences in the video game and industrial sector.
 
 The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes.
@@ -66,6 +65,9 @@ However, it needs to be updated for making more polyvalent and available solutio
 
 By the way, the society previously used a popular tool named SWIG which can connect a lot of target languages to the engine. Though, it was too old and complex, so they replaced it with FABGen. In fact, their creation is trying to solve its predecessor's issue by implementing new features, and it's still evolving. This is the company's duty to complete FABGen's functionalities for improving their creations.
 
+As a matter of fact, they want to update FABGen, so it could be able to generate a binding for a new programming language: F#. That's how they went to Algosup and are counting on our team to fulfill their library of python scripts.
+
+
 # 3. Goal of the project
 The goal of this project is to create a binding in the F# programming language for FABGen.
 
@@ -75,7 +77,7 @@ Most importantly, we have to find a way to bridge FABGen with the F# programming
 The issue is that it's not possible to bridge F# with C++. So, the client wants us to use the C language as an intermediary language between C++ and F#.
 
 Anyway, these are the mains features that are planned for the first version of our product :
-- integration of the F# language to C++.
+- integration of the F# language to a C library and to C++.
 - creation of a library using native F# code.
 - scripting of the required functions for using the native code of F#.     
   
