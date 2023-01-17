@@ -28,9 +28,24 @@ printfn "Hello from F#"
 ```
 
 ## 2. Addition
+Fsharp:
 ```
 let sum (x: int, y: int) = x + y
     printfn "sum = %d" (sum (1, 2))
+```
+To C++:
+```
+#include <iostream>
+
+int sum(int x, int y) {
+    return x + y;
+}
+
+int main() {
+    int result = sum(1, 2);
+    std::cout << "sum = " << result << std::endl;
+    return 0;
+}
 ```
 
 ## 3. Loop for
