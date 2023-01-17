@@ -109,8 +109,10 @@ The C API created will go through a process of configuration in order to be used
 
 ### Constraints
 
-F# is a static language, so we need to go through the C language to create the binding.
-F# is also missing some types  compared to C++ or Python, to face this problem we can wrap C++ inside F#, thus it will allow use to use the missing types.
+The project has some constraints, which are:
+
+- F# is a static language, so we need to go through the C language to create the binding.
+- F# is also missing some types  compared to C++ or Python, to face this problem we can wrap C++ inside F#, thus it will allow use to use the missing types.
 
 ## Testing
 
