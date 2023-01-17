@@ -12,7 +12,10 @@
 - [Software](#software)
 	- [Software architecture](#software-architecture)
 	- [File structure](#file-structure)
-- [Risk and assumptions](#risk-and-assumptions)
+- [Risk, assumptions and constraints](#risks-assumptions-and-constraints)
+	- [Risks](#risks)
+	- [Assumptions](#assumptions)
+	- [Constraints](#constraints)
 - [testing](#testing)
 - [Footnotes](#footnotes)
 
