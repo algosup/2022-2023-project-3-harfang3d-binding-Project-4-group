@@ -64,7 +64,7 @@ The project must have a good file structure to work properly, it is one of the m
 	├── go.py
 	├── lua.py
 	├── xml.py
-	<b>└── fsharp.py (in theory)</b>
+	<b>└── fsharp.py</b>
 ├── lib
 	├── cpython
 	│	├── __init__.py
@@ -78,7 +78,7 @@ The project must have a good file structure to work properly, it is one of the m
 	│	├── __init__.py
 	│	├── std.py
 	│	└── stl.py
-	<b>└── fsharp(in theory)
+	<b>└── fsharp
 		├── __init__.py
 		├── std.py
 		└── stl.py
@@ -90,6 +90,7 @@ The project must have a good file structure to work properly, it is one of the m
 
 </pre>
 
+Files named "fsharp" and bold files are what we will have to create during the project.
 
 ## Risks, assumptions and constraints
 

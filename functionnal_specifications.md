@@ -16,6 +16,8 @@
   - [5.1. Jean-Charles Magne](#51-jean-charles-magne)
   - [5.2. Didier Delacité](#52-didier-delacité)
   - [5.3. Naisha Kira](#53-naisha-kira)
+  - [5.4. Hélène Ganthe](#54-hélène-ganthe)
+  - [5.5. Marcus Tohm](#55-marcus-tohm)
 - [6. Use cases](#6-use-cases)
   - [6.1. Functional Analysis](#61-functional-analysis)
   - [6.2. Use Cases Analysis](#62-use-cases-analysis)
@@ -120,7 +122,7 @@ Jean-Charles wants to spend more time with his daughters during the days he is w
 ## 5.2 Didier Delacité
 
 ### 5.2.1 Job:  
-Developper from Harfang 3D
+Developper from Harfang 3D.
 
 ### 5.2.2 Description: 
 Didier is a 52 years old man who is living in Orleans since he was born. He has a passion for technology, and lives with his wife near the Head Office of Harfang 3D. 
@@ -137,7 +139,7 @@ Didier wants to improve the quality and availability of Harfang 3D products. Wit
 ## 5.3 Naisha Kira 
 
 ### 5.3.1 Job:  
-Software developer.
+Software developer from Harfang 3D.
  
 ### 5.3.2 Description:
 Naisha is a 21 years old woman who is living in an apartment in Orleans since a few months.
@@ -150,6 +152,45 @@ After she has finished her high school studies, she enrolled herself to an insti
 Naisha wants to use her F# skills to help Harfang 3D develop more products relying mostly on the F# binding.
 
 Indeed, this would benefit some products on the advantages of the F# language. 
+
+## 5.4 Hélène Ganthe  
+
+### 5.4.1 Job:  
+CEO of a glove making startup company.
+ 
+### 5.4.2 Description:
+Hélène is a 31 years old woman who lives at Paris, in an apartment not far from her own company.  
+
+She likes reading novels, musical comedy movies, and is fascinated by leather gloves since her youth. She often wears gloves and is a loving single mother of a 6 years old boy. 
+
+Each day (except during the week-end), she takes her son to school by walking before she arrives to her workplace at 9am. Then, she leaves at 4pm before taking a coffee with a friend and picking up her kid to school before going home. 
+
+A few months ago, she just created a startup glove-making company. 
+Indeed, she is the main person in charge of designing new variations of gloves. She leads her team of designer to find new ideas, but also new tools to create concepts more often.  
+
+Though, most of her team have experience in the F# programming, but they don't have time to focus on learning a new programming language. 
+
+### 5.4.3 Goals: 
+Hélène wants to spend more time with her child by having more control to her creativity. Indeed, she wants her team of glove designers to use a tool they can use to design new products. 
+ 
+This could improve the productivity of her new company. 
+
+## 5.5 Marcus Tohm
+
+### 5.5.1 Job:  
+Language designer.
+ 
+### 5.5.2 Description:
+Marcus is a 29 years old man who is living in Miami in Florida.  
+He loves traveling, chili dogs, and he spends most of his 5 weeks holidays to practice hiking. 
+
+However, when he starts working on his computer, nothing can stop him. He has a passion for programming languages since his teenage years, and works from 8am to 8pm. He would sometimes only eat sandwich at lunchtime while working. 
+
+Though, he is specialized by the greatness of the F# language, and often communicate with F# users to make the language better. He even communicated with Don Syme, F#’s creator, and works to give improvements to the language. 
+
+### 5.5.3 Goals: 
+Marcus wants to add more functionalities to the F# language, so he can grant it more freedom. 
+This would indirectly benefit the F# binding for FABGen. 
 
 
 # 6. Use cases
@@ -174,6 +215,11 @@ Indeed, this would benefit some products on the advantages of the F# language.
     - She tests her scene 
     - Case is closed
 
+- UC4 (Retrieve an existing F# for using it) :
+    -Françoise opens a scene in Harfang 3D
+    -She opens a window showing existing F# files
+    -She selects the F# file she wants
+    -Case is closed
 
 ## 6.2. Use Cases Analysis 
 Here is a more detailed version of the functional analysis above :
@@ -185,6 +231,7 @@ Here is a more detailed version of the functional analysis above :
 | UC 1       | U.R #1                                 | F# Binding    | Lambert wants to activate the F# binding from FABGen so he can code in F# in Harfang 3D | Developer | Lambert must be allowed to use the FABGen project to connect it with Harfang 3D. Indeed, only the authorized users will get to use FABGen and be allowed to use another programming language. | Lambert creates a scene in Harfang 3D so he can work on it. He then select the "Preferences" menu to change his programming language. | A pop-up showing all available language bindings will be displayed and Lambert has to select one. | The case is complete once Lambert has selected and saved the programming language he wants to work with.                      |
 | UC 2       | U.R #2                                 | New F# Script | Marcus wants to create a new script in F# while working on his Harfang 3D scene.        | Developer | Marcus has to activate the F# binding in the engine's preferences.                                                                                                                            | Once he activated the F# binding, Marcus click on "New Script".                                                                         | A window from the default IDE will open automatically and allow him to write in F#.                | The case is complete once Marcus wrote his F# program and saved it, showing it in the scene's database. |
 | UC 3       | U.R #3                                 | Scene testing | Linda would like to test the scene she created in Harfang 3D which is using F# scripts  | Developer | The scene Linda is working on must have F# scripts connected to the scene. They must be finished so Linda could test her scene.                                                              | Linda clicks on "Test" to activate a simulation of her scene in 3D real-time using F# languages.                                         | The objects connected to the f# scripts must have a specific behavior in the scene.                | The case is complete once Linda has validated if her F# scripts are working and saved her scene.                                                 |
+| UC 4       | U.R #4                                 | Retrieving F# script | Françoise wants to get a F# script she created in a previous project to reuse it in her Harfang 3D scene | Developer | There must be at least one existing F# script in her computer's files.                                                              | Françoise clicks on "Get script" to open a window showing different scripts.                                         | The files must be scripts written in programming languages, thus being in .fs format for F# case.                | The case is complete once Françoise has selected her F# script and clicked on OK, so it could appear in her scene's scripts database.                                                 |
 
 </details>     
 
