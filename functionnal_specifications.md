@@ -60,12 +60,13 @@ Harfang  3D is a software developpement company which is dedicated to the creati
 
 The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes.
 
-Two developers of the society, Emmanuel Julien and François Gutherz, want to improve the efficiency of their products. One of their popular project, FABGen, a binding generator used to bring the C++ engine to other languages like Python, Lua or Go. However, it needs to be updated for making more polyvalent and available solutions for their customers. Indeed, they were taking into account the fact that customers didn't want to learn a new programming language while testing their products.
+Two developers of the society, Emmanuel Julien and François Gutherz, want to improve the efficiency of their products. One of their popular project, FABGen, a binding generator used to bring the C++ engine to other languages like Python, Lua or Go. 
+
+However, it needs to be updated for making more polyvalent and available solutions for their customers. Indeed, they were taking into account the fact that customers didn't want to learn a new programming language while testing their products.
 
 By the way, the society previously used a popular tool named SWIG which can connect a lot of target languages to the engine. Though, it was too old and complex, so they replaced it with FABGen. In fact, their creation is trying to solve its predecessor's issue by implementing new features, and it's still evolving. This is the company's duty to complete FABGen's functionalities for improving their creations.
 
 # 3. Goal of the project
-
 The goal of this project is to create a binding in the F# programming language for FABGen.
 
 ## 3.1. In Scope
@@ -74,9 +75,8 @@ Most importantly, we have to find a way to bridge FABGen with the F# programming
 The issue is that it's not possible to bridge F# with C++. So, the client wants us to use the C language as an intermediary language between C++ and F#.
 
 Anyway, these are the mains features that are planned for the first version of our product :
-- implementation of a C API wrapping C++ objects.
-- integration of the F# language with the C API.
-- creation of a static library for an embedded use of F#.
+- integration of the F# language to C++.
+- creation of a library using native F# code.
 - scripting of the required functions for using the native code of F#.     
   
 ## 3.2. Out Of Scope
@@ -90,14 +90,14 @@ The deadline for the V0 is in February 17th 2023.
 
 # 4. Functional Requirements
 
-## 4.1. Assumptions
-- Several tests using FABGen with the F# binding must be done.
-- The python language should also be studied for understanding FABGen.
-- The C API created will go through a process of configuration in order to be used.
+## 4.1. Objectives
+- The product must be able to produce C++ code from F# scripts.
+- The unit tests to turn native F# into cpp code must all be functionnal.
   
-## 4.2. Constraints
-- F# is a static language, so we need to go through the C language to create the binding.
-- We have to manage time properly for this project, as we are doubting that we could finish everything.
+## 4.2. End result
+- The user will be able to activate F# binding when he is working on an Harfang 3D scene.
+- He will be allowed to use and create F# scripts for his scenes.
+
 
 
 # 5. Personas
@@ -216,10 +216,10 @@ This would indirectly benefit the F# binding for FABGen.
     - Case is closed
 
 - UC4 (Retrieve an existing F# for using it) :
-    -Françoise opens a scene in Harfang 3D
-    -She opens a window showing existing F# files
-    -She selects the F# file she wants
-    -Case is closed
+    - Françoise opens a scene in Harfang 3D
+    - She opens a window showing existing F# files
+    - She selects the F# file she wants
+    - Case is closed
 
 ## 6.2. Use Cases Analysis 
 Here is a more detailed version of the functional analysis above :
