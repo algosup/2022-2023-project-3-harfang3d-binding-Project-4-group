@@ -38,7 +38,7 @@
 
  - **Harfang 3D** : The society creating different 3D real-time engine solutions. 
 
-  - **FABGen** : A set of Python scripts to generate C++ bidning codes to different languages. 
+  - **FABGen** : A set of Python scripts to generate C++ binding codes to different languages. 
 
  - **Binding** : An use of a software library for a different programming language.
 
@@ -48,9 +48,9 @@
 
  - **Real-Time 3D** : The method of representation of 3D images that appear to be moving in real time.
 
- - **HMI** : Abreviation of "**H**uman-**M**achine **I**nterface.  
+ - **HMI** : Abreviation of "**H**uman-**M**achine **I**nterface".  
 
- - **API** : Abreviation of "**A**pplication **P**rogramming **I**nterface".   
+ - **API** : Abreviation of "**A**pplication **P**rogramming **I**nterface".     
 
  # 2. Introduction
 
