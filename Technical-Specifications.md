@@ -48,7 +48,7 @@ The project is divided into three main phases:
 
 ### Software architecture 
 
-![](./images/schema.png)
+![](./Images/Schema.png)
 
 As you can see above, the user will enter his F# code, then our algorithm will translate the functions in C++, if these functions can't be translated, it will do it in python and then in c++. The remaining code, which is in C++, will finally be send to harfang.
 
