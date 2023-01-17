@@ -221,9 +221,6 @@ This would indirectly benefit the F# binding for FABGen.
     -She selects the F# file she wants
     -Case is closed
 
-- UC5 (Test a scene in Harfang 3D using F#) : 
-
-
 ## 6.2. Use Cases Analysis 
 Here is a more detailed version of the functional analysis above :
 <details>
@@ -234,6 +231,7 @@ Here is a more detailed version of the functional analysis above :
 | UC 1       | U.R #1                                 | F# Binding    | Lambert wants to activate the F# binding from FABGen so he can code in F# in Harfang 3D | Developer | Lambert must be allowed to use the FABGen project to connect it with Harfang 3D. Indeed, only the authorized users will get to use FABGen and be allowed to use another programming language. | Lambert creates a scene in Harfang 3D so he can work on it. He then select the "Preferences" menu to change his programming language. | A pop-up showing all available language bindings will be displayed and Lambert has to select one. | The case is complete once Lambert has selected and saved the programming language he wants to work with.                      |
 | UC 2       | U.R #2                                 | New F# Script | Marcus wants to create a new script in F# while working on his Harfang 3D scene.        | Developer | Marcus has to activate the F# binding in the engine's preferences.                                                                                                                            | Once he activated the F# binding, Marcus click on "New Script".                                                                         | A window from the default IDE will open automatically and allow him to write in F#.                | The case is complete once Marcus wrote his F# program and saved it, showing it in the scene's database. |
 | UC 3       | U.R #3                                 | Scene testing | Linda would like to test the scene she created in Harfang 3D which is using F# scripts  | Developer | The scene Linda is working on must have F# scripts connected to the scene. They must be finished so Linda could test her scene.                                                              | Linda clicks on "Test" to activate a simulation of her scene in 3D real-time using F# languages.                                         | The objects connected to the f# scripts must have a specific behavior in the scene.                | The case is complete once Linda has validated if her F# scripts are working and saved her scene.                                                 |
+| UC 4       | U.R #4                                 | Retrieving F# script | Françoise wants to get a F# script she created in a previous project to reuse it in her Harfang 3D scene | Developer | There must be at least one existing F# script in her computer's files.                                                              | Françoise clicks on "Get script" to open a window showing different scripts.                                         | The files must be scripts written in programming languages, thus being in .fs format for F# case.                | The case is complete once Françoise has selected her F# script and clicked on OK, so it could appear in her scene's scripts database.                                                 |
 
 </details>     
 
