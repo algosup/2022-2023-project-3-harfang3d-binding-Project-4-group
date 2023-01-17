@@ -14,7 +14,7 @@
   - [4.2. Constraints](#42-constraints)
 - [5. Personas](#5-personas)
   - [5.1. Jean-Charles Magne](#51-jean-charles-magne)
-  - [5.2. Hélène Ganthe](#52-helene-ganthe)
+  - [5.2. Didier Delacité](#52-didier-delacité)
   - [5.3. Naisha Kira](#53-naisha-kira)
 - [6. Use cases](#6-use-cases)
   - [6.1. Functional Analysis](#61-functional-analysis)
@@ -79,7 +79,7 @@ Anyway, these are the mains features that are planned for the first version of o
   
 ## 3.2. Out Of Scope
 Because of the time and resources constraints, we could only include these features in the future versions :
-- shown desmonstration of using F# language for compiling an engine's project.
+- shown demonstration of using F# language for compiling an engine's project.
 - binding with newer version of F#.
 - writing a working manual for using the F# binding.
   
@@ -117,20 +117,22 @@ His job is to search for new software tools and test them in order to improve th
 ### 5.1.3 Goals: 
 Jean-Charles wants to spend more time with his daughters during the days he is with them. So, he would like to find a solution where he doesn’t have to learn a new programming language at home. 
  
-## 5.2 Hélène Ganthe 
+## 5.2 Didier Delacité
 
 ### 5.2.1 Job:  
-Lead Designer of the glove making Agnelle company
+Developper from Harfang 3D
 
 ### 5.2.2 Description: 
-Hélène is a 31 years old woman who lives at Paris, in an apartment not far from the Agnelle company. She likes reading novels, musical comedy movies, and is fascinated by leather gloves since her youth. She often wears gloves and is a loving single mother of a 6 years old boy. 
+Didier is a 52 years old man who is living in Orleans since he was born. He has a passion for technology, and lives with his wife near the Head Office of Harfang 3D. 
  
-Each day (except during the week-end), she takes her son to school by walking before she arrives to her workplace at 9am. Then, she leaves at 4pm before taking a coffee with a friend and picking up her kid to school before going home.
+He has a great sense of humor usually dines with his colleagues at restaurants each Saturday, but he hates Football.
 
-At her workplace, she is the main person in charge of designing new variations of gloves. She leads her team of designer to find new ideas, but also new tools to create concepts more often. Though, most of her team have experience in the F# programming, but they don't have time to focus on learning a new programming language.
+He studied at the Insitute of Technology in Orleans for getting a degree in electrical engineering and industrial computing, but he decided to specialize himself in software conceptions.
+
+Then, he has been working as a developer at Harfang 3D for 5 years. 
 
 ### 5.2.3 Goals: 
-Hélène wants to spend more time with her child by having more control to her creativity. Indeed, she wants a software to help her team design new gloves according to the hand size. 
+Didier wants to improve the quality and availability of Harfang 3D products. With that, the society could attract more customers. 
 
 ## 5.3 Naisha Kira 
 
@@ -138,16 +140,16 @@ Hélène wants to spend more time with her child by having more control to her c
 Software developer.
  
 ### 5.3.2 Description:
-Naisha is a 21 years old woman who is temporarily living in an apartment in Orleans for 2 weeks.
+Naisha is a 21 years old woman who is living in an apartment in Orleans since a few months.
 
 She originally came from Mumbai in India where she was born and spent her childhood here. Since she was 7 years old, she had a passion for programming and wants to become a software developer. She knows a few programming languages, especially F# and python.
 
-After she has finished her high school studies, she enrolled herself to an institute of Technology in Mumbai for 2 years. She then got graduated and is now beginning to work for a indian society specialized in robotics in Bangalore.
-
-The society is seeking for a tool to improve the design of their robot arms, and they got in contact with Harfang 3D's society. So, they sent Naisha in France by airplane with a mission to test Harfang's solutions. 
+After she has finished her high school studies, she enrolled herself to an institute of Technology in Mumbai for 2 years. She then got graduated and decided to live in France, after being hired as a software developer by Harfang 3D.
 
 ### 5.3.3 Goals: 
-Naisha wishes to use her F# skills to help her society finding a software tool to improve their productivity.
+Naisha wants to use her F# skills to help Harfang 3D develop more products relying mostly on the F# binding.
+
+Indeed, this would benefit some products on the advantages of the F# language. 
 
 
 # 6. Use cases
