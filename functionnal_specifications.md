@@ -239,9 +239,16 @@ Here is a more detailed version of the functional analysis above :
 
 
 # 7. Non-Functional Requirements
-For the moment, we didn't find any non-functional requirements for this project.
+
+# 7.1. Security
+Potentially, we can add a security feature when the F# binding is reading an F# script.
+Indeed, some nasty program can be harmful for our operating system, so we might implement some security settings to detect any code which could be a source of bugs.
 
 # 8. Conclusion
-The client helped us by giving us leads on how to work on the project. Indeed, they gave us a link to a github page for showing how FABGen and creating a binding would work.
+We have a hard time trying to understand how the original FABGen tests are working.
+
+The client helped us by giving us leads on how to work on the project. For example, they gave us a link to a github page for showing how FABGen and creating a binding would work.
+
+Though, it will be necessary to understand how the bindings for existing languages work. This could be benefical for us to understand some functions, but we have to be careful to not lose time while trying to understand them.
 
 We want to thank the stakeholders, Harfang 3D, and particularly François Gutherz and Emmanuel Julien, for giving us details for the project.
