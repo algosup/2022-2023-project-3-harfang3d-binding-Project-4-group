@@ -91,12 +91,25 @@ The project must have a good file structure to work properly, it is one of the m
 </pre>
 
 
-## Risks
+## Risks, assumptions and constraints
+
+### Risks
 
 This project has few risks, they can be defined as:
 - The risk of being late and miss deadlines.
 - The risk of misunderstanding FABgen's functions.
 - The risk of bad file structure.
+
+### Assumptions
+
+Several tests using FABGen with the F# binding must be done.
+The python language should also be studied to understand FABGen.
+The C API created will go through a process of configuration in order to be used.
+
+### Constraints
+
+F# is a static language, so we need to go through the C language to create the binding.
+F# is also missing some types  compared to C++ or Python, to face this problem we can wrap C++ inside F#, thus it will allow use to use the missing types.
 
 ## Testing
 
