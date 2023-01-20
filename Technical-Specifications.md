@@ -37,16 +37,16 @@ The goal of this project is to translate [FABGen](#FABGen) into [F#](#F#). To do
 
 ### Schedule
 
-The project has to be finished by the 17 of February 2023.
 
-The project is divided into three main phases: 
-&nbsp;
 <img src="./Images/ProjectPhases.png" width="350" height="120" />
-
+<br />
+The project is divided into three main phases: 
 
 - week 1 to week 2 phase 1: creation of documents and exploration of the subject
 - week 2 to week 4 phase 2: Exploration and understanding of [FABGen](#FABGen)
 - week 4 to week 6 phase 3: Production of the product
+
+The project has to be finished by the 17 of February 2023.
 
 ## Software
 
