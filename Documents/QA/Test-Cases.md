@@ -2,11 +2,7 @@
 <summary style="text-decoration: underline; font-size:150%">Table of contents:</summary>
 
 1. [FSHARP_001](#1-fsharp_001)
-2. [Addition](#2-addition)
-3. [Loop for](#3-loop-for)
-4. [If statement](#4-if-statement)
-5. [Class](#5-class)
-6. [Tuple](#6-tuple)
+
     
 </details>
  
