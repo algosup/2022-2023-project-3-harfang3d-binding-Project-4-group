@@ -39,7 +39,7 @@ The goal of this project is to translate [FABGen](#FABGen) into [F#](#F#). To do
 
 
 <img src="./Images/ProjectPhases.png" width="500" height="160" />
-<br />
+
 The project is divided into three main phases: 
 
 - week 1 to week 2 phase 1: creation of documents and exploration of the subject
@@ -129,12 +129,12 @@ Tests are provided by [Harfang 3D](#Harfang3D) so we won't have to create them, 
 
 ## Footnotes
 |word|definition|
-|---|:----:|
+|-----|:----:|
 |<span id="FABGen">FABGen</span>   | FABGen is a script written in Python made to create C++ to allow users to code with multiple languages such as Python, Go, and Lua.|
-|<span id="F#">F#</span> <img src="./Images/Fsharp_logo.png" width="50" height="50" />| F# is an object-oriented language which means it can associate a block of a program to a concept, F# is widely used to make multiple languages work together.|
-|<span id="C++">C++</span><img src="./Images/CppLogo.png" width="50" height="50" />| C++ is a high-level programming language, as F#, C++ is an object-oriented language.|
-|<span id="Python">Python</span> <img src="./Images/PythonLogo.png" width="50" height="50" />| Like C++, Python is a high-level language, this language is widely used inside the programming community for his simplicity to use parts of code called libraries which are made by users.|
-|<span id="Harfang3D">Harfang 3D</span> <img src="./Images/HarfangLogo.png" width="50" height="50" />| Harfang 3D is a French company based in Orléans with the objective to create a 3D engine for industrial companies and purposes less explored by his concurrence. Harfang 3D is also the name of their 3D engine. |
+|<img src="./Images/Fsharp_logo.png" width="30" height="30" /> <span id="F#">F#</span>| F# is an object-oriented language which means it can associate a block of a program to a concept, F# is widely used to make multiple languages work together.|
+|<img src="./Images/CppLogo.png" width="30" height="30" /><span id="C++">C++</span>| C++ is a high-level programming language, as F#, C++ is an object-oriented language.|
+|<img src="./Images/PythonLogo.png" width="30" height="30" /><span id="Python">Python</span>| Like C++, Python is a high-level language, this language is widely used inside the programming community for his simplicity to use parts of code called libraries which are made by users.|
+|<img src="./Images/HarfangLogo.png" width="30" height="30" /><span id="Harfang3D">Harfang 3D</span>| Harfang 3D is a French company based in Orléans with the objective to create a 3D engine for industrial companies and purposes less explored by his concurrence. Harfang 3D is also the name of their 3D engine. |
 
 
 
