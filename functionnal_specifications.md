@@ -10,8 +10,8 @@
   - [3.2. Out Of Scope](#32-out-of-scope)
   - [3.3. Deadline](#33-deadline)
 - [4. Functional Requirements](#4-functional-requirements)
-  - [4.1. Assumptions](#41-assumptions)
-  - [4.2. Constraints](#42-constraints)
+  - [4.1. Objectives](#41-objectives)
+  - [4.2. End Result](#42-end-result)
 - [5. Personas](#5-personas)
   - [5.1. Jean-Charles Magne](#51-jean-charles-magne)
   - [5.2. Didier Delacité](#52-didier-delacité)
@@ -22,7 +22,10 @@
   - [6.1. Functional Analysis](#61-functional-analysis)
   - [6.2. Use Cases Analysis](#62-use-cases-analysis)
 - [7. Non-Functional Requirements](#7-non-functional-requirements)
-- [8. Conclusion](#9-conclusion)
+  - [7.1. Security](#71-security)
+  - [7.2. Availability](#72-availability)
+  - [7.3. Portability](#73-portability)
+- [8. Conclusion](#8-conclusion)
 
 </details> 
 
@@ -67,9 +70,10 @@ By the way, the society previously used a popular tool named SWIG which can conn
 
 As a matter of fact, they want to update FABGen, so it could be able to generate a binding for a new programming language: F#. That's how they went to Algosup and are counting on our team to fulfill their library of python scripts.
 
+In theory, our work will allow them to develop the FABGen's technical architecture. This time, we will need to work on several programming languages to create their product.
 
 # 3. Goal of the project
-The goal of this project is to create a binding in the F# programming language for FABGen.
+The goal of this project is to create a binding generator in the F# programming language for FABGen.
 
 ## 3.1. In Scope
 Most importantly, we have to find a way to bridge FABGen with the F# programming language.
@@ -80,12 +84,12 @@ Anyway, these are the mains features that are planned for the first version of o
 - integration of the F# language to a C library and to C++.
 - creation of a library using native F# code.
 - scripting of the required functions for using the native code of F#.     
-  
+- writing of a working manual for using the F# binding.
+
 ## 3.2. Out Of Scope
 Because of the time and resources constraints, we could only include these features in the future versions :
 - shown demonstration of using F# language for compiling an engine's project.
 - binding with newer version of F#.
-- writing a working manual for using the F# binding.
   
 ## 3.3. Deadline
 The deadline for the V0 is in February 17th 2023.
@@ -94,13 +98,12 @@ The deadline for the V0 is in February 17th 2023.
 
 ## 4.1. Objectives
 - The product must be able to produce C++ code from F# scripts.
-- The unit tests to turn native F# into cpp code must all be functionnal.
+- The unit tests to turn native F# into C++ code must all be functionnal.
   
-## 4.2. End result
+## 4.2. End Result
 - The user will be able to activate F# binding when he is working on an Harfang 3D scene.
 - He will be allowed to use and create F# scripts for his scenes.
-
-
+- He can test his simulations with objects connected to F# scripts.
 
 # 5. Personas
 
@@ -167,8 +170,7 @@ She likes reading novels, musical comedy movies, and is fascinated by leather gl
 
 Each day (except during the week-end), she takes her son to school by walking before she arrives to her workplace at 9am. Then, she leaves at 4pm before taking a coffee with a friend and picking up her kid to school before going home. 
 
-A few months ago, she just created a startup glove-making company. 
-Indeed, she is the main person in charge of designing new variations of gloves. She leads her team of designer to find new ideas, but also new tools to create concepts more often.  
+A few months ago, she just created a startup glove-making company. Indeed, she is the main person in charge of designing new variations of gloves. She leads her team of designer to find new ideas, but also new tools to create concepts more often.  
 
 Though, most of her team have experience in the F# programming, but they don't have time to focus on learning a new programming language. 
 
@@ -183,8 +185,7 @@ This could improve the productivity of her new company.
 Language designer.
  
 ### 5.5.2 Description:
-Marcus is a 29 years old man who is living in Miami in Florida.  
-He loves traveling, chili dogs, and he spends most of his 5 weeks holidays to practice hiking. 
+Marcus is a 29 years old man who is living in Miami in Florida. He loves traveling, chili dogs, and he spends most of his 5 weeks holidays to practise hiking. 
 
 However, when he starts working on his computer, nothing can stop him. He has a passion for programming languages since his teenage years, and works from 8am to 8pm. He would sometimes only eat sandwich at lunchtime while working. 
 
@@ -237,18 +238,23 @@ Here is a more detailed version of the functional analysis above :
 
 </details>     
 
-
 # 7. Non-Functional Requirements
 
-# 7.1. Security
+## 7.1. Security
 Potentially, we can add a security feature when the F# binding is reading an F# script.
 Indeed, some nasty program can be harmful for our operating system, so we might implement some security settings to detect any code which could be a source of bugs.
 
-# 8. Conclusion
-We have a hard time trying to understand how the original FABGen tests are working.
+## 7.2. Availability
+With the integration of a binding generator for a new programming language, FABGen would become more available to F# specialists who don't have time to learn another programming language.
 
+## 7.3. Portability
+The F# binding has to be available on both Windows and Mac operating systems.
+
+# 8. Conclusion
 The client helped us by giving us leads on how to work on the project. For example, they gave us a link to a github page for showing how FABGen and creating a binding would work.
 
 Though, it will be necessary to understand how the bindings for existing languages work. This could be benefical for us to understand some functions, but we have to be careful to not lose time while trying to understand them.
+
+This project would give to the clients a view on how a binding for the F# language with FABGen would work, and potentially give them ideas in order to integrate other languages.
 
 We want to thank the stakeholders, Harfang 3D, and particularly François Gutherz and Emmanuel Julien, for giving us details for the project.
