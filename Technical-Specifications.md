@@ -38,7 +38,7 @@ The goal of this project is to translate [FABGen](#FABGen) into [F#](#F#). To do
 ### Schedule
 
 
-<img src="./Images/ProjectPhases.png" width="350" height="120" />
+<img src="./Images/ProjectPhases.png" width="500" height="160" />
 <br />
 The project is divided into three main phases: 
 
