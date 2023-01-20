@@ -40,7 +40,8 @@ The goal of this project is to translate [FABGen](#FABGen) into [F#](#F#). To do
 The project has to be finished by the 17 of February 2023.
 
 The project is divided into three main phases:
-![](./Images/ProjectPhases.png)
+<img src="./Images/ProjectPhases.png" width="350" height="120" />
+
 
 - week 1 to week 2 phase 1: creation of documents and exploration of the subject
 - week 2 to week 4 phase 2: Exploration and understanding of [FABGen](#FABGen)
