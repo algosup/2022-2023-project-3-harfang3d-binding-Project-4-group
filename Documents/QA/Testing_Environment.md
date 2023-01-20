@@ -55,5 +55,27 @@ To generate the Lua and CPython bindings for this library run:
 python3 {FABGen}/bind.py --lua --cpython --out {FABGen} test_bind.py
 ```
 
+## Binding Example :
+
+```
+// C++ library
+#include <iostream>
+
+extern "C" int add(int a, int b) {
+    return a + b;
+}
+
+// F# code
+open System.Runtime.InteropServices
+
+[<DllImport("mylib.dll", CallingConvention=CallingConvention.Cdecl)>]
+extern int add(int a, int b)
+
+let result = add(3, 4)
+printfn "3 + 4 = %d" result
+```
+**Comments :**<br>
+In this example, the C++ library contains a function called "add", which takes two integers as arguments and returns their sum. The extern "C" keyword is used to indicate that this function should be exported from the library and made available for other languages to call.
+In the F# code, the DllImport attribute is used to import the "add" function from the "mylib.dll" library. The extern keyword is used to indicate that this function is implemented in an external library, and the add function is called with two integer arguments and the result is stored in the result variable. The final line of the F# code uses the printfn function to display the result of the addition.
 
 
