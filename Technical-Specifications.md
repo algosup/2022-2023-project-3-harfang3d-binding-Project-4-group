@@ -40,8 +40,9 @@ The goal of this project is to translate [FABGen](#FABGen) into [F#](#F#). To do
 The project has to be finished by the 17 of February 2023.
 
 The project is divided into three main phases:
+![](./Images/ProjectPhases.png)
 
-- week 1 to week 2 phase 1: creation of documents
+- week 1 to week 2 phase 1: creation of documents and exploration of the subject
 - week 2 to week 4 phase 2: Exploration and understanding of [FABGen](#FABGen)
 - week 4 to week 6 phase 3: Production of the product
 
@@ -53,7 +54,7 @@ The project is divided into three main phases:
 
 ![](./Images/Schema.png)
 
-As you can see above, the user will enter his F# code, then our algorithm will translate the functions in C++, if these functions can't be translated, it will do it in python and then in c++. The remaining code, which is in C++, will finally be send to harfang.
+As you can see above, the user will enter his F# code, then our algorithm will translate the functions in C++, if these functions can't be translated, it will do it in python and then in c++. The remaining code, which is in C++, will finally be send to [Harfang 3D](#Harfang3D).
 
 
 ### File structure
@@ -103,6 +104,9 @@ This project has few risks, they can be defined as:
 - The risk of being late and miss deadlines.
 - The risk of misunderstanding FABgen's functions.
 - The risk of bad file structure.
+- The risk of having wrong test cases wich leads to functions being wrong functions.
+- The risk of [FABGen](#FABGen)'s code not being able to run on our machines.
+
 
 ### Assumptions
 
@@ -119,7 +123,7 @@ The project has some constraints, which are:
 
 ## Testing
 
-Tests are provided by [Harfang 3D](#Harfang3D) so we won't have to create them.
+Tests are provided by [Harfang 3D](#Harfang3D) so we won't have to create them, but we will have to modify them a bit to adapt them to [F#](#F#).
 
 ## Footnotes
 |word|definition|
@@ -132,3 +136,4 @@ Tests are provided by [Harfang 3D](#Harfang3D) so we won't have to create them.
 
 
 
+###### [all icons used are made by professionals and are available on Flaticon](https://www.flaticon.com/)
