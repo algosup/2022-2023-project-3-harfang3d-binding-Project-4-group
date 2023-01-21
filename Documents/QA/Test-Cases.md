@@ -34,32 +34,35 @@ printfn "3 + 4 = %d" result
 <sub>In this example, the C++ library contains a function called "add", which takes two integers as arguments and returns their sum. The extern "C" keyword is used to indicate that this function should be exported from the library and made available for other languages to call.
 In the F# code, the DllImport attribute is used to import the "add" function from the "mylib.dll" library. The extern keyword is used to indicate that this function is implemented in an external library, and the add function is called with two integer arguments and the result is stored in the result variable. The final line of the F# code uses the printfn function to display the result of the addition.</sub>
 
-**Test Case ID:** FSHARP_001
+${\color{orange}Test Case ID:}$ FSHARP_001
 
-**Test Case Name:** F# and C++ library integration
+${\color{orange}Test Case Name:}$ F# and C++ library integration
 
-**Prerequisites:**
+${\color{orange}Prerequisites:}$
 
 C++ library has been successfully compiled and linked with the F# code
 F# code has been compiled without errors<br>
 
-**Test Steps:**
+${\color{orange}Test Steps:}$
 
 Run the F# code
 Call the C++ library function add with the input values 3 and 4.<br>
 Pass the returned value from the C++ library to a F# function that performs additional computation on it.<br>
 Verify that the final output of the F# code is correct.<br>
 
-**Expected Result:**
+${\color{orange}Expected Result:}$
+
 The F# code should correctly call the C++ library function add and pass the result to another F# function that performs additional computation correctly. The final output should match the expected result.<br>
 
-**Actual Result:**
+${\color{orange}Actual Result:}$
+
 [Record the actual result of the test here]
 
-**Test Pass/Fail Criteria:**
+${\color{orange}Test Pass/Fail Criteria:}$
+
 The test is considered pass if the actual result matches the expected result.
 
-**Notes:**
+${\color{orange}Notes:}$
 [Any additional notes or comments related to the test case can be added here]
 
 This test case is checking the overall integration of the F# code and the C++ library. It's also verifies that the data transfer between the two languages is working as expected. 
