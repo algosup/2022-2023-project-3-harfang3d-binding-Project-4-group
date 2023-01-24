@@ -81,5 +81,5 @@ printfn "3 + 4 = %d" result
 In this example, the C++ library contains a function called "add", which takes two integers as arguments and returns their sum. The extern "C" keyword is used to indicate that this function should be exported from the library and made available for other languages to call.
 In the F# code, the DllImport attribute is used to import the "add" function from the "mylib.dll" library. The extern keyword is used to indicate that this function is implemented in an external library, and the add function is called with two integer arguments and the result is stored in the result variable. The final line of the F# code uses the printfn function to display the result of the addition.
 
-[External Functions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/external-functions)
-
+[External Functions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/external-functions)<br/>
+[vector.cpp](https://github.com/jackdalton/vector-cpp/blob/master/src/vector.h)
