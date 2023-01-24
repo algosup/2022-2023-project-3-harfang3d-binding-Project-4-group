@@ -13,3 +13,9 @@ extern "C" double distanceTo(Vector2 pos, Vector2 end)
 {
         return sqrt((pos.y - end.y) * (pos.y - end.y) + (pos.x - end.x) * (pos.x - end.x));
 }
+
+extern "C" Vector2 vectorMovement(Vector2 mov, double plusx, double plusy) {
+    mov.x += plusx;
+    mov.y += plusy;
+    return mov;
+}
