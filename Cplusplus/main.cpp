@@ -39,5 +39,8 @@ int main() {
     p1.vectorMovement(2, 2);
     printf("P1's new coordinates are X: %f and Y: %f. \n\n ", p1.x, p1.y);
 
+    Vector2 midP1_P2 = p1.midpoint(p2);
+    printf("P1 and P2's midpoint's coordinates are X: %f and Y: %f. \n\n ", midP1_P2.x, midP1_P2.y);
+
     return 0;
 }
