@@ -7,10 +7,10 @@
 
 class Vector2 {
 public:
-    Vector2(double inx = 0, double iny = 0) {
-        x = inx;
-        y = iny;
-    }
+     Vector2(double inx = 0, double iny = 0) {
+         x = inx;
+         y = iny;
+     }
     double x;
     double y;
     double distanceTo(Vector2 pos) {
