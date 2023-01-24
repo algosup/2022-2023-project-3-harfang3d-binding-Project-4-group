@@ -19,3 +19,13 @@ extern "C" Vector2 vectorMovement(Vector2 mov, double plusx, double plusy) {
     mov.y += plusy;
     return mov;
 }
+
+ extern "C" Vector2 midpoint(Vector2 fst, Vector2 scd) {
+        double mx = (fst.x + scd.x) / 2;
+        double my = (fst.y + scd.y) / 2;
+        Vector2 mid;
+        mid.x = mx;
+        mid.y = my;
+
+        return mid;
+}
