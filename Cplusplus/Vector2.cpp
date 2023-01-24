@@ -27,6 +27,7 @@ public:
         Vector2 mid(mx, my);
         return mid;
     }
+    //Calculate the distance between the vector and another vector in percents, like it was a 100% loading bar
     double percentDistance(Vector2 pos, double percentOfDistance = 100) {
         return distanceTo(pos) / (100 / percentOfDistance);
     }
