@@ -28,10 +28,10 @@ Email:
 - Emmanuel Julien at emmanuel.julien@harfang3d.com.
 - Robert Pickering at robertfpickering@fastmail.com
 
-Slack:
+Slack: <img src="https://a.slack-edge.com/5f35cf0/img/icons/favicon-32-ua.png" width="20">
 - ALGOSUP Slack workspace
 
-Github project:
+Github project: <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30"/>
 - [planning](https://github.com/orgs/algosup/projects/4/views/1?sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=26551610&layout=table)
 
 
@@ -39,7 +39,7 @@ Discord:
 - [HARFANG®3D Discord server](https://discord.gg/8gE44QqE)
 - [Project Team Discord server](https://discord.gg/6s4G7z3axv)
 
-Github:
+Github:<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30"/>
 - [FABGen repository](https://github.com/ejulien/FABGen)
 - [HARFANG®3D repository](https://github.com/harfang3d/harfang3d)
 - [F# Binding repository](https://github.com/algosup/2022-2023-project-3-harfang3d-binding-Project-4-group/)

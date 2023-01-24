@@ -34,3 +34,4 @@ Our goal for this project is to ad a binding for the language [F#](https://fshar
 [Project's planner](https://github.com/orgs/algosup/projects/4/views/1) <br>
 [Critical path](https://docs.google.com/spreadsheets/d/1LDPr-LcLIMsKmaVQhj4lGdEyIJRwftaApHXx4YnH4_M/edit?usp=sharing) <br>
 [Communication plan](Documents/communication-plan.md) <br>
+[KPI's evaluation](https://docs.google.com/spreadsheets/d/1W16BV-xJHv1o4vF_B-yCt-Q5-HjRdeBla_S-Vu_Vd5k/edit?usp=sharing)<br>
