@@ -33,11 +33,20 @@
 // };
 
  extern "C" struct Vector2 {
-     double x = 0;
-     double y =0;
+     double x;
+     double y;
  };
 
-extern "C" Vector2 *Vector2_Constructor(Vector2 *this_ptr, int x);
+extern "C" Vector2* Vector2_Constructor(int x, int y);
+{
+  Vector2* obj = malloc (sizeof *obj); 
+  if(obj == NULL) { /* error handling here */ } 
+
+  obj->x = x;
+  obj->y = y;
+
+  return obj;
+}
 
 extern "C" void vectorMovement(Vector2* vec2, double plusx, double plusy)
 {

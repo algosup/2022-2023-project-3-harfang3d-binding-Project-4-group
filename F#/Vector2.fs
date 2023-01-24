@@ -7,7 +7,11 @@ extern type Vector2 = struct
     val x: double 
     val y: double
 
-    new (0, 0) = {x = 0; y = 0}
+    new (inx, iny) = {x = inx; y = iny}
+
+    let distanceTo (pos: Vector2): double =
+        let distance = sqrt((pos.y - y) * (pos.y - y) + (pos.x - x) * (pos.x - x));
+        distance
 
 
     
