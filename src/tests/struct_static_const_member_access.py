@@ -1,0 +1,90 @@
+import lib
+
+
+def bind_test(gen):
+	gen.start('my_test')
+
+	lib.bind_defaults(gen)
+
+	# inject test code in the wrapper
+	gen.insert_code('''\
+struct simple_struct {
+	int v{3};
+	static int i;
+	static const char *s;
+};
+
+int simple_struct::i = 5;
+const char *simple_struct::s = "some string";
+''', True, False)
+
+	simple_struct = gen.begin_class('simple_struct')
+	gen.bind_constructor(simple_struct, [])
+	gen.bind_member(simple_struct, 'int v')
+	gen.bind_static_member(simple_struct, 'int i')
+	gen.bind_static_member(simple_struct, 'const char *s')
+	gen.end_class(simple_struct)
+
+	gen.finalize()
+	return gen.get_output()
+
+
+test_python = '''\
+import my_test
+
+v = my_test.simple_struct()
+assert v.v == 3
+
+assert my_test.simple_struct.i == 5
+assert my_test.simple_struct.s == "some string"
+'''
+
+test_lua = '''\
+my_test = require "my_test"
+
+v = my_test.simple_struct()
+assert(v.v == 3)
+
+assert(my_test.simple_struct.i == 5)
+assert(my_test.simple_struct.s == "some string")
+'''
+
+test_go = '''\
+package mytest
+
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
+
+// Test ...
+func Test(t *testing.T) {
+	v := NewSimpleStruct()
+	assert.Equal(t, v.GetV(), int32(3), "should be the same.")
+
+	assert.Equal(t, SimpleStructGetI(), int32(5), "should be the same.")
+	assert.Equal(t, SimpleStructGetS(), "some string", "should be the same.")
+}
+'''
+
+test_fsharp = '''\
+    open NUnit.Framework
+
+type SimpleStruct() =
+    member val V = 3
+    with get, set
+
+let SimpleStructGetI() = 5
+let SimpleStructGetS() = "some string"
+
+[<Test>]
+let ``Test SimpleStruct``() = 
+    let v = SimpleStruct()
+    Assert.AreEqual(3, v.V, "should be the same.")
+    Assert.AreEqual(5, SimpleStructGetI(), "should be the same.")
+    Assert.AreEqual("some string", SimpleStructGetS(), "should be the same.")
+'''
+#This code defines a struct named SimpleStruct in F#, which has a single field "V" initialized to 3. Then it defines two functions SimpleStructGetI and SimpleStructGetS which just return 5 and "some string" respectively.
+#And the test function Test SimpleStruct creates an instance of SimpleStruct and assert that the value of V is 3, and both the functions return the expected values.
+#It uses the NUnit.Framework library for assertions, which would need to be imported in the project for this code to work.
