@@ -32,12 +32,12 @@
 //     }
 // };
 
- extern "C" struct Vector2 {
+ extern "C" typedef struct Vector2 {
      double x;
      double y;
  };
 
-extern "C" Vector2* Vector2_Constructor(int x, int y);
+extern "C" Vector2* Vector2_Constructor(double x, double y);
 {
   Vector2* obj = malloc (sizeof *obj); 
   if(obj == NULL) { /* error handling here */ } 
