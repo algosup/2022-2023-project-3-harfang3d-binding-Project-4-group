@@ -22,7 +22,7 @@ This allows to show that all the actors of the project have the necessary inform
        
 ## Communication channels:
 
-Email:
+Email 📧:
 
 - François Gutherz at francois.gutherz@harfang3d.com.
 - Emmanuel Julien at emmanuel.julien@harfang3d.com.
@@ -35,7 +35,7 @@ Github project: <img src="https://github.githubassets.com/images/modules/logos_p
 - [planning](https://github.com/orgs/algosup/projects/4/views/1?sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=26551610&layout=table)
 
 
-Discord:
+Discord: <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62fddf0fde45a8baedcc7ee5_847541504914fd33810e70a0ea73177e%20(2)-1.png" width="20">
 - [HARFANG®3D Discord server](https://discord.gg/8gE44QqE)
 - [Project Team Discord server](https://discord.gg/6s4G7z3axv)
 
