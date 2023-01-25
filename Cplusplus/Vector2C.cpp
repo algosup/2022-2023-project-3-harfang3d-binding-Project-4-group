@@ -20,7 +20,7 @@ extern "C" Vector2 vectorMovement(Vector2 mov, double plusx, double plusy) {
     return mov;
 }
 
- extern "C" Vector2 midpoint(Vector2 fst, Vector2 scd) {
+extern "C" Vector2 midpoint(Vector2 fst, Vector2 scd) {
         double mx = (fst.x + scd.x) / 2;
         double my = (fst.y + scd.y) / 2;
         Vector2 mid;
@@ -29,3 +29,7 @@ extern "C" Vector2 vectorMovement(Vector2 mov, double plusx, double plusy) {
 
         return mid;
 }
+
+extern "C" double percentDistance(Vector2 pos, Vector2 end, double percentOfDistance = 100) {
+        return distanceTo(pos, end) / (100 / percentOfDistance);
+    }
