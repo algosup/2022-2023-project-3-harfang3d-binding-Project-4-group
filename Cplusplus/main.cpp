@@ -24,6 +24,9 @@ int main() {
 
     printf("P4's coordinates are X:%f, Y:%f and Z:%f.\n", p4.x, p4.y, p4.z);
 
+    Vector3 midP3_P4 = midpoint(p3, p4);
+    printf("The midpoint between points p3 and p4 is (%f, %f, %f).\n", midP3_P4.x, midP3_P4.y, midP3_P4.z);
+
     // C++ CODE
 
     // Vector3 p3(0, 0, 4);
