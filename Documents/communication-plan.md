@@ -31,7 +31,7 @@ Email 📧:
 Slack: <img src="https://a.slack-edge.com/5f35cf0/img/icons/favicon-32-ua.png" width="20">
 - ALGOSUP Slack workspace
 
-Github project: <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30"/>
+Github project: <img src="https://github.githubassets.com/pinned-octocat.svg" width="20"/>
 - [planning](https://github.com/orgs/algosup/projects/4/views/1?sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=26551610&layout=table)
 
 
@@ -39,7 +39,7 @@ Discord: <img src="https://assets-global.website-files.com/6257adef93867e50d84d3
 - [HARFANG®3D Discord server](https://discord.gg/8gE44QqE)
 - [Project Team Discord server](https://discord.gg/6s4G7z3axv)
 
-Github:<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30"/>
+Github:<img src="https://github.githubassets.com/pinned-octocat.svg" width="20"/>
 - [FABGen repository](https://github.com/ejulien/FABGen)
 - [HARFANG®3D repository](https://github.com/harfang3d/harfang3d)
 - [F# Binding repository](https://github.com/algosup/2022-2023-project-3-harfang3d-binding-Project-4-group/)
