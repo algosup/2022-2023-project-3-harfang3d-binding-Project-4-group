@@ -17,7 +17,7 @@ import lib
 
 
 def route_lambda(name):
-    	
+		
 	''' It takes a string and returns a function that takes a list of strings and returns a string
 	
 	:param name: The name of the route
@@ -28,7 +28,7 @@ def route_lambda(name):
 
 
 def clean_name(name):
-    	
+
 	''' It takes a string, strips it of whitespace, replaces underscores with nothing, replaces colons with
 	nothing, and if the resulting string is a reserved word in Go, it appends "Go" to the end of it
 	:param name: The name of the function
@@ -41,7 +41,7 @@ def clean_name(name):
 
 
 def clean_name_with_title(name):
-    	
+		
 	''' It takes a string and returns a string with the first letter capitalized and all other letters
 	lowercase.
 	
@@ -279,10 +279,10 @@ class GoGenerator(gen.FABGen):
 
 	#
 	def get_binding_api_declaration(self):
-    		
+
 		# It generates the C++ code for the binding API
 		#:return: The return value is a string containing the C++ code for the binding API declaration.
-		 
+		
 		type_info_name = gen.apply_api_prefix("type_info")
 
 		out = '''\
@@ -309,7 +309,7 @@ struct %s {
 		return out
 
 	def output_binding_api(self):
-    		
+
 		# It generates a function that returns a pointer to a type_info object
 		
 		type_info_name = gen.apply_api_prefix("type_info")
@@ -338,7 +338,7 @@ uint32_t %s(void* p) {
 
 	#
 	def get_output(self):
-    		
+
 		#It returns a dictionary of the output files.
 		#:return: The return value is a dictionary of the generated files.
 		
@@ -368,7 +368,7 @@ uint32_t %s(void* p) {
 		return False
 
 	def __get_stars(self, val, start_stars=0, add_start_for_ref=True):
-    		
+
 		''' It takes a value, and returns a string of stars, based on the value's type
 		
 		:param val: The value to be converted
@@ -389,7 +389,7 @@ uint32_t %s(void* p) {
 		return stars
 
 	def __arg_from_cpp_to_c(self, val, retval_name, just_copy):
-    		
+
 		''' If the return type is a class, and it's not a pointer, and it's not a reference, then we create a
 		new instance of the class and return a pointer to it
 		
@@ -397,7 +397,7 @@ uint32_t %s(void* p) {
 		'converter.CType'>, 'storage_name': 'retval'}
 		:param retval_name: the name of the variable that holds the return value
 		:param just_copy: True if the return value is a pointer to a class, but the class is static
-	 '''	
+		'''	
 		src = ""
 		# type class, not a pointer
 		if val['conv'] is not None and val['conv'].is_type_class() and \
@@ -926,7 +926,7 @@ uint32_t %s(void* p) {
 		return go
 
 	def __extract_get_set_member_go(self, classname, member, static=False, name=None, bound_name=None, is_global=False, implicit_cast=None):
-    		
+
 		''' It takes a Python dictionary and returns a Go string.
 		
 		:param classname: The name of the class
@@ -936,7 +936,7 @@ uint32_t %s(void* p) {
 		:param bound_name: the name of the member in the C++ class
 		:param is_global: True if the member is a global variable, defaults to False (optional)
 		:param implicit_cast: This is the type that the member is cast to
-		 '''
+		'''
 		go = ""
 		conv = self.select_ctype_conv(member["ctype"])
 
@@ -1028,7 +1028,7 @@ uint32_t %s(void* p) {
 		return go
 
 	def __extract_get_set_member(self, classname, convClass, member, static=False, name=None, bound_name=None, is_global=False, is_in_header=False):
-    		
+
 		''' It takes a classname, a member, and a conversion class, and returns a string.
 		
 		:param classname: The name of the class
@@ -1133,7 +1133,7 @@ uint32_t %s(void* p) {
 		return go
 
 	def __extract_method_go(self, classname, convClass, method, static=False, name=None, bound_name=None, is_global=False, is_constructor=False):
-    		
+
 		''' It's a function that takes a bunch of arguments and returns a string.
 		
 		:param classname: "IVRCompositor"
@@ -1145,7 +1145,7 @@ uint32_t %s(void* p) {
 		:param is_global: True if the method is a global function, False if it's a class method, defaults
 		to False (optional)
 		:param is_constructor: True if this is a constructor, False otherwise, defaults to False (optional)
-		 '''
+		'''
 		go = ""
 
 		if bound_name is None:
@@ -1374,7 +1374,7 @@ uint32_t %s(void* p) {
 		return go
 
 	def __extract_method(self, classname, convClass, method, static=False, name=None, bound_name=None, is_global=False, is_in_header=False, is_constructor=False, overload_op=None):
-    		
+
 		''' It takes a method, and returns a string that is the Go code for that method.
 		
 		:param classname: The name of the class
@@ -2039,7 +2039,7 @@ uint32_t %s(void* p) {
 		go_translate_file = {}
 
 		def bind_method_translate(classname, convClass, method, static=False, name=None, bound_name=None, is_global=False, is_constructor=False):
-    			
+
 			''' It takes a classname, a method name, and a list of protos, and returns a list of method names.
 			
 			:param classname: The name of the class
@@ -2051,7 +2051,7 @@ uint32_t %s(void* p) {
 			:param is_global: True if the method is a global function, False if it's a class method, defaults
 			to False (optional)
 			:param is_constructor: True if the method is a constructor, defaults to False (optional)
-		 '''	
+			'''	
 			if bound_name is None:
 				bound_name = method["bound_name"]
 			if name is None:
