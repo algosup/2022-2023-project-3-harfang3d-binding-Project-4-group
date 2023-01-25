@@ -8,49 +8,15 @@
 using namespace std;
 
 int main() {
-    // C CODE
+    // C++ CODE
 
-    struct Vector2 p1;
-    struct Vector2 p2; 
-
-    p1.x = 0;
-    p1.y = 0;
-
-    p2.x = 0;
-    p2.y = 100;
-
-    printf("P1 x is equal to: %d\n", p1.x);
-
-    double distance = distanceTo(p1, p2);
-    printf("The distance between points p1 and p2 is %f.\n", distance);
-
-    p1 = vectorMovement(p1, 2, 2);
-    printf("P1's new coordinates are X: %f and Y: %f. \n", p1.x, p1.y);
-
-    Vector2 midP1_P2 = midpoint(p1, p2);
-    printf("P1 and P2's midpoint's coordinates are X: %f and Y: %f. \n ", midP1_P2.x, midP1_P2.y);
-
-    double distancePercent = percentDistance(p1, p2);
-    printf("The distance between points p1 and p2 is %f%. \n ", distancePercent);
-
-    //C++ CODE
-
-    // Vector2 p1(0, 0);
-    // Vector2 p2(0, 100);
-
-    // cout << "P1 x is equal to: " <<p1.x << "\n"; 
-
-    // double distance = p1.distanceTo(p2);
-    // printf("The distance between points p1 and p2 is %f.\n", distance);
-
-    // p1.vectorMovement(2, 2);
-    // printf("P1's new coordinates are X: %f and Y: %f. \n ", p1.x, p1.y);
-
-    // Vector2 midP1_P2 = p1.midpoint(p2);
-    // printf("P1 and P2's midpoint's coordinates are X: %f and Y: %f. \n ", midP1_P2.x, midP1_P2.y);
-
-    // double distancePercent = p1.percentDistance(p2);
-    // printf("The distance between points p1 and p2 is %f%. \n ", distancePercent);
-
+    Vector3 p3(0, 0, 4);
+    Vector3 p4(0, 4, 0);
+    Vector3 mp = p3.midpoint(p4);
+    printf("The midpoint between points p1 and p2 is (%f, %f, %f).\n\n", mp.x, mp.y, mp.z);
+    // add your tests above this line.
+    printf("Testing finished, press enter to exit.");
+    cin.get();
     return 0;
+    
 }
