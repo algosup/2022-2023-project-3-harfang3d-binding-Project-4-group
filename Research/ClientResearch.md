@@ -16,10 +16,56 @@ The goal of Harfang3D is to develop their engine for the industrial sector, whil
 
 # Resources
 ## Your sources
-> think also of sources to follow (people and keywords on Linkedin for example, a specialized blog or news outlet)
+
+[Algosup X Harfang project github page](https://github.com/harfang3d/algosup-binding-project)
+
+[Harfang3D engine presentation github page](https://github.com/harfang3d/harfang3d)
+
+[FABGen project presentation github page](https://github.com/ejulien/FABGen/)
+
+[Harfang3D official website](https://www.harfang3d.com/en_US/)
+
+[Algosup X Harfang project github page](https://github.com/harfang3d/algosup-binding-project)
+
+[Algosup X Harfang project github page](https://github.com/harfang3d/algosup-binding-project)
+
+[Algosup X Harfang project github page](https://github.com/harfang3d/algosup-binding-project)
+
 
 ## Glossary
-> write down all the words specific to the client's field, or the products your creating for the client (or both) with a short definition
+ - **Harfang 3D** : The society creating different 3D real-time engine solutions. 
+
+ - **FABGen** : A set of Python scripts to generate C++ binding codes to different languages. 
+
+ - **Binding** : An use of a software library for a different programming language.
+
+ - **Engine** : A program performing a core or essential function, faciliting development and allowing real-time maintenance.
+
+ - **Framework** : A set of tools and software components gathered to allow a faster development of softwares.  
+
+ - **Real-Time 3D** : The method of representation of 3D images that appear to be moving in real time.
+
+ - **HMI** : Abreviation of "**H**uman-**M**achine **I**nterface".  
+
+ - **API** : Abreviation of "**A**pplication **P**rogramming **I**nterface". 
+
+ - **Native Code** : Abreviation
+
+ - **Library** : Abreviation
+
+ - **Programming Language** : Abreviation
+
+ - **Integration** : Abreviation
+
+ - **Dynamically typed** : Abreviation
+
+ - **Statically typed** : Abreviation
+
+ - **Wrapper** : Abreviation
+
+ - **Converter** : Abreviation
+
+ - **Type** : Abreviation
 
 
 # Communication

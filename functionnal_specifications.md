@@ -132,9 +132,9 @@ Developper from Harfang 3D.
 ### 5.2.2 Description: 
 Didier is a 52 years old man who is living in Orleans since he was born. He has a passion for technology, and lives with his wife near the Head Office of Harfang 3D. 
  
-He has a great sense of humor usually dines with his colleagues at restaurants each Saturday, but he hates Football.
+He has a great sense of humor, he usually dines with his colleagues at restaurants each Saturday, but he hates Football.
 
-He studied at the Insitute of Technology in Orleans for getting a degree in electrical engineering and industrial computing, but he decided to specialize himself in software conceptions.
+He studied at the Institute of Technology in Orleans for getting a degree in electrical engineering and industrial computing, but he decided to specialize himself in software conception.
 
 Then, he has been working as a developer at Harfang 3D for 5 years. 
 
