@@ -35,6 +35,6 @@ extern "C" Vector3 midpoint(Vector3 fst, Vector3 scd) {
         return mid;
 }
 
-// extern "C" double percentDistance(Vector2 pos, Vector2 end, double percentOfDistance = 100) {
-//         return distanceTo(pos, end) / (100 / percentOfDistance);
-//     }
+extern "C" double percentDistance(Vector3 pos, Vector3 end, double percentOfDistance = 100) {
+    return distanceTo(pos, end) / (100 / percentOfDistance);
+}
