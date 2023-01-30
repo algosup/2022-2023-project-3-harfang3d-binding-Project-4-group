@@ -257,3 +257,4 @@ paket-files/
 # Coverage Report
 MyProject_coverage.xml
 .pdf
+.DS_Store
