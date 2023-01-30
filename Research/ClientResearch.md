@@ -1,13 +1,12 @@
 # Research notes
 
-## Who is the client
 The client is Harfang 3D, a software developpement company dedicated to the creation of HMIs (human-machine interfaces) for various sectors. 
 
+The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes, and improve the efficiency of their products. 
 
+One of their popular project, FABGen, a binding generator used to bring the C++ engine to other programming languages, needs an improvement for being more polyvalent and available solutions for their customers. 
 
-## His/her field
-
-
+Indeed, they are aware that customers didn't want to learn a new programming language while testing their products. So, the society want to help them save time.
 
 ## Competition
 The society's competitors are potentially other companies offering products and services related to their own engine software. A few notable examples would be Unity and Unreal Engine.
