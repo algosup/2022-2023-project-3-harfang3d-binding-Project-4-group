@@ -1,5 +1,4 @@
 # Research notes
-
 The client is Harfang 3D, a software developpement company dedicated to the creation of HMIs (human-machine interfaces) for various sectors. 
 
 The society is specialized in Real-Time 3D Visualization, they create useful tools to transform the development of real-time 3D imagery in an industrial context. Indeed, their goal is to popularize their use beyond entertainment purposes, and improve the efficiency of their products. 
@@ -23,13 +22,6 @@ The goal of Harfang3D is to develop their engine for the industrial sector, whil
 [FABGen project presentation github page](https://github.com/ejulien/FABGen/)
 
 [Harfang3D official website](https://www.harfang3d.com/en_US/)
-
-[Algosup X Harfang project github page](https://github.com/harfang3d/algosup-binding-project)
-
-[Algosup X Harfang project github page](https://github.com/harfang3d/algosup-binding-project)
-
-[Algosup X Harfang project github page](https://github.com/harfang3d/algosup-binding-project)
-
 
 ## Glossary
  - **Harfang 3D** : The society creating different 3D real-time engine solutions. 
