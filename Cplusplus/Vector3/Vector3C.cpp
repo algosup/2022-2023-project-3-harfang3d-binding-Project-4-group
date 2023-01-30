@@ -15,11 +15,12 @@ extern "C" double distanceTo(Vector3 pos, Vector3 end)
     return sqrt((pos.y - end.y) * (pos.y - end.y) + (pos.x - end.x) * (pos.x - end.x) + (pos.z - end.z) * (pos.z - end.z));
 }
 
-// extern "C" Vector2 vectorMovement(Vector2 mov, double plusx, double plusy) {
-//     mov.x += plusx;
-//     mov.y += plusy;
-//     return mov;
-// }
+extern "C" Vector3 vectorMovement(Vector3 mov, double plusx, double plusy, double plusz) {
+    mov.x += plusx;
+    mov.y += plusy;
+    mov.z += plusz;
+    return mov;
+}
 
 
 extern "C" Vector3 midpoint(Vector3 fst, Vector3 scd) {

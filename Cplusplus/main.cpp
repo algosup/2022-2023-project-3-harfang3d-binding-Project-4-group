@@ -30,6 +30,9 @@ int main() {
     double distance = distanceTo(p3, p4);
     printf("The distance between points p3 and p4 is %f.\n", distance);
 
+    p3 = vectorMovement(p3, 2, 2, 2);
+    printf("P3's new coordinates are X: %f , Y: %f and Z: %f. \n ", p3.x, p3.y, p3.z);
+
     // C++ CODE
 
     // Vector3 p3(0, 0, 4);
@@ -43,6 +46,9 @@ int main() {
 
     // double distance = p3.distanceTo(p4);
     // printf("The distance between points p3 and p2 is %f.\n", distance);
+
+    // p3.vectorMovement(2, 2, 2);
+    // printf("P3's new coordinates are X: %f , Y: %f and Z: %f. \n ", p3.x, p3.y, p3.z);
     
 
     return 0;
