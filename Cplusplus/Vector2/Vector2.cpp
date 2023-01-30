@@ -32,34 +32,3 @@ public:
         return distanceTo(pos) / (100 / percentOfDistance);
     }
 };
-
-//  extern "C" typedef struct Vector2 {
-//      double x;
-//      double y;
-//  };
-
-// extern "C" Vector2* Vector2_Constructor(double x, double y);
-// {
-//   Vector2* obj = malloc (sizeof *obj); 
-//   if(obj == NULL) { /* error handling here */ } 
-
-//   obj->x = x;
-//   obj->y = y;
-
-//   return obj;
-// }
-
-// extern "C" void vectorMovement(Vector2* vec2, double plusx, double plusy)
-// {
-//     &vec2.x += plusx;
-//     &vec2.y += plusy;
-//     return;
-// }
-
-// extern "C" Vector2 midpoint(Vector2* vec2, Vector2 pos)
-// {
-//    double mx = (&vec2.x + pos.x) / 2;
-//    double my = (&vec2.y + pos.y) / 2;
-//    Vector2 mid(mx, my);
-//    return mid;
-// }

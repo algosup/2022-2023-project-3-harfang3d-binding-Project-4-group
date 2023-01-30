@@ -10,16 +10,16 @@ extern "C" struct Vector3 {
     double z;
 };
 
-extern "C" double distanceTo(Vector2 pos, Vector2 end)
+extern "C" double distanceTo(Vector3 pos, Vector3 end)
 {
-        return sqrt((pos.y - end.y) * (pos.y - end.y) + (pos.x - end.x) * (pos.x - end.x));
+    return sqrt((pos.y - end.y) * (pos.y - end.y) + (pos.x - end.x) * (pos.x - end.x) + (pos.z - end.z) * (pos.z - end.z));
 }
 
-extern "C" Vector2 vectorMovement(Vector2 mov, double plusx, double plusy) {
-    mov.x += plusx;
-    mov.y += plusy;
-    return mov;
-}
+// extern "C" Vector2 vectorMovement(Vector2 mov, double plusx, double plusy) {
+//     mov.x += plusx;
+//     mov.y += plusy;
+//     return mov;
+// }
 
 
 extern "C" Vector3 midpoint(Vector3 fst, Vector3 scd) {
@@ -34,6 +34,6 @@ extern "C" Vector3 midpoint(Vector3 fst, Vector3 scd) {
         return mid;
 }
 
-extern "C" double percentDistance(Vector2 pos, Vector2 end, double percentOfDistance = 100) {
-        return distanceTo(pos, end) / (100 / percentOfDistance);
-    }
+// extern "C" double percentDistance(Vector2 pos, Vector2 end, double percentOfDistance = 100) {
+//         return distanceTo(pos, end) / (100 / percentOfDistance);
+//     }
