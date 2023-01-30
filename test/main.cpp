@@ -14,9 +14,9 @@ int main() {
     Vector3 p3(0, 0, 4);
     Vector3 p4(0, 4, 0);
     Vector3 mp = p3.midpoint(p4);
-    printf("The midpoint between points p1 and p2 is (%f, %f, %f).\n\n", mp.x, mp.y, mp.z);
+    double percent= p1.percentDistance(p2,50);
     // add your tests above this line.
+    printf("%f",percent);
     printf("Testing finished, press enter to exit.");
-    cin.get();
     return 0;
 }

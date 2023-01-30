@@ -34,14 +34,16 @@ extern "C" double V2distanceTo(Vector2* pos1,Vector2* pos2) {
 
         return sqrt(pow(pos2->X - pos1->X,2) + pow(pos2->Y - pos1->Y,2) );
     }
-// extern "C" void vectorMovement(Vector2* vector,double plusx, double plusy) {
-//     vector->X += plusx;
-//     vector->Y += plusy;
-//     return;
-// }
-// extern "C" Vector2 midpoint(Vector2* pos1, Vector2* pos2) {
-//     double mx = (pos1->X + pos2->Y) / 2;
-//     double my = (pos1->X + pos2->Y) / 2;
-//     Vector2 mid(mx, my);
-//     return mid;
-// }
+extern "C" void vectorMovement(Vector2* vector,double plusx, double plusy) {
+    vector->X += plusx;
+    vector->Y += plusy;
+    return;
+}
+extern "C" Vector2* midpoint(Vector2* pos1, Vector2* pos2) {
+    double mx = (pos1->X + pos2->X) / 2;
+    double my = (pos1->Y + pos2->Y) / 2;
+    return new Vector2 (mx, my);
+}
+extern "C" double percentDistance(Vector2* pos,Vector2* pos2, double percentOfDistance) {
+        return V2distanceTo(pos,pos2)/ (100 / percentOfDistance);
+    }
