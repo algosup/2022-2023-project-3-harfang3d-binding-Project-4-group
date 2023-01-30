@@ -48,24 +48,23 @@ The goal of Harfang3D is to develop their engine for the industrial sector, whil
 
  - **API** : Abreviation of "**A**pplication **P**rogramming **I**nterface". 
 
- - **Native Code** : Abreviation
+ - **Native Code** : Programming code configured to run on a specific processor.
 
- - **Library** : Abreviation
+ - **Library** : Collection of pre-written code used to optimize tasks.
 
- - **Programming Language** : Abreviation
+ - **Programming Language** : System of notation for writing computer programs used to formulate algorithms.
 
- - **Integration** : Abreviation
+ - **Integration** : Process of combining separate programs or softwares in one system.
 
- - **Dynamically typed** : Abreviation
+ - **Dynamically typed** : A programming language is dynamically typed when it performs type checking at run time.
 
- - **Statically typed** : Abreviation
+ - **Statically typed** : A programming language is statically typed when it performs type checking at compile time.
 
- - **Wrapper** : Abreviation
+ - **Wrapper** : Programming code encapsulating another code to provide it new functionnalities
 
- - **Converter** : Abreviation
+ - **Converter** : Software used to convert the value of a source type to a target type.
 
- - **Type** : Abreviation
-
+ - **Type** : Nature of the data value and its related operators.
 
 # Communication
 
