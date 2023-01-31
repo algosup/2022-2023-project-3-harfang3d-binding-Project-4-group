@@ -65,6 +65,3 @@ public:
     }
 };
 
- double distanceTo(Vector2 pos1, Vector2 pos2) {
-        return sqrt((pos1.y - pos2.y) * (pos1.y - pos2.y) + (pos1.x - pos2.x) * (pos1.x - pos2.x));
-    }

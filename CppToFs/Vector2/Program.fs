@@ -6,33 +6,26 @@ type Vector2 =
     val mutable Y: double
     new(x, y) = { X = x; Y = y }
 
-[<StructLayout(LayoutKind.Sequential)>]
-type Vector3 =
-    val mutable X: double
-    val mutable Y: double
-    val mutable Z: double
-    new(x, y, z) = { X = x; Y = y; Z = z }
-
 //import all functions 
-[<DllImport("compiledCPP")>]
+[<DllImport("compiledVector2")>]
 extern Vector2 CreateVector2(double x, double y)
 
-[<DllImport("compiledCPP")>]
+[<DllImport("compiledVector2")>]
 extern double GetX(Vector2 v)
 
-[<DllImport("compiledCPP")>]
+[<DllImport("compiledVector2")>]
 extern double GetY(Vector2 v)
 
-[<DllImport("compiledCPP")>]
+[<DllImport("compiledVector2")>]
 extern void vectorMovement(Vector2 vector,double plusx, double plusy)
 
-[<DllImport("compiledCPP")>]
+[<DllImport("compiledVector2")>]
 extern Vector2 midpoint(Vector2 pos1, Vector2 pos2)
 
-[<DllImport("compiledCPP", CallingConvention=CallingConvention.Cdecl)>]
-extern double V2distanceTo(Vector2 pos1, Vector2 pos2);
+[<DllImport("compiledVector2", CallingConvention=CallingConvention.Cdecl)>]
+extern double distanceTo(Vector2 pos1, Vector2 pos2);
 
-[<DllImport("compiledCPP", CallingConvention=CallingConvention.Cdecl)>]
+[<DllImport("compiledVector2", CallingConvention=CallingConvention.Cdecl)>]
 extern double percentDistance(Vector2 pos1, Vector2 pos2, double);
 
 
@@ -46,7 +39,7 @@ let test2= Vector2(GetX(vector2),GetY(vector2))
 
 //get distance between two vectors
 printfn"Distance"
-let distance =V2distanceTo(test1,test2)
+let distance =distanceTo(test1,test2)
 printfn $"The distance is: {distance}"
 
 //Move vector's points 
