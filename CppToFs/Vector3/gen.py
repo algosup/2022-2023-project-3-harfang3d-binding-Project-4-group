@@ -1,11 +1,15 @@
 import os
 import subprocess
+from sys import platform
 
 if os.path.exists("Vector3.cpp"):
     os.remove("Vector3.cpp")
 
 if os.path.exists("compiledVector3"):
     os.remove("compiledVector3")
+
+if os.path.exists("compiledVector3.dll"):
+    os.remove("compiledVector3.dll")
 
 f= open("Vector3.cpp","x")
 f.write("#include <math.h>\n"+
@@ -70,7 +74,10 @@ f.write("#include <math.h>\n"+
 f.flush()        
 
 def compile_cpp(file_path):
-    subprocess.run(["g++", "-o","compiledVector3",file_path])
+    if platform == "darwin":
+        subprocess.run(["g++", "-o","compiledVector3",file_path])
+    elif platform == "win32":
+        subprocess.run(["g++", "-shared" ,"-o","compiledVector3.dll",file_path])
 
 compile_cpp("Vector3.cpp")
 
@@ -80,7 +87,7 @@ lines=program.readlines()
 program=open("Program.fs","w")
 done=False
 
-imports=['open System.Runtime.InteropServices\n',
+importsMac=['open System.Runtime.InteropServices\n',
         "[<StructLayout(LayoutKind.Sequential)>]\n",
         "type Vector3 =\n",
         "    val mutable X: double\n",
@@ -110,21 +117,70 @@ imports=['open System.Runtime.InteropServices\n',
 
         '[<DllImport("compiledVector3")>]\n',
         "extern double percentDistance(Vector3 pos1, Vector3 pos2, double percent)\n"]
-i=0
-exists=[]
-for line in lines:
-    
-    exists.append(line)
 
-    if i<len(imports) and done==False:
-        program.write(imports[i])
-    
-    i+=1
-for lines in exists:
-    if lines in imports:
-        pass
-    else:
-        program.write(lines)
+importsWindows=['open System.Runtime.InteropServices\n',
+        "[<StructLayout(LayoutKind.Sequential)>]\n",
+        "type Vector3 =\n",
+        "    val mutable X: double\n",
+        "    val mutable Y: double\n",
+        "    val mutable Z: double\n",
+        "    new(x, y, z) = { X = x; Y = y; Z = z }\n",
+        '[<DllImport("compiledVector3.dll")>]\n',
+        "extern Vector3 CreateVector3(double x, double y, double z)\n",
+
+        '[<DllImport("compiledVector3.dll")>]\n',
+        "extern double GetX(Vector3 v)\n",
+
+        '[<DllImport("compiledVector3.dll")>]\n',
+        "extern double GetY(Vector3 v)\n",
+
+        '[<DllImport("compiledVector3.dll")>]\n',
+        "extern double GetZ(Vector3 v)\n",
+
+        '[<DllImport("compiledVector3.dll")>]\n',
+        "extern double distanceTo(Vector3 v,Vector3 v2)\n",
+
+        '[<DllImport("compiledVector3.dll")>]\n',
+        "extern void vectorMovement(Vector3 v,double plusx, double plusy, double plusz)\n",
+
+        '[<DllImport("compiledVector3.dll")>]\n',
+        "extern Vector3 midpoint(Vector3 v,Vector3 v2)\n",
+
+        '[<DllImport("compiledVector3.dll")>]\n',
+        "extern double percentDistance(Vector3 pos1, Vector3 pos2, double percent)\n"]
+
+if platform == "darwin":
+    i=0
+    exists=[]
+    for line in lines:
+        
+        exists.append(line)
+
+        if i<len(importsMac) and done==False:
+            program.write(importsMac[i])
+        
+        i+=1
+    for lines in exists:
+        if lines in importsMac:
+            pass
+        else:
+            program.write(lines)
+elif platform == "win32":
+    i=0
+    exists=[]
+    for line in lines:
+        
+        exists.append(line)
+
+        if i<len(importsWindows) and done==False:
+            program.write(importsWindows[i])
+        
+        i+=1
+    for lines in exists:
+        if lines in importsWindows:
+            pass
+        else:
+            program.write(lines)
 
 program.flush()
 subprocess.run(["dotnet","run"])

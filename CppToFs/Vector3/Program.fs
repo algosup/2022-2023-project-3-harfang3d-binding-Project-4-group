@@ -1,3 +1,26 @@
+open System.Runtime.InteropServices
+[<StructLayout(LayoutKind.Sequential)>]
+type Vector3 =
+    val mutable X: double
+    val mutable Y: double
+    val mutable Z: double
+    new(x, y, z) = { X = x; Y = y; Z = z }
+[<DllImport("compiledVector3.dll")>]
+extern Vector3 CreateVector3(double x, double y, double z)
+[<DllImport("compiledVector3.dll")>]
+extern double GetX(Vector3 v)
+[<DllImport("compiledVector3.dll")>]
+extern double GetY(Vector3 v)
+[<DllImport("compiledVector3.dll")>]
+extern double GetZ(Vector3 v)
+[<DllImport("compiledVector3.dll")>]
+extern double distanceTo(Vector3 v,Vector3 v2)
+[<DllImport("compiledVector3.dll")>]
+extern void vectorMovement(Vector3 v,double plusx, double plusy, double plusz)
+[<DllImport("compiledVector3.dll")>]
+extern Vector3 midpoint(Vector3 v,Vector3 v2)
+[<DllImport("compiledVector3.dll")>]
+extern double percentDistance(Vector3 pos1, Vector3 pos2, double percent)
 //Create vectors
 let FstVector= CreateVector3(0.0, 0.0, 0.0)
 let SndVector= CreateVector3(1.0, 2.0, 3.0)
