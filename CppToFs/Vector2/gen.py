@@ -85,19 +85,11 @@ compile_cpp(args.path+"Vector2.cpp")
 os.remove(args.path+"Vector2.cpp")
 
 
-# reading the user's F# file
-program=open(args.path+"Program.fs","r")
-lines=program.readlines()
-program=open(args.path+"Program.fs","w")
-done=False
 
 # storing every functions import inside an array
 imports=['open System.Runtime.InteropServices\n',
         "[<StructLayout(LayoutKind.Sequential)>]\n",
-        "type Vector2 =\n",
-        "    val mutable X: double\n",
-        "    val mutable Y: double\n",
-        "    new(x, y, z) = { X = x; Y = y}\n",
+        "type Vector2 = val mutable X: double; val mutable Y: double new(x, y, z) = { X = x; Y = y}\n",
         '[<DllImport("compiledVector2")>]\n',
         "extern Vector2 CreateVector2(double x, double y)\n",
 
@@ -119,25 +111,31 @@ imports=['open System.Runtime.InteropServices\n',
         '[<DllImport("compiledVector2")>]\n',
         "extern double percentDistance(Vector2 pos1, Vector2 pos2, double percent)\n"]
 
-# adding every imports inside the user's file and storing the file's original lines,
-# while removing everything
-i=0
-exists=[]
-for line in lines:
-    
-    exists.append(line)
+# reading the user's F# file
+program=open(args.path+"Program.fs","r")
+FileLength=program.readlines()
+program=open(args.path+"Program.fs","w")
 
-    if i<len(imports) and done==False:
-        program.write(imports[i])
-    
-    i+=1
+# Copy every lines of the original file into an array
+exists=[]
+for line in FileLength: 
+    exists.append(line) 
+
+# Delete every line inside the program
+program.truncate()
+program=open(args.path+"Program.fs","a")
+
+# Write every imports into the file
+for eachImport in imports:
+    program.write(eachImport)
+
 # insert back every lines the user has written, except already added lines (ex:[<DllImport("compiledVector2")>])
 for lines in exists:
     if lines in imports:
         pass
     else:
         program.write(lines)
-
+    
 program.flush()
 # run user's F# project
 subprocess.run(["dotnet","run"])

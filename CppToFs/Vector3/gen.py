@@ -93,19 +93,10 @@ compile_cpp(args.path+"Vector3.cpp")
 os.remove(args.path+"Vector3.cpp")
 
 
-# Edit Program.fs file to add the imports
-program=open(args.path+"Program.fs","r")
-lines=program.readlines()
-program=open(args.path+"Program.fs","w")
-done=False
 
 importsMac=['open System.Runtime.InteropServices\n',
         "[<StructLayout(LayoutKind.Sequential)>]\n",
-        "type Vector3 =\n",
-        "    val mutable X: double\n",
-        "    val mutable Y: double\n",
-        "    val mutable Z: double\n",
-        "    new(x, y, z) = { X = x; Y = y; Z = z }\n",
+        "type Vector3 =val mutable X: double; val mutable Y: double; val mutable Z: double new(x, y, z) = { X = x; Y = y; Z = z }\n",
         '[<DllImport("compiledVector3")>]\n',
         "extern Vector3 CreateVector3(double x, double y, double z)\n",
 
@@ -132,11 +123,7 @@ importsMac=['open System.Runtime.InteropServices\n',
 
 importsWindows=['open System.Runtime.InteropServices\n',
         "[<StructLayout(LayoutKind.Sequential)>]\n",
-        "type Vector3 =\n",
-        "    val mutable X: double\n",
-        "    val mutable Y: double\n",
-        "    val mutable Z: double\n",
-        "    new(x, y, z) = { X = x; Y = y; Z = z }\n",
+        "type Vector3 = val mutable X: double; val mutable Y: double; val mutable Z: double new(x, y, z) = { X = x; Y = y; Z = z }\n",
         '[<DllImport("compiledVector3.exe")>]\n',
         "extern Vector3 CreateVector3(double x, double y, double z)\n",
 
@@ -161,34 +148,48 @@ importsWindows=['open System.Runtime.InteropServices\n',
         '[<DllImport("compiledVector3.exe")>]\n',
         "extern double percentDistance(Vector3 pos1, Vector3 pos2, double percent)\n"]
 
+# Edit Program.fs file to add the imports
+program=open(args.path+"Program.fs","r")
+FileLength=program.readlines()
+program=open(args.path+"Program.fs","w")
+
 # Depending on the OS, the imports are different, we need to add the DLL imports to the Program.fs file
 if platform == "darwin": # mac
-    i=0
-    exists=[]
-    for line in lines:
-        
-        exists.append(line)
 
-        if i<len(importsMac) and done==False:
-            program.write(importsMac[i])
-        
-        i+=1
+# Copy every lines of the original file into an array
+    exists=[]
+    for line in FileLength: 
+        exists.append(line) 
+
+    # Delete every line inside the program
+    program.truncate()
+    program=open(args.path+"Program.fs","a")
+
+    # Write every imports into the file
+    for eachImport in importsMac:
+        program.write(eachImport)
+
+    # insert back every lines the user has written, except already added lines (ex:[<DllImport("compiledVector2")>])
     for lines in exists:
         if lines in importsMac:
             pass
         else:
             program.write(lines)
+    
 elif platform == "win32": # windows
-    i=0
     exists=[]
-    for line in lines:
-        
-        exists.append(line)
+    for line in FileLength: 
+        exists.append(line) 
 
-        if i<len(importsWindows) and done==False:
-            program.write(importsWindows[i])
-        
-        i+=1
+    # Delete every line inside the program
+    program.truncate()
+    program=open(args.path+"Program.fs","a")
+
+    # Write every imports into the file
+    for eachImport in importsWindows:
+        program.write(eachImport)
+
+    # insert back every lines the user has written, except already added lines (ex:[<DllImport("compiledVector2")>])
     for lines in exists:
         if lines in importsWindows:
             pass

@@ -1,9 +1,6 @@
 open System.Runtime.InteropServices
 [<StructLayout(LayoutKind.Sequential)>]
-type Vector2 =
-    val mutable X: double
-    val mutable Y: double
-    new(x, y, z) = { X = x; Y = y}
+type Vector2 = val mutable X: double; val mutable Y: double new(x, y, z) = { X = x; Y = y}
 [<DllImport("compiledVector2")>]
 extern Vector2 CreateVector2(double x, double y)
 [<DllImport("compiledVector2")>]

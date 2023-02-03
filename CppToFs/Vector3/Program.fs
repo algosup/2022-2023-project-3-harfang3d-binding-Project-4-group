@@ -1,10 +1,6 @@
 open System.Runtime.InteropServices
 [<StructLayout(LayoutKind.Sequential)>]
-type Vector3 =
-    val mutable X: double
-    val mutable Y: double
-    val mutable Z: double
-    new(x, y, z) = { X = x; Y = y; Z = z }
+type Vector3 =val mutable X: double; val mutable Y: double; val mutable Z: double new(x, y, z) = { X = x; Y = y; Z = z }
 [<DllImport("compiledVector3")>]
 extern Vector3 CreateVector3(double x, double y, double z)
 [<DllImport("compiledVector3")>]
