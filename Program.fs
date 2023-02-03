@@ -1,67 +1,58 @@
 open System.Runtime.InteropServices
 [<StructLayout(LayoutKind.Sequential)>]
-type Vector2 =
+type Vector3 =
     val mutable X: double
     val mutable Y: double
-    new(x, y, z) = { X = x; Y = y}
-[<DllImport("compiledVector2")>]
-extern Vector2 CreateVector2(double x, double y)
-[<DllImport("compiledVector2")>]
-extern double GetX(Vector2 v)
-[<DllImport("compiledVector2")>]
-extern double GetY(Vector2 v)
-[<DllImport("compiledVector2")>]
-extern double distanceTo(Vector2 v,Vector2 v2)
-[<DllImport("compiledVector2")>]
-extern void vectorMovement(Vector2 v,double plusx, double plusy)
-[<DllImport("compiledVector2")>]
-extern Vector2 midpoint(Vector2 v,Vector2 v2)
-[<DllImport("compiledVector2")>]
-extern double percentDistance(Vector2 pos1, Vector2 pos2, double percent)
+    val mutable Z: double
+    new(x, y, z) = { X = x; Y = y; Z = z }
+[<DllImport("compiledVector3")>]
+extern Vector3 CreateVector3(double x, double y, double z)
+[<DllImport("compiledVector3")>]
+extern double GetX(Vector3 v)
+[<DllImport("compiledVector3")>]
+extern double GetY(Vector3 v)
+[<DllImport("compiledVector3")>]
+extern double GetZ(Vector3 v)
+[<DllImport("compiledVector3")>]
+extern double distanceTo(Vector3 v,Vector3 v2)
+[<DllImport("compiledVector3")>]
+extern void vectorMovement(Vector3 v,double plusx, double plusy, double plusz)
+[<DllImport("compiledVector3")>]
+extern Vector3 midpoint(Vector3 v,Vector3 v2)
+[<DllImport("compiledVector3")>]
+extern double percentDistance(Vector3 pos1, Vector3 pos2, double percent)
 
+let FstVector= CreateVector3(0.0, 0.0, 0.0)
+let SndVector= CreateVector3(1.0, 2.0, 3.0)
 
-//create vector 1 and 2
-let vector = CreateVector2(10.0, 0.0)
-let vector2 = CreateVector2(0.0, 0.0)
+//Get values
+printfn"Get values"
+printfn $"The before movement X= {GetX(SndVector)} and Y= {GetY(SndVector)} and Z={GetZ(SndVector)}"
 
-// get X and Y of vectors 1
-printfn"\nGet points of the first vector"
-printfn $"The point X= {GetX(vector)} and point Y= {GetY(vector)}"
+//Get distance
+let distance=distanceTo(FstVector,SndVector)
+printfn"______________________________________________"
+printfn"Get Distance"
+printfn $"The Distance between the first and second vector is: {distance}"
 
+//Move the first vector +1 to each point
+let move=vectorMovement(FstVector,1.0,1.0,1.0)
+printfn"______________________________________________"
+printfn"Move the first vector +1 to each point"
+printfn $"The Vector 1 was at X=0, Y=0 and Z=0 \nIt is now X= {GetX(FstVector)} and Y= {GetY(FstVector)} and Z={GetZ(FstVector)} "
 
-//get distance between two vectors
-printfn"--------------------------------"
-printfn"Distance"
-let distance =distanceTo(vector,vector2)
-printfn $"The distance is: {distance}"
+//Get the midpoint between the two vectors
+let Midpoint=midpoint(FstVector,SndVector)
+printfn"______________________________________________"
+printfn"Get the midpoint between the two vectors"
+printfn $"The midpoint between the first and second vector is X= {GetX(Midpoint)} and Y= {GetY(Midpoint)} and Z={GetZ(Midpoint)} "
 
-//Move vector's points 
-// !!!!!!
-// Test 1 is being modified by vectorMovement
-// !!!!!!
+//Get the distance between the two vectors divised by a percentage
+let percentage: double =percentDistance(FstVector,SndVector, 50)
+let fullDistance=distanceTo(FstVector,SndVector)
 
-printfn"--------------------------------"
-printfn"Move points"
-printfn $"The before movement X= {GetX(vector)} and Y= {GetY(vector)}"
-let move =vectorMovement(vector, -12.0,36.0)
-printfn $"after movement X= {GetX(vector)} and Y= {GetY(vector)}"
+printfn"______________________________________________"
+printfn"Get the distance between the two vectors divised by a percentage"
+printfn $"The distance between the first and second vector at 50 percent is: {percentage}"
+printfn $"And the full distanc is: {fullDistance}"
 
-//get midpoint from vector A to B
-let Midpoint: Vector2 =midpoint(vector,vector2)
-
-printfn"--------------------------------"
-printfn"Get mid point"
-printfn $"vector X= {GetX(vector)} Y={GetY(vector)}"
-printfn $"vector2 X= {GetX(vector2)} Y={GetY(vector2)}"
-printfn $"The mid point between vector and vector2 is: X= {GetX(Midpoint)} Y: {GetY(Midpoint)}"
-
-//get percentage of the distance from vector A to B
-let percentage: double =percentDistance(vector,vector2, 50)
-let Newdistance =distanceTo(vector,vector2)
-
-printfn"--------------------------------"
-printfn"Get percentage between two vectors"
-printfn $"vector X= {GetX(vector)} Y={GetY(vector)}"
-printfn $"vector2 X= {GetX(vector2)} Y={GetY(vector2)}"
-printfn $"The distance is: {Newdistance}"
-printfn $"The point at 50 percent between vector and vector2 is: {percentage}"

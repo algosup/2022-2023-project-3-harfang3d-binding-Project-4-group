@@ -1,15 +1,26 @@
 import os
 import subprocess
+import sys
 from sys import platform
+import argparse
 
-if os.path.exists("Vector3.cpp"):
-    os.remove("Vector3.cpp")
+parser = argparse.ArgumentParser()
+parser.add_argument("path", type=str, help="The path of your directory")
+args = parser.parse_args()
 
-if os.path.exists("compiledVector3"):
-    os.remove("compiledVector3")
+if os.path.exists(args.path+"Program.fs"):
+    pass
+else:
+    sys.exit("The file have not been found, please verify the location of your Program.fs")
+
+if os.path.exists(args.path+"Vector3.cpp"):
+    os.remove(args.path+"Vector3.cpp")
+
+if os.path.exists(args.path+"compiledVector3"):
+    os.remove(args.path+"compiledVector3")
 
 #Create Vector3.cpp file who define the Vector3 class and the functions
-f= open("Vector3.cpp","x")
+f= open(args.path+"Vector3.cpp","x")
 f.write("#include <math.h>\n"+
     "#include <iostream>\n"+
     "using namespace std;\n"+
@@ -78,12 +89,14 @@ def compile_cpp(file_path):
     elif platform == "win32": #Windows
         subprocess.run(["g++", "-shared" ,"-o","compiledVector3.exe",file_path])
 
-compile_cpp("Vector3.cpp")
+compile_cpp(args.path+"Vector3.cpp")
+os.remove(args.path+"Vector3.cpp")
+
 
 # Edit Program.fs file to add the imports
-program=open("Program.fs","r")
+program=open(args.path+"Program.fs","r")
 lines=program.readlines()
-program=open("Program.fs","w")
+program=open(args.path+"Program.fs","w")
 done=False
 
 importsMac=['open System.Runtime.InteropServices\n',

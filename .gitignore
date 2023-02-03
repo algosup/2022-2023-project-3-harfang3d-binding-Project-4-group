@@ -262,4 +262,6 @@ Vector2.cpp
 Vector3.cpp
 compiledVector2
 compiledVector3
+compiledVector2.exe
+compiledVector3.exe
 .DS_Store
