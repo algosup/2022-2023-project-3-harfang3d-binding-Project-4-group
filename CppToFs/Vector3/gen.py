@@ -8,9 +8,7 @@ if os.path.exists("Vector3.cpp"):
 if os.path.exists("compiledVector3"):
     os.remove("compiledVector3")
 
-if os.path.exists("compiledVector3.dll"):
-    os.remove("compiledVector3.dll")
-
+#Create Vector3.cpp file who define the Vector3 class and the functions
 f= open("Vector3.cpp","x")
 f.write("#include <math.h>\n"+
     "#include <iostream>\n"+
@@ -73,15 +71,16 @@ f.write("#include <math.h>\n"+
         "}")
 f.flush()        
 
+# Compile Vector3.cpp
 def compile_cpp(file_path):
-    if platform == "darwin":
+    if platform == "darwin": #macOs
         subprocess.run(["g++", "-o","compiledVector3",file_path])
-    elif platform == "win32":
-        subprocess.run(["g++", "-shared" ,"-o","compiledVector3.dll",file_path])
+    elif platform == "win32": #Windows
+        subprocess.run(["g++", "-shared" ,"-o","compiledVector3.exe",file_path])
 
 compile_cpp("Vector3.cpp")
 
-
+# Edit Program.fs file to add the imports
 program=open("Program.fs","r")
 lines=program.readlines()
 program=open("Program.fs","w")
@@ -125,31 +124,32 @@ importsWindows=['open System.Runtime.InteropServices\n',
         "    val mutable Y: double\n",
         "    val mutable Z: double\n",
         "    new(x, y, z) = { X = x; Y = y; Z = z }\n",
-        '[<DllImport("compiledVector3.dll")>]\n',
+        '[<DllImport("compiledVector3.exe")>]\n',
         "extern Vector3 CreateVector3(double x, double y, double z)\n",
 
-        '[<DllImport("compiledVector3.dll")>]\n',
+        '[<DllImport("compiledVector3.exe")>]\n',
         "extern double GetX(Vector3 v)\n",
 
-        '[<DllImport("compiledVector3.dll")>]\n',
+        '[<DllImport("compiledVector3.exe")>]\n',
         "extern double GetY(Vector3 v)\n",
 
-        '[<DllImport("compiledVector3.dll")>]\n',
+        '[<DllImport("compiledVector3.exe")>]\n',
         "extern double GetZ(Vector3 v)\n",
 
-        '[<DllImport("compiledVector3.dll")>]\n',
+        '[<DllImport("compiledVector3.exe")>]\n',
         "extern double distanceTo(Vector3 v,Vector3 v2)\n",
 
-        '[<DllImport("compiledVector3.dll")>]\n',
+        '[<DllImport("compiledVector3.exe")>]\n',
         "extern void vectorMovement(Vector3 v,double plusx, double plusy, double plusz)\n",
 
-        '[<DllImport("compiledVector3.dll")>]\n',
+        '[<DllImport("compiledVector3.exe")>]\n',
         "extern Vector3 midpoint(Vector3 v,Vector3 v2)\n",
 
-        '[<DllImport("compiledVector3.dll")>]\n',
+        '[<DllImport("compiledVector3.exe")>]\n',
         "extern double percentDistance(Vector3 pos1, Vector3 pos2, double percent)\n"]
 
-if platform == "darwin":
+# Depending on the OS, the imports are different, we need to add the DLL imports to the Program.fs file
+if platform == "darwin": # mac
     i=0
     exists=[]
     for line in lines:
@@ -165,7 +165,7 @@ if platform == "darwin":
             pass
         else:
             program.write(lines)
-elif platform == "win32":
+elif platform == "win32": # windows
     i=0
     exists=[]
     for line in lines:
@@ -183,4 +183,5 @@ elif platform == "win32":
             program.write(lines)
 
 program.flush()
+# Run the updated Program.fs file
 subprocess.run(["dotnet","run"])

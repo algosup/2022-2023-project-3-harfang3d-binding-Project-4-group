@@ -5,23 +5,22 @@ type Vector3 =
     val mutable Y: double
     val mutable Z: double
     new(x, y, z) = { X = x; Y = y; Z = z }
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe")>]
 extern Vector3 CreateVector3(double x, double y, double z)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe")>]
 extern double GetX(Vector3 v)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe")>]
 extern double GetY(Vector3 v)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe")>]
 extern double GetZ(Vector3 v)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe")>]
 extern double distanceTo(Vector3 v,Vector3 v2)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe")>]
 extern void vectorMovement(Vector3 v,double plusx, double plusy, double plusz)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe")>]
 extern Vector3 midpoint(Vector3 v,Vector3 v2)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe")>]
 extern double percentDistance(Vector3 pos1, Vector3 pos2, double percent)
-
 //Create vectors
 let FstVector= CreateVector3(0.0, 0.0, 0.0)
 let SndVector= CreateVector3(1.0, 2.0, 3.0)
