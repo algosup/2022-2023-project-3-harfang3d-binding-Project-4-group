@@ -9,8 +9,8 @@ import subprocess
 # type "python3 Hub.py -h" in your terminal.
 parser = argparse.ArgumentParser(
                     prog = 'Hub.py',
-                    description = 'This script serve as a hub for every generator written for f#,'+
-                                    'depending on the argument you will use to call this file'+
+                    description = 'This script serve as a hub for every generator written for f#, '+
+                                    'depending on the argument you will use to call this file, '+
                                     'it will execute a specific file with its own functions.')
 
 
@@ -19,13 +19,14 @@ def call(gen:str, path:str):
         case "v2":
             subprocess.run(["python3","./CppToFs/Vector2/gen.py", path])
         case "v3":
-            print("not yet")
+            subprocess.run(["python3","./CppToFs/Vector3/gen.py", path])
+            
 
 generators = {'v2',
                 'v3'}
 
 parser.add_argument('-gen', "--generator", help="Choose which generator you want to call for your program", type=str, required=True)
-parser.add_argument("path", default="./", type=str, help="The path of your Program.fs")
+parser.add_argument("--path", default="./", type=str, help="The path of your directory", required=False)
 args = parser.parse_args()
 
 if args.generator in generators:

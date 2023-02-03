@@ -19,6 +19,7 @@ extern Vector2 midpoint(Vector2 v,Vector2 v2)
 [<DllImport("compiledVector2")>]
 extern double percentDistance(Vector2 pos1, Vector2 pos2, double percent)
 
+
 //create vector 1 and 2
 let vector = CreateVector2(10.0, 0.0)
 let vector2 = CreateVector2(0.0, 0.0)

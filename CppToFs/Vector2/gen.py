@@ -4,23 +4,23 @@ import subprocess
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("path", type=str, help="The path of your Program.fs")
+parser.add_argument("path", type=str, help="The path of your directory")
 args = parser.parse_args()
 
 # remove every C++ files already existing
-if os.path.exists(args.path,"program.fs"):
+if os.path.exists(args.path+"Program.fs"):
     pass
 else:
     sys.exit("The file have not been found, please verify the location of your Program.fs")
 
-if os.path.exists(args.path,"Vector2.cpp"):
-    os.remove(args.path,"Vector2.cpp")
+if os.path.exists(args.path+"Vector2.cpp"):
+    os.remove(args.path+"Vector2.cpp")
 
-if os.path.exists(args.path,"compiledVector2"):
-    os.remove(args.path,"compiledVector2")
+if os.path.exists(args.path+"compiledVector2"):
+    os.remove(args.path+"compiledVector2")
 
 # Generate the C++ file for 2D vectors basic calculations 
-f= open(args.path,"Vector2.cpp","x")
+f= open(args.path+"Vector2.cpp","x")
 f.write("#include <math.h>\n"+
     "#include <iostream>\n"+
     "using namespace std;\n"+
@@ -79,14 +79,16 @@ f.flush()
 
 # compiling the C++ file
 def compile_cpp(file_path):
-    subprocess.run(["g++", "-o",args.path,"compiledVector2",file_path])
+    subprocess.run(["g++", "-o",args.path+"compiledVector2",file_path])
 
-compile_cpp(args.path,"Vector2.cpp")
+compile_cpp(args.path+"Vector2.cpp")
+os.remove(args.path+"Vector2.cpp")
+
 
 # reading the user's F# file
-program=open(args.path,"Program.fs","r")
+program=open(args.path+"Program.fs","r")
 lines=program.readlines()
-program=open(args.path,"Program.fs","w")
+program=open(args.path+"Program.fs","w")
 done=False
 
 # storing every functions import inside an array
@@ -96,25 +98,25 @@ imports=['open System.Runtime.InteropServices\n',
         "    val mutable X: double\n",
         "    val mutable Y: double\n",
         "    new(x, y, z) = { X = x; Y = y}\n",
-        '[<DllImport(args.path,"compiledVector2")>]\n',
+        '[<DllImport("compiledVector2")>]\n',
         "extern Vector2 CreateVector2(double x, double y)\n",
 
-        '[<DllImport(args.path,"compiledVector2")>]\n',
+        '[<DllImport("compiledVector2")>]\n',
         "extern double GetX(Vector2 v)\n",
 
-        '[<DllImport(args.path,"compiledVector2")>]\n',
+        '[<DllImport("compiledVector2")>]\n',
         "extern double GetY(Vector2 v)\n",
 
-        '[<DllImport(args.path,"compiledVector2")>]\n',
+        '[<DllImport("compiledVector2")>]\n',
         "extern double distanceTo(Vector2 v,Vector2 v2)\n",
 
-        '[<DllImport(args.path,"compiledVector2")>]\n',
+        '[<DllImport("compiledVector2")>]\n',
         "extern void vectorMovement(Vector2 v,double plusx, double plusy)\n",
 
-        '[<DllImport(args.path,"compiledVector2")>]\n',
+        '[<DllImport("compiledVector2")>]\n',
         "extern Vector2 midpoint(Vector2 v,Vector2 v2)\n",
 
-        '[<DllImport(args.path,"compiledVector2")>]\n',
+        '[<DllImport("compiledVector2")>]\n',
         "extern double percentDistance(Vector2 pos1, Vector2 pos2, double percent)\n"]
 
 # adding every imports inside the user's file and storing the file's original lines,
@@ -129,7 +131,7 @@ for line in lines:
         program.write(imports[i])
     
     i+=1
-# insert back every lines the user has written, except already added lines (ex:[<DllImport(args.path,"compiledVector2")>])
+# insert back every lines the user has written, except already added lines (ex:[<DllImport("compiledVector2")>])
 for lines in exists:
     if lines in imports:
         pass
