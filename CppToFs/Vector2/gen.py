@@ -1,13 +1,26 @@
 import os
+import sys
 import subprocess
+import argparse
 
-if os.path.exists("Vector2.cpp"):
-    os.remove("Vector2.cpp")
+parser = argparse.ArgumentParser()
+parser.add_argument("path", type=str, help="The path of your Program.fs")
+args = parser.parse_args()
 
-if os.path.exists("compiledVector2"):
-    os.remove("compiledVector2")
+# remove every C++ files already existing
+if os.path.exists(args.path,"program.fs"):
+    pass
+else:
+    sys.exit("The file have not been found, please verify the location of your Program.fs")
 
-f= open("Vector2.cpp","x")
+if os.path.exists(args.path,"Vector2.cpp"):
+    os.remove(args.path,"Vector2.cpp")
+
+if os.path.exists(args.path,"compiledVector2"):
+    os.remove(args.path,"compiledVector2")
+
+# Generate the C++ file for 2D vectors basic calculations 
+f= open(args.path,"Vector2.cpp","x")
 f.write("#include <math.h>\n"+
     "#include <iostream>\n"+
     "using namespace std;\n"+
@@ -59,45 +72,53 @@ f.write("#include <math.h>\n"+
     'extern "C" double percentDistance(Vector2* pos,Vector2* pos2, double percentOfDistance) {\n'+
             "return distanceTo(pos,pos2)/ (100 / percentOfDistance);\n"+
         "}")
+
+# flush is telling to the computer's memory to write the file right now,
+# instead of waiting the end of the script to do it.
 f.flush()        
 
+# compiling the C++ file
 def compile_cpp(file_path):
-    subprocess.run(["g++", "-o","compiledVector2",file_path])
+    subprocess.run(["g++", "-o",args.path,"compiledVector2",file_path])
 
-compile_cpp("Vector2.cpp")
+compile_cpp(args.path,"Vector2.cpp")
 
-
-program=open("Program.fs","r")
+# reading the user's F# file
+program=open(args.path,"Program.fs","r")
 lines=program.readlines()
-program=open("Program.fs","w")
+program=open(args.path,"Program.fs","w")
 done=False
 
+# storing every functions import inside an array
 imports=['open System.Runtime.InteropServices\n',
         "[<StructLayout(LayoutKind.Sequential)>]\n",
         "type Vector2 =\n",
         "    val mutable X: double\n",
         "    val mutable Y: double\n",
         "    new(x, y, z) = { X = x; Y = y}\n",
-        '[<DllImport("compiledVector2")>]\n',
+        '[<DllImport(args.path,"compiledVector2")>]\n',
         "extern Vector2 CreateVector2(double x, double y)\n",
 
-        '[<DllImport("compiledVector2")>]\n',
+        '[<DllImport(args.path,"compiledVector2")>]\n',
         "extern double GetX(Vector2 v)\n",
 
-        '[<DllImport("compiledVector2")>]\n',
+        '[<DllImport(args.path,"compiledVector2")>]\n',
         "extern double GetY(Vector2 v)\n",
 
-        '[<DllImport("compiledVector2")>]\n',
+        '[<DllImport(args.path,"compiledVector2")>]\n',
         "extern double distanceTo(Vector2 v,Vector2 v2)\n",
 
-        '[<DllImport("compiledVector2")>]\n',
+        '[<DllImport(args.path,"compiledVector2")>]\n',
         "extern void vectorMovement(Vector2 v,double plusx, double plusy)\n",
 
-        '[<DllImport("compiledVector2")>]\n',
+        '[<DllImport(args.path,"compiledVector2")>]\n',
         "extern Vector2 midpoint(Vector2 v,Vector2 v2)\n",
 
-        '[<DllImport("compiledVector2")>]\n',
+        '[<DllImport(args.path,"compiledVector2")>]\n',
         "extern double percentDistance(Vector2 pos1, Vector2 pos2, double percent)\n"]
+
+# adding every imports inside the user's file and storing the file's original lines,
+# while removing everything
 i=0
 exists=[]
 for line in lines:
@@ -108,6 +129,7 @@ for line in lines:
         program.write(imports[i])
     
     i+=1
+# insert back every lines the user has written, except already added lines (ex:[<DllImport(args.path,"compiledVector2")>])
 for lines in exists:
     if lines in imports:
         pass
@@ -115,4 +137,8 @@ for lines in exists:
         program.write(lines)
 
 program.flush()
+# run user's F# project
 subprocess.run(["dotnet","run"])
+
+
+
