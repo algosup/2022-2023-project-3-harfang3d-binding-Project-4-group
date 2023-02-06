@@ -19,6 +19,9 @@ if os.path.exists(args.path+"Vector3.cpp"):
 if os.path.exists(args.path+"compiledVector3"):
     os.remove(args.path+"compiledVector3")
 
+if os.path.exists(args.path+"compiledVector3.exe"):
+    os.remove(args.path+"compiledVector3.exe")
+
 #Create Vector3.cpp file who define the Vector3 class and the functions
 f= open(args.path+"Vector3.cpp","x")
 f.write("#include <math.h>\n"+

@@ -1,5 +1,7 @@
 import os
 import sys
+import sys 
+from sys import platform
 import subprocess
 import argparse
 
@@ -18,6 +20,9 @@ if os.path.exists(args.path+"Vector2.cpp"):
 
 if os.path.exists(args.path+"compiledVector2"):
     os.remove(args.path+"compiledVector2")
+
+if os.path.exists(args.path+"compiledVector2.exe"):
+    os.remove(args.path+"compiledVector2.exe")
 
 # Generate the C++ file for 2D vectors basic calculations 
 f= open(args.path+"Vector2.cpp","x")
@@ -79,15 +84,16 @@ f.flush()
 
 # compiling the C++ file
 def compile_cpp(file_path):
-    subprocess.run(["g++", "-o",args.path+"compiledVector2",file_path])
+    if platform == "darwin": #macOs
+        subprocess.run(["g++", "-o","compiledVector3",file_path])
+    elif platform == "win32": #Windows
+        subprocess.run(["g++", "-shared" ,"-o","compiledVector2.exe", "-m64", file_path])
 
 compile_cpp(args.path+"Vector2.cpp")
-os.remove(args.path+"Vector2.cpp")
-
 
 
 # storing every functions import inside an array
-imports=['open System.Runtime.InteropServices\n',
+importsMac=['open System.Runtime.InteropServices\n',
         "[<StructLayout(LayoutKind.Sequential)>]\n",
         "type Vector2 = val mutable X: double; val mutable Y: double new(x, y, z) = { X = x; Y = y}\n",
         '[<DllImport("compiledVector2")>]\n',
@@ -108,37 +114,79 @@ imports=['open System.Runtime.InteropServices\n',
         '[<DllImport("compiledVector2")>]\n',
         "extern Vector2 midpoint(Vector2 v,Vector2 v2)\n",
 
-        '[<DllImport("compiledVector2")>]\n',
+        '[<DllImport("compiledVector2>]\n',
         "extern double percentDistance(Vector2 pos1, Vector2 pos2, double percent)\n"]
 
+importsWindows=['open System.Runtime.InteropServices\n',
+        "[<StructLayout(LayoutKind.Sequential)>]\n",
+        "type Vector2 = val mutable X: double; val mutable Y: double new(x, y, z) = { X = x; Y = y}\n",
+        'printfn("test 1 passed")\n',
+        '[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]\n',
+        "extern Vector2 CreateVector2(double x, double y)\n",
+
+        '[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]\n',
+        "extern double GetX(Vector2 v)\n",
+
+        '[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]\n',
+        "extern double GetY(Vector2 v)\n",
+
+        '[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]\n',
+        "extern double distanceTo(Vector2 v,Vector2 v2)\n",
+
+        '[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]\n',
+        "extern void vectorMovement(Vector2 v,double plusx, double plusy)\n",
+
+        '[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]\n',
+        "extern Vector2 midpoint(Vector2 v,Vector2 v2)\n",
+
+        '[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]\n',
+        "extern double percentDistance(Vector2 pos1, Vector2 pos2, double percent)\n",
+        'printfn("test 2 passed")\n'
+        ]
 # reading the user's F# file
 program=open(args.path+"Program.fs","r")
 FileLength=program.readlines()
 program=open(args.path+"Program.fs","w")
 
-# Copy every lines of the original file into an array
-exists=[]
-for line in FileLength: 
-    exists.append(line) 
+# if the user is on macOs, add macOs imports
+if platform == "darwin":
+    # Copy every lines of the original file into an array
+    exists=[]
+    for line in FileLength: 
+        exists.append(line) 
 
-# Delete every line inside the program
-program.truncate()
-program=open(args.path+"Program.fs","a")
+    # Delete every line inside the program
+    program.truncate()
+    program=open(args.path+"Program.fs","a")
 
-# Write every imports into the file
-for eachImport in imports:
-    program.write(eachImport)
+    # Write every imports into the file
+    for eachImport in importsMac:
+        program.write(eachImport)
 
-# insert back every lines the user has written, except already added lines (ex:[<DllImport("compiledVector2")>])
-for lines in exists:
-    if lines in imports:
-        pass
-    else:
-        program.write(lines)
-    
+    # insert back every lines the user has written, except already added lines (ex:[<DllImport("compiledVector2")>])
+    for lines in exists:
+        if lines in importsMac:
+            pass
+        else:
+            program.write(lines)
+
+elif platform == "win32":
+    exists=[]
+    for line in FileLength:
+        exists.append(line)
+
+    program.truncate()
+    program=open(args.path+"Program.fs","a")
+
+    for eachImport in importsWindows:
+        program.write(eachImport)
+
+    for lines in exists:
+        if lines in importsWindows:
+            pass
+        else:
+            program.write(lines)
+
 program.flush()
 # run user's F# project
 subprocess.run(["dotnet","run"])
-
-
-

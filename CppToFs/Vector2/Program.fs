@@ -1,20 +1,22 @@
 open System.Runtime.InteropServices
 [<StructLayout(LayoutKind.Sequential)>]
 type Vector2 = val mutable X: double; val mutable Y: double new(x, y, z) = { X = x; Y = y}
-[<DllImport("compiledVector2")>]
+printfn("test 1 passed")
+[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]
 extern Vector2 CreateVector2(double x, double y)
-[<DllImport("compiledVector2")>]
+[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]
 extern double GetX(Vector2 v)
-[<DllImport("compiledVector2")>]
+[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]
 extern double GetY(Vector2 v)
-[<DllImport("compiledVector2")>]
+[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]
 extern double distanceTo(Vector2 v,Vector2 v2)
-[<DllImport("compiledVector2")>]
+[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]
 extern void vectorMovement(Vector2 v,double plusx, double plusy)
-[<DllImport("compiledVector2")>]
+[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]
 extern Vector2 midpoint(Vector2 v,Vector2 v2)
-[<DllImport("compiledVector2")>]
+[<DllImport("compiledVector2.exe", CallingConvention = CallingConvention.StdCall)>]
 extern double percentDistance(Vector2 pos1, Vector2 pos2, double percent)
+printfn("test 2 passed")
 
 //create vector 1 and 2
 let vector = CreateVector2(10.0, 0.0)
