@@ -87,11 +87,9 @@ def compile_cpp(file_path):
     if platform == "darwin": #macOs
         subprocess.run(["g++", "-o","compiledVector3",file_path])
     elif platform == "win32": #Windows
-        subprocess.run(["g++", "-shared" ,"-o","compiledVector3.exe",file_path])
+        subprocess.run(["g++", "-shared" ,"-o","compiledVector3.exe", "-m64", file_path])
 
 compile_cpp(args.path+"Vector3.cpp")
-os.remove(args.path+"Vector3.cpp")
-
 
 
 importsMac=['open System.Runtime.InteropServices\n',
@@ -124,29 +122,32 @@ importsMac=['open System.Runtime.InteropServices\n',
 importsWindows=['open System.Runtime.InteropServices\n',
         "[<StructLayout(LayoutKind.Sequential)>]\n",
         "type Vector3 = val mutable X: double; val mutable Y: double; val mutable Z: double new(x, y, z) = { X = x; Y = y; Z = z }\n",
-        '[<DllImport("compiledVector3.exe")>]\n',
+        'printfn("Test 1 passed")\n',
+        '[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]\n',
         "extern Vector3 CreateVector3(double x, double y, double z)\n",
 
-        '[<DllImport("compiledVector3.exe")>]\n',
+        '[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]\n',
         "extern double GetX(Vector3 v)\n",
 
-        '[<DllImport("compiledVector3.exe")>]\n',
+        '[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]\n',
         "extern double GetY(Vector3 v)\n",
 
-        '[<DllImport("compiledVector3.exe")>]\n',
+        '[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]\n',
         "extern double GetZ(Vector3 v)\n",
 
-        '[<DllImport("compiledVector3.exe")>]\n',
+        '[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]\n',
         "extern double distanceTo(Vector3 v,Vector3 v2)\n",
 
-        '[<DllImport("compiledVector3.exe")>]\n',
+        '[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]\n',
         "extern void vectorMovement(Vector3 v,double plusx, double plusy, double plusz)\n",
 
-        '[<DllImport("compiledVector3.exe")>]\n',
+        '[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]\n',
         "extern Vector3 midpoint(Vector3 v,Vector3 v2)\n",
 
-        '[<DllImport("compiledVector3.exe")>]\n',
-        "extern double percentDistance(Vector3 pos1, Vector3 pos2, double percent)\n"]
+        '[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]\n',
+        "extern double percentDistance(Vector3 pos1, Vector3 pos2, double percent)\n",
+        'printfn("Test 2 passed")\n'
+        ]
 
 # Edit Program.fs file to add the imports
 program=open(args.path+"Program.fs","r")

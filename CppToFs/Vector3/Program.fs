@@ -1,25 +1,28 @@
 open System.Runtime.InteropServices
 [<StructLayout(LayoutKind.Sequential)>]
-type Vector3 =val mutable X: double; val mutable Y: double; val mutable Z: double new(x, y, z) = { X = x; Y = y; Z = z }
-[<DllImport("compiledVector3")>]
+type Vector3 = val mutable X: double; val mutable Y: double; val mutable Z: double new(x, y, z) = { X = x; Y = y; Z = z }
+printfn("Test 1 passed")
+[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]
 extern Vector3 CreateVector3(double x, double y, double z)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]
 extern double GetX(Vector3 v)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]
 extern double GetY(Vector3 v)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]
 extern double GetZ(Vector3 v)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]
 extern double distanceTo(Vector3 v,Vector3 v2)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]
 extern void vectorMovement(Vector3 v,double plusx, double plusy, double plusz)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]
 extern Vector3 midpoint(Vector3 v,Vector3 v2)
-[<DllImport("compiledVector3")>]
+[<DllImport("compiledVector3.exe", CallingConvention = CallingConvention.StdCall)>]
 extern double percentDistance(Vector3 pos1, Vector3 pos2, double percent)
+printfn("Test 2 passed")
 
 let FstVector= CreateVector3(0.0, 0.0, 0.0)
 let SndVector= CreateVector3(1.0, 2.0, 3.0)
+printf("Test 3 passed")
 
 //Get values
 printfn"Get values"
@@ -51,4 +54,3 @@ printfn"______________________________________________"
 printfn"Get the distance between the two vectors divised by a percentage"
 printfn $"The distance between the first and second vector at 50 percent is: {percentage}"
 printfn $"And the full distanc is: {fullDistance}"
-
