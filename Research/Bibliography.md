@@ -1,6 +1,17 @@
-  NAME - SUBJECT - WHY ?
+ 
+| NAME | LINK | SUBJECT | REASON
+|----------|----------|-----|-------|
+| F# tutorial | https://www.youtube.com/watch?v=c7eNDJN758U | To learn F# basis | The video is very clear and complete |
+| Row 2, Column 1 | Row 2, Column 2 |
+| Row 1, Column 1 | Row 1, Column 2 |
+| Row 2, Column 1 | Row 2, Column 2 |
+| Row 1, Column 1 | Row 1, Column 2 |
+| Row 2, Column 1 | Row 2, Column 2 |
+| Row 1, Column 1 | Row 1, Column 2 |
+| Row 2, Column 1 | Row 2, Column 2 |
+| Row 1, Column 1 | Row 1, Column 2 |
+| Row 2, Column 1 | Row 2, Column 2 |
 
-- [F# tutorial](https://www.youtube.com/watch?v=c7eNDJN758U) - To learn F# basis - (The video is very clear and complete)
 
 - [C++ tutorial](https://openclassrooms.com/fr/courses/1894236-apprenez-a-programmer-en-c) - To learn C++ basis - (The course is very efficient)
 
