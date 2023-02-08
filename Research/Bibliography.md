@@ -4,23 +4,17 @@
 | F# tutorial | https://www.youtube.com/watch?v=c7eNDJN758U | To learn F# basis | The video is very clear and complete |
 | C++ tutorial | https://openclassrooms.com/fr/courses/1894236-apprenez-a-programmer-en-c | To learn C++ basis | The course is very efficient |
 | External functions | https://rebrand.ly/xrvl42h | How to call C++ functions in a F# file | This a link given by Harfang’s engineers |
-| Row 2, Column 1 | Row 2, Column 2 |
+| C++ code | https://github.com/jackdalton/vector-cpp/blob/master/src/vector.h | Exemple of C++ functions | This a link given by Harfang’s engineers |
+| Test plan | https://www.wearedevelopers.com/magazine/how-to-create-a-test-plan-for-software-testing | Tutorial to make a test plan | Link very useful for QA |
+| Use F# on macos | https://fsharp.org/use/mac/ | How to start using F# on macos | Essential to start working |
 | Row 1, Column 1 | Row 1, Column 2 |
 | Row 2, Column 1 | Row 2, Column 2 |
 | Row 1, Column 1 | Row 1, Column 2 |
 | Row 2, Column 1 | Row 2, Column 2 |
-| Row 1, Column 1 | Row 1, Column 2 |
-| Row 2, Column 1 | Row 2, Column 2 |
 
 
 
-- [External functions](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/functions/external-functions) - How to call C++ functions in a F# file - (This a link given by Harfang’s engineers)
 
-- [C++ code](https://github.com/jackdalton/vector-cpp/blob/master/src/vector.h) - Exemple of C++ functions - (This a link given by Harfang’s engineers)
-
-- [Test plan](https://www.wearedevelopers.com/magazine/how-to-create-a-test-plan-for-software-testing) - Tutorial to make a test plan - (Link very useful for QA)
-
-- [Use F# on macos](https://fsharp.org/use/mac/) - How to start using F# on macos - (Essential to start working)
 
 - [Executing F# scripts](https://stackoverflow.com/questions/2459472/executing-f-scripts) - How to compile F# scripts - (Essential to start working)
 
