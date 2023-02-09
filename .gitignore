@@ -258,10 +258,6 @@ paket-files/
 MyProject_coverage.xml
 
 # Specific to the project
-Vector2.cpp
-Vector3.cpp
-compiledVector2
-compiledVector3
-compiledVector2.exe
-compiledVector3.exe
+compiledVectors
+compiledVectors.exe
 .DS_Store
