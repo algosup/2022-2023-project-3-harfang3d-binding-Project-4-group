@@ -6,7 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="FSHeader.fs"/>
+    <Compile Include="FSHeader3D.fs"/>
+    <Compile Include="FSHeader2D.fs"/>
     <Compile Include="Program.fs" />
   </ItemGroup>
 
