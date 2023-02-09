@@ -17,9 +17,9 @@ parser = argparse.ArgumentParser(
 def call(gen:str, path:str):
     match gen:
         case "v2":
-            subprocess.run(["python3","./CppToFs/Vector2/gen.py", path])
+            subprocess.run(["python3","../../CppToFs/Vector2/gen.py", path])
         case "v3":
-            subprocess.run(["python3","./CppToFs/Vector3/gen.py", path])
+            subprocess.run(["python3","../../CppToFs/Vector3/gen.py", path])
             
 
 generators = {'v2',

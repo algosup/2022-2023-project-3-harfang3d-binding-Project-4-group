@@ -1,11 +1,4 @@
-open System.Runtime.InteropServices
 open vector2
-
-printfn ("test 1 passed")
-
-printfn ("test 2 passed")
-
-//create vector 1 and 2
 let vector = CreateVector2(10.0, 0.0)
 let vector2 = CreateVector2(0.0, 0.0)
 
@@ -51,3 +44,5 @@ printfn $"vector X= {vector.X} Y={vector.Y}"
 printfn $"vector2 X= {vector2.X} Y={vector2.Y}"
 printfn $"The distance is: {Newdistance}"
 printfn $"The point at 50 percent between vector and vector2 is: {percentage}"
+open vector2
+open vector2
