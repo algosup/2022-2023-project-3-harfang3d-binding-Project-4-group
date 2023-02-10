@@ -1,4 +1,4 @@
- 
+
 | NAME | LINK | SUBJECT | REASON |
 |----------|----------|-----|-------|
 | F# tutorial | https://www.youtube.com/watch?v=c7eNDJN758U | To learn F# basis | The video is very clear and complete |
@@ -11,4 +11,3 @@
 | Harfang3D github | https://github.com/harfang3d/harfang3d | The repository of Harfang | Link to the company software |
 | FABGen github | https://github.com/ejulien/FABGen | The repository of language binding | Link to the repository reference for our project |
 | Wrapping C++ in C | https://rebrand.ly/u4xwoke | How to wrap C++ in C | The clients said that we need to wrap C++ in C before in F# |
-
