@@ -17,8 +17,6 @@
 		- [Constraints](#constraints)
 	- [Testing](#testing)
 	- [Footnotes](#footnotes)
-					- [all icons used are made by professionals and are available on Flaticon](#all-icons-used-are-made-by-professionals-and-are-available-on-flaticon)
-
 </details>
 
 <hr>
@@ -26,6 +24,7 @@
 ## Overview
 
 The goal of this project is to update [FABGen](#FABGen) to add [F#](#F#) [bindings](#Bindings) To do so we will have to understand what [FABGen](#FABGen) is and how it works, moreover, to make it work properly we will have to use three languages which are:
+
 - [F#](#F#)
 - [C++](#C++)
 - [Python](#Python)
@@ -37,6 +36,7 @@ The goal of this project is to update [FABGen](#FABGen) to add [F#](#F#) [bindin
 ## Software
 
 ### Software workflow
+
 <img src="./Images/Schema.png" width="400" height="550" />
 
 As you can see above, the user will enter his F# code, then our algorithm will translate the functions in C++, if these functions can't be translated, it will do it in python and then in c++. The remaining code, which is in C++, will finally be send to [Harfang 3D](#Harfang3D).
@@ -72,11 +72,11 @@ The next files
 		├── __init__.py
 		├── std.py
 		└── stl.py
-		</b>
-├── <b>Hub.py</b>
-├── <b>User</b>
-	<b>├──Program.fs</b>
-	<b>└──UserProject.fsproj</b>
+		
+├── Hub.py
+├── User
+	├──Program.fs
+	└──UserProject.fsproj</b>
 ├── bind.py
 ├── gen.py
 ├── license.md
@@ -121,6 +121,3 @@ Tests are provided by [Harfang 3D](#Harfang3D) so we won't have to create them, 
 | <img src="./Images/PythonLogo.png" width="30" height="30" /><span id="Python">Python</span>         |            Like C++, Python is a high-level language, this language is widely used inside the programming community for his simplicity to use parts of code called libraries which are made by users.            |
 | <img src="./Images/HarfangLogo.png" width="30" height="30" /><span id="Harfang3D">Harfang 3D</span> | Harfang 3D is a French company based in Orléans with the objective to create a 3D engine for industrial companies and purposes less explored by his concurrence. Harfang 3D is also the name of their 3D engine. |
 
-
-
-###### [all icons used are made by professionals and are available on Flaticon](https://www.flaticon.com/)
