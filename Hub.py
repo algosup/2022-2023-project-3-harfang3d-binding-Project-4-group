@@ -19,8 +19,8 @@ def call(gen: str, path: str):
 
 
 generators = {'v2',
-              'v3',
-              'vectors'}
+                'v3',
+                    'vectors'}
 
 parser.add_argument('-gen', "--generator",
                     help="Choose which generator you want to call for your program", type=str, required=True)
