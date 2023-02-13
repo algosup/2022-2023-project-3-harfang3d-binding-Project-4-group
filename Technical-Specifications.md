@@ -37,15 +37,15 @@ The goal of this project is to update [FABGen](#FABGen) to add [F#](#F#) [bindin
 
 ### Software workflow
 
-<img src="./Images/Schema.png" width="400" height="550" />
+<img src="./Images/Schema.png" width="300" height="550" />
 
-As you can see above, the user will enter his F# code, then our algorithm will translate the functions in C++, if these functions can't be translated, it will do it in python and then in c++. The remaining code, which is in C++, will finally be send to [Harfang 3D](#Harfang3D).
+As you can see above, the user will enter his F# code, then our algorithm will translate the functions in C++ and write it in a new file this code, which is in C++, will finally be send to [Harfang 3D](#Harfang3D) to be executed.
 
 ### File structure
 
 For this project we wanted to use FABgen's original file structure.
 Files named "fsharp" and bold files are what we will have to create during the project. As you can see multiple files are added, the most important is the hub.py, it is python file that serves the same function as the original bind.py, but since we can't modify FABgen's code we had to create one.
-The next files
+The next one is the folder "User", inside there is an example of a user's project. This folder serve as a specific place for user to create their projects.
 
 <pre>
 ├── lang
@@ -90,10 +90,10 @@ The next files
 
 This project has few risks, they can be defined as:
 
-The risk of misunderstanding [FABGen](#FABGen)'s functions
+The risk of misunderstanding [FABGen](#FABGen)'s functions:
 In the situation where we misunderstood FABgen's function we might produce function that shouldn't be part of our [bindings](#Bindings), this will lead to a slowdown of our project and result of being late with our deadlines.
 
-The risk of having a non-organised file structure can lead to bugs or being a problem for updating [FABGen](#FABGen) with a file structure different than their own.
+The risk of having a non-organised file structure can lead to bugs or having a problem to update [FABGen](#FABGen) with a file structure different than their own.
 
 The risk of having defective tests, this will end up by having a defective product or having a slowdown during the project.
 
