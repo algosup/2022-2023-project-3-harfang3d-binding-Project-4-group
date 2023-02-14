@@ -52,7 +52,7 @@ What are the steps to achieve your goals?
 
 # Resources
 
-> [Project's charter](https://github.com/harfang3d/algosup-binding-project) - The project's charter.(given by the client)
-> [The company website](https://www.harfang3d.com/en_US/about) - Usefull information about the company.(given by the school)
-> [Their Github](https://github.com/harfang3d/harfang3d) - The source code of all company's products.(given by the client)
-> [FABGen's source code](https://github.com/ejulien/FABGen) - The source code of FABGen, our project's main tool.(given by the client)
+> [Project's charter](https://github.com/harfang3d/algosup-binding-project) - The project's charter.(given by the client) <br>
+[The company website](https://www.harfang3d.com/en_US/about) - Usefull information about the company.(given by the school) <br>
+[Their Github](https://github.com/harfang3d/harfang3d) - The source code of all company's products.(given by the client) <br>
+[FABGen's source code](https://github.com/ejulien/FABGen) - The source code of FABGen, our project's main tool.(given by the client)
