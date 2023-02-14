@@ -8,7 +8,7 @@ Who are they and what do they do?
 ## Product
 
 ​What is it and why the client need our help to improve it ?
-> As I said earlier, the product we are working on is FABGen, a binding generator. It is used to generate bindings for different languages. It is used by Harfang 3D to generate bindings for their engine. The client needs our help to improve it because they want to add F# bindings to their engine.
+> As I said earlier, the product we are working on is FABGen, a binding generator. It is used to generate bindings for different languages. It is used by Harfang 3D to generate bindings for their engine. The client needs our help to improve it because they want to add F# bindings to their engine. There is a real need for this because they have a lot of users who don't know or want to use C++. They want to add F# bindings to expand their user base.
 
 ## Ecosystem
 
@@ -55,4 +55,5 @@ What are the steps to achieve your goals?
 > [Project's charter](https://github.com/harfang3d/algosup-binding-project) - The project's charter.(given by the client) <br>
 [The company website](https://www.harfang3d.com/en_US/about) - Usefull information about the company.(given by the school) <br>
 [Their Github](https://github.com/harfang3d/harfang3d) - The source code of all company's products.(given by the client) <br>
-[FABGen's source code](https://github.com/ejulien/FABGen) - The source code of FABGen, our project's main tool.(given by the client)
+[FABGen's source code](https://github.com/ejulien/FABGen) - The source code of FABGen, our project's main tool.(given by the client) <br>
+[A real need](https://twitter.com/harfang3dengine/status/834247877732003842) - A tweet from a user who wants differents languages bindings for Harfang 3D's engine.(Self found) <br>
