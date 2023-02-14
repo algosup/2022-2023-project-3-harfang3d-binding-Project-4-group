@@ -2,6 +2,7 @@
 <summary style="text-decoration: underline; font-size:150%">Table of contents:</summary>
 
 1. [FSHARP_001](#1-fsharp_001)
+2. [FSHARP_002](#2-fsharp_002)
 
     
 </details>
@@ -57,6 +58,63 @@ The F# code should correctly call the C++ library function add and pass the resu
 ${\color{orange}Actual Result:}$
 
 [Record the actual result of the test here]
+
+${\color{orange}Test Pass/Fail Criteria:}$
+
+The test is considered pass if the actual result matches the expected result.
+
+${\color{orange}Notes:}$
+[Any additional notes or comments related to the test case can be added here]
+
+This test case is checking the overall integration of the F# code and the C++ library. It's also verifies that the data transfer between the two languages is working as expected. 
+
+
+## 2. FSHARP_002
+
+${\color{orange}Test Case ID:}$ FSHARP_002
+
+${\color{orange}Test Case Name:}$ F# binding1
+
+${\color{orange}Prerequisites:}$
+
+C++ library has been compiled without errors<br>
+F# code has been compiled without errors<br>
+
+${\color{orange}Test Steps:}$
+
+Run the Python file with going in the wright folder.<br>
+Open a terminal and write 
+```
+python3 gen.py ./
+```
+
+${\color{orange}Expected Result:}$
+
+The file would compiled correctly and send the answers of the code as an output.<br>
+A file.cpp is created.<br>
+
+${\color{orange}Actual Result:}$
+
+```
+Test 1 passed
+Test 2 passed
+Test 3 passedGet values
+The before movement X= 1 and Y= 2 and Z=3
+______________________________________________
+Get Distance
+The Distance between the first and second vector is: 3.7416573867739413
+______________________________________________
+Move the first vector +1 to each point
+The Vector 1 was at X=0, Y=0 and Z=0 
+It is now X= 1 and Y= 1 and Z=1 
+______________________________________________
+Get the midpoint between the two vectors
+The midpoint between the first and second vector is X= 1 and Y= 1.5 and Z=2 
+______________________________________________
+Get the distance between the two vectors divised by a percentage
+The distance between the first and second vector at 50 percent is: 1.118033988749895
+And the full distanc is: 2.23606797749979
+```
 
 ${\color{orange}Test Pass/Fail Criteria:}$
 
