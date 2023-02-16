@@ -31,12 +31,26 @@ Our goal for this project is to ad a binding for the language [F#](https://fshar
 During the project we had multiple meetings with the client, since the first meeting we received a new goal: to bind the file vector.h to f#, to achieve that goal, we decided to inspire ourselves from FABgen's structure.
 Firstly there is the original file, vector.h, he wasn't modified at all, then you have vectors.cpp, it is a cpp file that is using every functions defined in vector.h. Then you have the main file, Hub.py, it is inspired by FABgen's bind.py, it is a python file that you call to generate a compiled version of your desired C++ file and add multiple lines in your program to be able to call the functions in the compiled file.
 
+## How it works
+
+To use the functions in vector.h you will need to perform few steps:
+
+First you have to go in the folder called "User', as it name indicate, it is a folder created to give users a place to create their F# projects. Then you will have to create your project, to create it you will need to use this command: 
+```dotnet new console -lang F# -n "Your_project_name" ```
+
+then go inside your project's folder usind cd:
+```cd "Your_project_name```
+
+Finally you will have to execute this line inside your terminal:
+```python3 "path to Hub.py (in the root of the project)" -gen vectors --path "path to your directory or ./ if you are already inside it"```
+
+
 ## Documents
 
 <!-- [Functional Specifications](Documents/functional-specifications.md) <br>
-// [Technical Specifications](Documents/Technical-Specifications.md) <br>
-// [Test Plan](Documents/QA/Test-plan.md) <br>
-// [Project's planner](https://github.com/orgs/algosup/projects/4/views/1) <br>
-// [Critical path](https://docs.google.com/spreadsheets/d/1LDPr-LcLIMsKmaVQhj4lGdEyIJRwftaApHXx4YnH4_M/edit?usp=sharing) <br>
-// [Communication plan](Documents/communication-plan.md) <br>
-// [KPI's evaluation](https://docs.google.com/spreadsheets/d/1W16BV-xJHv1o4vF_B-yCt-Q5-HjRdeBla_S-Vu_Vd5k/edit?usp=sharing)<br> -->
+[Technical Specifications](Documents/Technical-Specifications.md) <br>
+[Test Plan](Documents/QA/Test-plan.md) <br>
+[Project's planner](https://github.com/orgs/algosup/projects/4/views/1) <br>
+[Critical path](https://docs.google.com/spreadsheets/d/1LDPr-LcLIMsKmaVQhj4lGdEyIJRwftaApHXx4YnH4_M/edit?usp=sharing) <br>
+[Communication plan](Documents/communication-plan.md) <br>
+[KPI's evaluation](https://docs.google.com/spreadsheets/d/1W16BV-xJHv1o4vF_B-yCt-Q5-HjRdeBla_S-Vu_Vd5k/edit?usp=sharing)<br> -->
