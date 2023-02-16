@@ -1,74 +1,67 @@
-#include <iostream>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string>
 #include <math.h>
+#include <iostream>
 
-    class Vector2
-{
+using namespace std;
+
+extern "C" class Vector2 {
 public:
-   Vector2(double inx = 0, double iny = 0)
-   {
-      x = inx;
-      y = iny;
-   }
-   double x;
-   double y;
-   double distanceTo(Vector2 pos)
-   {
-      return sqrt((pos.y - y) * (pos.y - y) + (pos.x - x) * (pos.x - x));
-   }
-   void vectorMovement(double plusx, double plusy)
-   {
-      x += plusx;
-      y += plusy;
-      return;
-   }
-   Vector2 midpoint(Vector2 pos)
-   {
-      double mx = (x + pos.x) / 2;
-      double my = (y + pos.y) / 2;
-      Vector2 mid(mx, my);
-      return mid;
-   }
-   double percentDistance(Vector2 pos, double percentOfDistance = 100)
-   {
-      return distanceTo(pos) / (100 / percentOfDistance);
-   }
+    double x;
+    double y;
+
+    Vector2(double x, double y) : x(x), y(y) {}
 };
-class Vector3
-{
+
+extern "C" class Vector3 {
 public:
-   Vector3(double inx = 0, double iny = 0, double inz = 0)
-   {
-      x = inx;
-      y = iny;
-      z = inz;
-   }
-   double x;
-   double y;
-   double z;
-   double distanceTo(Vector3 pos)
-   {
-      return sqrt((pos.y - y) * (pos.y - y) + (pos.x - x) * (pos.x - x) + (pos.z - z) * (pos.z - z));
-   }
-   void vectorMovement(double plusx, double plusy, double plusz)
-   {
-      x += plusx;
-      y += plusy;
-      z += plusz;
-      return;
-   }
-   Vector3 midpoint(Vector3 pos)
-   {
-      double mx = (x + pos.x) / 2;
-      double my = (y + pos.y) / 2;
-      double mz = (z + pos.z) / 2;
-      Vector3 mid(mx, my, mz);
-      return mid;
-   }
-   double percentDistance(Vector3 pos, double percentOfDistance = 100)
-   {
-      return distanceTo(pos) / (100 / percentOfDistance);
-   }
+    double x;
+    double y;
+    double z;
+
+    Vector3(double x, double y, double z) : x(x), y(y), z(z) {}
 };
+
+extern "C" Vector2 *CreateVector2D(double x, double y)
+{
+   return new Vector2(x, y);
+}
+extern "C" double distanceTo2D(Vector2* pos1, Vector2* pos2)
+{   
+   return pos1->distanceTo(*pos2);
+}
+extern "C" void vectorMovement2D(Vector2* vector, double plusx, double plusy)
+{
+   vector->vectorMovement(plusx, plusy);
+   return;
+}
+extern "C" Vector2 *midpoint2D(Vector2* pos1, Vector2* pos2)
+{
+   return new Vector2(pos1->midpoint(*pos2));
+}
+extern "C" double percentDistance2D(Vector2* pos, Vector2* pos2, double percentOfDistance)
+{
+   return pos->percentDistance(*pos2, percentOfDistance);
+}
+
+
+
+extern "C" Vector3 *CreateVector3D(double x, double y,double z)
+{
+   return new Vector3(x, y, z);
+}
+extern "C" double distanceTo3D(Vector3* pos1, Vector3* pos2)
+{   
+   return pos1->distanceTo(*pos2);
+}
+extern "C" void vectorMovement3D(Vector3* vector, double plusx, double plusy, double plusz)
+{
+   vector->vectorMovement(plusx, plusy, plusz);
+   return;
+}
+extern "C" Vector3 *midpoint3D(Vector3* pos1, Vector3* pos2)
+{
+   return new Vector3(pos1->midpoint(*pos2));
+}
+extern "C" double percentDistance3D(Vector3* pos, Vector3* pos2, double percentOfDistance)
+{
+   return pos->percentDistance(*pos2, percentOfDistance);
+}
