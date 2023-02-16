@@ -83,37 +83,43 @@ F# code has been compiled without errors<br>
 ${\color{orange}Test Steps:}$
 
 Run the Python file with going in the wright folder.<br>
+```
+cd User
+cd MyProject
+```
 Open a terminal and write 
 ```
-python3 gen.py ./
+python3 ../../Hub.py -gen vectors --path ./
 ```
 
 ${\color{orange}Expected Result:}$
 
 The file would compiled correctly and send the answers of the code as an output.<br>
-A file.cpp is created.<br>
+A file.cpp is compiled.<br>
 
 ${\color{orange}Actual Result:}$
 
 ```
-Test 1 passed
-Test 2 passed
-Test 3 passedGet values
-The before movement X= 1 and Y= 2 and Z=3
-______________________________________________
-Get Distance
-The Distance between the first and second vector is: 3.7416573867739413
-______________________________________________
-Move the first vector +1 to each point
-The Vector 1 was at X=0, Y=0 and Z=0 
-It is now X= 1 and Y= 1 and Z=1 
-______________________________________________
-Get the midpoint between the two vectors
-The midpoint between the first and second vector is X= 1 and Y= 1.5 and Z=2 
-______________________________________________
-Get the distance between the two vectors divised by a percentage
-The distance between the first and second vector at 50 percent is: 1.118033988749895
-And the full distanc is: 2.23606797749979
+Get points of the first vector
+The point X= 10 and point Y= 0
+--------------------------------
+Distance
+The distance is: 10
+--------------------------------
+Move points
+The before movement X= 10 and Y= 0
+after movement X= -2 and Y= 36
+--------------------------------
+Get mid point
+vector X= -2 Y=36
+vector2 X= 0 Y=0
+The mid point between vector and vector2 is: X= -1 Y: 18
+--------------------------------
+Get percentage between two vectors
+vector X= -2 Y=36
+vector2 X= 0 Y=0
+The distance is: 36.05551275463989
+The point at 50 percent between vector and vector2 is: 18.027756377319946
 ```
 
 ${\color{orange}Test Pass/Fail Criteria:}$
