@@ -36,12 +36,15 @@ Firstly there is the original file, vector.h, he wasn't modified at all, then yo
 To use the functions in vector.h you will need to perform few steps:
 
 First you have to go in the folder called "User', as it name indicate, it is a folder created to give users a place to create their F# projects. Then you will have to create your project, to create it you will need to use this command: 
+<br>
 ```dotnet new console -lang F# -n "Your_project_name" ```
 
 then go inside your project's folder usind cd:
+<br>
 ```cd "Your_project_name```
 
 Finally you will have to execute this line inside your terminal:
+<br>
 ```python3 "path to Hub.py (in the root of the project)" -gen vectors --path "path to your directory or ./ if you are already inside it"```
 
 
