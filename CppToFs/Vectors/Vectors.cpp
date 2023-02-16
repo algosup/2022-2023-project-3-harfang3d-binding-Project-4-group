@@ -1,7 +1,6 @@
 #include <math.h>
 #include <iostream>
-#include "vector.h"
-using namespace std;
+#include "Vector.h"
 int main()
 {
    return 0;
