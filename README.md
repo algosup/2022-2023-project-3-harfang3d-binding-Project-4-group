@@ -26,12 +26,17 @@ Our goal for this project is to ad a binding for the language [F#](https://fshar
 
 <br>
 
+## Changes during the project
+
+During the project we had multiple meetings with the client, since the first meeting we received a new goal: to bind the file vector.h to f#, to achieve that goal, we decided to inspire ourselves from FABgen's structure.
+Firstly there is the original file, vector.h, he wasn't modified at all, then you have vectors.cpp, it is a cpp file that is using every functions defined in vector.h. Then you have the main file, Hub.py, it is inspired by FABgen's bind.py, it is a python file that you call to generate a compiled version of your desired C++ file and add multiple lines in your program to be able to call the functions in the compiled file.
+
 ## Documents
 
-[Functional Specifications](Documents/functional-specifications.md) <br>
-[Technical Specifications](Documents/Technical-Specifications.md) <br>
-[Test Plan](Documents/QA/Test-plan.md) <br>
-[Project's planner](https://github.com/orgs/algosup/projects/4/views/1) <br>
-[Critical path](https://docs.google.com/spreadsheets/d/1LDPr-LcLIMsKmaVQhj4lGdEyIJRwftaApHXx4YnH4_M/edit?usp=sharing) <br>
-[Communication plan](Documents/communication-plan.md) <br>
-[KPI's evaluation](https://docs.google.com/spreadsheets/d/1W16BV-xJHv1o4vF_B-yCt-Q5-HjRdeBla_S-Vu_Vd5k/edit?usp=sharing)<br>
+<!-- [Functional Specifications](Documents/functional-specifications.md) <br>
+// [Technical Specifications](Documents/Technical-Specifications.md) <br>
+// [Test Plan](Documents/QA/Test-plan.md) <br>
+// [Project's planner](https://github.com/orgs/algosup/projects/4/views/1) <br>
+// [Critical path](https://docs.google.com/spreadsheets/d/1LDPr-LcLIMsKmaVQhj4lGdEyIJRwftaApHXx4YnH4_M/edit?usp=sharing) <br>
+// [Communication plan](Documents/communication-plan.md) <br>
+// [KPI's evaluation](https://docs.google.com/spreadsheets/d/1W16BV-xJHv1o4vF_B-yCt-Q5-HjRdeBla_S-Vu_Vd5k/edit?usp=sharing)<br> -->
