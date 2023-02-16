@@ -41,7 +41,7 @@ First you have to go in the folder called "User', as it name indicate, it is a f
 
 then go inside your project's folder usind cd:
 <br>
-```cd "Your_project_name```
+```cd "Your_project_name"```
 
 Finally you will have to execute this line inside your terminal:
 <br>
