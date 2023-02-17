@@ -1,6 +1,6 @@
 #include <math.h>
 #include <iostream>
-#include "vector.h"
+#include "Vector.h"
 using namespace std;
 int main()
 {
