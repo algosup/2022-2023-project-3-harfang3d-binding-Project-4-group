@@ -258,7 +258,4 @@ paket-files/
 # Coverage Report
 MyProject_coverage.xml
 
-# Specific to the project
-compiledVectors
-compiledVectors.exe
 .DS_Store
