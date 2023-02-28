@@ -24,9 +24,9 @@ This allows to show that all the actors of the project have the necessary inform
 
 Email 📧:
 
-- François Gutherz at francois.gutherz@harfang3d.com.
-- Emmanuel Julien at emmanuel.julien@harfang3d.com.
-- Robert Pickering at robertfpickering@fastmail.com
+- François Gutherz;
+- Emmanuel Julien;
+- Robert Pickering.
 
 Slack: <img src="https://a.slack-edge.com/5f35cf0/img/icons/favicon-32-ua.png" width="20">
 - ALGOSUP Slack workspace
@@ -65,8 +65,8 @@ Weekly:
 
 ## Contact information:
 
-- Alexis Lasselin at alexis.lasselin@algosup.com
-- Paul Nowak at paul.nowak@algosup.com
-- Aurélien Fernandez at aurelien.fernandez@algosup.com
-- Laurent Bouquin at laurent.bouquin@algosup.com
-- Karine Vinette at karine.vinette@algosup.com
+- Alexis Lasselin;
+- Paul Nowak;
+- Aurélien Fernandez;
+- Laurent Bouqui;
+- Karine Vinette.
